@@ -37,10 +37,10 @@ Files
 `file`_
     
     
-.. _bool: ../html/docs/bool/index.html
-.. _int: ../html/docs/ints/index.html
-.. _long: ../html/docs/ints/index.html
-.. _float: ../html/docs/float/index.html
-.. _complex: ../html/docs/complex/index.html
-.. _str: ../html/docs/str/index.html
+.. _bool: ../docs/bool/index.html
+.. _int: ../docs/ints/index.html
+.. _long: ../docs/ints/index.html
+.. _float: ../docs/float/index.html
+.. _complex: ../docs/complex/index.html
+.. _str: ../docs/str/index.html
 
