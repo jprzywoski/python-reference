@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Introduction &mdash; Python Reference (The Right Way) 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="index.html" />
+    <link rel="next" title="Definitions" href="definitions.html" />
+    <link rel="prev" title="Python Reference (The Right Way) - DRAFT" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="definitions.html" title="Definitions"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Python Reference (The Right Way) - DRAFT"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>This documentation is the result of my frustration with official Python Manuals.</p>
+<p>Currently all the material resides on my PC in a form of Word documents. I am going to convert those word documents into .rst files over the course of the next few days. Or weeks possibly if my motivation falters. And I&#8217;m talking about 300-400 A4 pages describing all the Python features with working code examples. It took me about 4 months to put it all together.</p>
+<p><em>Note</em></p>
+<p>Moving stuff from Word files into reStructuredText is tedious. This is work in progress as of January 2015.</p>
+<p><em>Update 18/01/2015.</em></p>
+<p>Moving all the contents from word files to Sphinx project has proven to be more time consuming than I originally thought. Getting the ver. 1.0 ready will take weeks.</p>
+<div class="section" id="scope">
+<h2>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h2>
+<p>This work is not meant to be a total replacement for Python Manuals. As a matter of fact most of the definitions are based on the official docs. I decided to only cover the core Python&#8217;s syntax, that means, the stuff that does not require using &#8220;import&#8221; statement.</p>
+<p>This reference is designed to minimize the amount of time needed to look things up. The whole layout is well structured and consistent. I put a lot of emphasis on working code examples and very simple definitions. Being realistic, no one wants to read lengthy passages about some obscure functions, most people only need to glance at the code examples and then copy, paste and modify.</p>
+<p>Python Standard Library is beyond the scope of this reference. If you are looking for a description of library modules have a look at:</p>
+<ul class="simple">
+<li>Python Module of The Week by Doug Hellman</li>
+<li>Python Reference by Frederik Lundh (this one is a bit dated, but still top-notch in terms of clarity)</li>
+<li>Official Python Standard Library documentation (terse and lacks examples)</li>
+</ul>
+</div>
+<div class="section" id="rationale">
+<h2>Rationale<a class="headerlink" href="#rationale" title="Permalink to this headline">¶</a></h2>
+<p>Python is such a well-designed, clean and enjoyable to code in language so it sure deserves to have a decent syntax reference. I’ve been coding in Python for a few months now and whenever I need to check something about syntax 99.9% of the time I end up either on Stackoverflow or some other on-line resource. My main gripes with official docs are too terse descriptions and virtual lack of any code examples as well as lack of any coherent logical structure. It does not have to be this way. Just take a look on Mozilla’s JavaScript reference or Microsoft’s any .net language or VBA/VBScript references. Those are excellent examples of good technical writing.</p>
+<p>Absurdly enough the whole Python documentation stands in contrast to the Zen of Python.</p>
+<p>My first idea was to identify main use case scenarios for using any language reference. Luckily there are only two I can think of:</p>
+<ol class="arabic simple">
+<li>I know what I am looking for and I only need a quick refresher on syntax or code snippet to copy/paste end edit for my needs.</li>
+<li>I want to see if what I need to do has already been implemented (good example is <strong>enum()</strong> function – lots of people implement that pattern themselves). In this case I need to be quickly able to scan through a list of descriptions gathered in one place.</li>
+</ol>
+<p>In both cases Python docs fail miserably.</p>
+<p>So I decided to introduce the following template logical structures:</p>
+</div>
+<div class="section" id="use-case-1">
+<h2>Use case 1<a class="headerlink" href="#use-case-1" title="Permalink to this headline">¶</a></h2>
+<p>This one is used to explain usage of functions/methods. It quickly gives you the info about:</p>
+<ul class="simple">
+<li>what does the function do</li>
+<li>what are the inputs</li>
+<li>what is the output</li>
+</ul>
+</div>
+<div class="section" id="name">
+<h2>Name<a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h2>
+<p>[quick description field – preferably up to 80 characters long]</p>
+<div class="section" id="syntax">
+<h3>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h3>
+<p>[detailed description of calling this function]</p>
+</div>
+<div class="section" id="return-value">
+<h3>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">¶</a></h3>
+<p>[if applicable]</p>
+</div>
+<div class="section" id="time-complexity">
+<h3>Time Complexity<a class="headerlink" href="#time-complexity" title="Permalink to this headline">¶</a></h3>
+<p>[if applicable]</p>
+</div>
+<div class="section" id="remarks">
+<h3>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h3>
+<p>[further discussion]</p>
+</div>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<p>[simple code snippets to illustrate basic usage; the simpler the better]</p>
+</div>
+<div class="section" id="see-also">
+<h3>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h3>
+<p>[links to related topics]</p>
+</div>
+</div>
+<div class="section" id="use-case-2">
+<h2>Use case 2<a class="headerlink" href="#use-case-2" title="Permalink to this headline">¶</a></h2>
+<p>Used as a list of thematically grouped functions/methods. I decided to organize things by function rather than alphabetically. That&#8217;s the same way a handyman organizes his tools in the toolbox. Makes needed things easier to find.</p>
+<p><strong>Method_a (hyperlink)</strong></p>
+<blockquote>
+<div>[quick description field – preferably up to 80 characters long]</div></blockquote>
+<p><strong>Method_b (hyperlink)</strong></p>
+<blockquote>
+<div>[quick description field – preferably up to 80 characters long]</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#scope">Scope</a></li>
+<li><a class="reference internal" href="#rationale">Rationale</a></li>
+<li><a class="reference internal" href="#use-case-1">Use case 1</a></li>
+<li><a class="reference internal" href="#name">Name</a><ul>
+<li><a class="reference internal" href="#syntax">Syntax</a></li>
+<li><a class="reference internal" href="#return-value">Return Value</a></li>
+<li><a class="reference internal" href="#time-complexity">Time Complexity</a></li>
+<li><a class="reference internal" href="#remarks">Remarks</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#use-case-2">Use case 2</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Python Reference (The Right Way) - DRAFT</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="definitions.html"
+                        title="next chapter">Definitions</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/intro.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="definitions.html" title="Definitions"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Python Reference (The Right Way) - DRAFT"
+             >previous</a> |</li>
+        <li><a href="index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jakub Przywóski.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

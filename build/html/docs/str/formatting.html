@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>% (String Formatting Operator) &mdash; Python Reference (The Right Way) 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="string-formatting-operator">
+<h1>% (String Formatting Operator)<a class="headerlink" href="#string-formatting-operator" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Formats the string according to the specified format.</p>
+</div>
+<div class="section" id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<p><em>%[key][flags][width][.precision][length type]conversion type</em> % <strong>values</strong></p>
+<dl class="docutils">
+<dt><em>%</em></dt>
+<dd>Required. The &#8216;%&#8217; character, which marks the start of the specifier.</dd>
+<dt><em>key</em></dt>
+<dd>Optional. Mapping key, consisting of a parenthesised sequence of characters (for example, (somename)).</dd>
+<dt><em>flags</em></dt>
+<dd>Optional. Conversion flags, which affect the result of some conversion types.</dd>
+<dt><em>width</em></dt>
+<dd>Optional. Minimum field width. If specified as an &#8216;*&#8217; (asterisk), the actual width is read from the next element of the tuple in values, and the object to convert comes after the minimum field width and optional precision.</dd>
+<dt><em>precision</em></dt>
+<dd>Optional. Precision, given as a &#8216;.&#8217; (dot) followed by the precision. If specified as &#8216;*&#8217; (an asterisk), the actual width is read from the next element of the tuple in values, and the value to convert comes after the precision.</dd>
+<dt><em>length type</em></dt>
+<dd>Optional. Length modifier.</dd>
+<dt><em>conversion type</em></dt>
+<dd>Optional. Conversion type.</dd>
+<dt><strong>values</strong></dt>
+<dd>Required. A number, string or a container with values to substitute for the conversion type.</dd>
+</dl>
+</div>
+<div class="section" id="conversion-flags">
+<h2>Conversion Flags<a class="headerlink" href="#conversion-flags" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><em>&#8216;#&#8217;</em></dt>
+<dd>The value conversion will use the “alternate form” (where defined below).</dd>
+<dt><em>&#8216;0&#8217;</em></dt>
+<dd>The conversion will be zero padded for numeric values.</dd>
+<dt><em>&#8216;-&#8216;</em></dt>
+<dd>The converted value is left adjusted (overrides the &#8216;0&#8217; conversion if both are given).</dd>
+<dt><em>&#8216; &#8216;</em></dt>
+<dd>(a space) A blank should be left before a positive number (or empty string) produced by a signed conversion.</dd>
+<dt><em>&#8216;+&#8217;</em></dt>
+<dd>A sign character (&#8216;+&#8217; or &#8216;-&#8216;) will precede the conversion (overrides a “space” flag).</dd>
+</dl>
+<p>A length modifier (h, l, or L) may be present, but is ignored as it is not necessary for Python – so e.g. %ld is identical to %d.</p>
+</div>
+<div class="section" id="conversion-types">
+<h2>Conversion Types<a class="headerlink" href="#conversion-types" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><em>&#8216;d&#8217;</em></dt>
+<dd>Signed integer decimal.</dd>
+<dt><em>&#8216;i&#8217;</em></dt>
+<dd>Signed integer decimal.</dd>
+<dt><em>&#8216;o&#8217;</em></dt>
+<dd>Signed octal value. The alternate form causes a leading zero (&#8216;0&#8217;) to be inserted between left-hand padding and the formatting of the number if the leading character of the result is not already a zero.</dd>
+<dt><em>&#8216;u&#8217;</em></dt>
+<dd>Obsolete type – it is identical to &#8216;d&#8217;.     See PEP 237.</dd>
+<dt><em>&#8216;x&#8217; or &#8216;X&#8217;</em></dt>
+<dd>Signed hexadecimal. The alternate form causes a leading &#8216;0x&#8217; or &#8216;0X&#8217; (depending on whether the &#8216;x&#8217; or &#8216;X&#8217; format was used) to be inserted between left-hand padding and the formatting of the number if the leading character of the result is not already a zero.</dd>
+<dt><em>&#8216;e&#8217; or &#8216;E&#8217;</em></dt>
+<dd><p class="first">Floating point exponential format.  The alternate form causes the result to always contain a decimal point, even if no digits follow it.</p>
+<p class="last">The precision determines the number of digits after the decimal point and defaults to 6.</p>
+</dd>
+<dt><em>&#8216;f&#8217; or &#8216;F&#8217;</em></dt>
+<dd><p class="first">Floating point decimal format.      The alternate form causes the result to always contain a decimal point, even if no digits follow it.</p>
+<p class="last">The precision determines the number of digits after the decimal point and defaults to 6.</p>
+</dd>
+<dt><em>&#8216;g&#8217; or &#8216;G&#8217;</em></dt>
+<dd><p class="first">Floating point format. Uses exponential format if exponent is less than -4 or not less than precision, decimal format otherwise.    The alternate form causes the result to always contain a decimal point, and trailing zeroes are not removed as they would otherwise be.</p>
+<p class="last">The precision determines the number of significant digits before and after the decimal point and defaults to 6.</p>
+</dd>
+<dt><em>&#8216;c&#8217;</em></dt>
+<dd>Single character (accepts integer or single character string).</dd>
+<dt><em>&#8216;r&#8217;</em></dt>
+<dd><p class="first">String (converts any Python object using repr()).</p>
+<p class="last">The precision determines the maximal number of characters used.</p>
+</dd>
+<dt><em>&#8216;s&#8217;</em></dt>
+<dd><p class="first">String (converts any Python object using str()).</p>
+<p>If the object or format provided is a unicode string, the resulting string will also be unicode.</p>
+<p class="last">The precision determines the maximal number of characters used.</p>
+</dd>
+<dt><em>&#8216;%&#8217;</em></dt>
+<dd>No argument is converted, results in a &#8216;%&#8217; character in the result.</dd>
+</dl>
+</div>
+<div class="section" id="remarks">
+<h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h2>
+<p>If <strong>format specifier</strong> is a Unicode object, or if any of the objects being converted using the %s conversion are Unicode objects, the result will also be a Unicode object.</p>
+<p>If <strong>format specifier</strong> requires a single argument, <strong>values</strong> may be a single non-tuple object. Otherwise, <strong>values</strong> must be a tuple with exactly the number of items specified by the format string, or a single mapping object (for example, a dictionary).</p>
+<p>When the right argument is a dictionary (or other mapping type), then the formats in the string <strong>must</strong> include a parenthesised mapping key into that dictionary inserted immediately after the &#8216;%&#8217; character. The mapping key selects the value to be formatted from the mapping. For example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&#39;</span><span class="si">%(language)s</span><span class="s"> has </span><span class="si">%(number)03d</span><span class="s"> quote types.&#39;</span> <span class="o">%</span> \
+<span class="gp">... </span>      <span class="p">{</span><span class="s">&quot;language&quot;</span><span class="p">:</span> <span class="s">&quot;Python&quot;</span><span class="p">,</span> <span class="s">&quot;number&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="go">Python has 002 quote types.</span>
+</pre></div>
+</div>
+<p>In this case no * specifiers may occur in a format (since they require a sequential parameter list).</p>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">100</span>  <span class="c"># This Example shows simple substitution.</span>
+<span class="go">&#39;100&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">0</span><span class="n">b1111</span>
+<span class="go">&#39;15&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="s">&#39;foo&#39;</span>
+<span class="go">&#39;foo&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%s</span><span class="s"> </span><span class="si">%s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="s">&#39;foo&#39;</span><span class="p">,</span> <span class="s">&#39;bar&#39;</span><span class="p">)</span>
+<span class="go">&#39;foo bar&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dct</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;foo&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s">&#39;bar&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%(foo)s</span><span class="s">&quot;</span> <span class="o">%</span> <span class="n">dct</span>
+<span class="go">&#39;10&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%x</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">17</span>   <span class="c"># This Example shows usage of # flag (alternate form).</span>
+<span class="go">&#39;11&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%#x</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">17</span>
+<span class="go">&#39;0x11&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%#X</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">17</span>
+<span class="go">&#39;0X11&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">1</span>    <span class="c"># This Example shows usage of zero padding and width flags.</span>
+<span class="go">&#39;1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%03d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">1</span>
+<span class="go">&#39;001&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">1</span>    <span class="c"># This Example shows usage of left adjust flag.</span>
+<span class="go">&#39;1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%-5d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">1</span>
+<span class="go">&#39;1    &#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;</span><span class="si">%0-5d</span><span class="s">&quot;</span> <span class="o">%</span> <span class="mi">1</span>
+<span class="go">&#39;1    &#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-5">
+<h2>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1</span>    <span class="c"># This Example shows usage of space flag.</span>
+<span class="go">&#39;1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="o">-</span><span class="mi">1</span>
+<span class="go">&#39;-1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">% d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1</span>
+<span class="go">&#39; 1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">% d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="o">-</span><span class="mi">1</span>
+<span class="go">&#39;-1&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-6">
+<h2>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1</span>    <span class="c"># This Example shows usage of sign flag.</span>
+<span class="go">&#39;1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%+d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1</span>
+<span class="go">&#39;+1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%+d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="o">-</span><span class="mi">1</span>
+<span class="go">&#39;-1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">% +d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="o">-</span><span class="mi">1</span>
+<span class="go">&#39;-1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">% +d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1</span>
+<span class="go">&#39;+1&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-7">
+<h2>Example 7<a class="headerlink" href="#example-7" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mf">3.14</span>     <span class="c"># This Example shows usage of precision modifier.</span>
+<span class="go">&#39;3.140000&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%.1f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mf">3.14</span>
+<span class="go">&#39;3.1&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%.2f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mf">3.14</span>
+<span class="go">&#39;3.14&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%.3f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mf">3.14</span>
+<span class="go">&#39;3.140&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-8">
+<h2>Example 8<a class="headerlink" href="#example-8" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%i</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">0</span><span class="n">b1111</span>   <span class="c"># This Example shows how to covert to signed integer decimals.</span>
+<span class="go">&#39;15&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">0</span><span class="n">b1111</span>
+<span class="go">&#39;15&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">10</span>
+<span class="go">&#39;10&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%d</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mf">3.14</span>
+<span class="go">&#39;3&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%i</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mf">3.14</span>
+<span class="go">&#39;3&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%i</span><span class="s">&#39;</span> <span class="o">%</span> <span class="o">-</span><span class="mi">10</span>
+<span class="go">&#39;-10&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-9">
+<h2>Example 9<a class="headerlink" href="#example-9" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%x</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">27</span>   <span class="c"># Hex and octal conversions.</span>
+<span class="go">&#39;1b&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%X</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">27</span>
+<span class="go">&#39;1B&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%o</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">27</span>
+<span class="go">&#39;33&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-10">
+<h2>Example 10<a class="headerlink" href="#example-10" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%f</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">10</span>   <span class="c"># Float conversions.</span>
+<span class="go">&#39;10.000000&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%F</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">10</span>
+<span class="go">&#39;10.000000&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%g</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1234567890</span>
+<span class="go">&#39;1.23457e+09&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%G</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1234567890</span>
+<span class="go">&#39;1.23457E+09&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%e</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1234567890</span>
+<span class="go">&#39;1.234568e+09&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;</span><span class="si">%E</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">1234567890</span>
+<span class="go">&#39;1.234568E+09&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-11">
+<h2>Example 11<a class="headerlink" href="#example-11" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;ABC </span><span class="si">%c</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">10</span>   <span class="c"># Character and string conversions.</span>
+<span class="go">&#39;ABC \n&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;ABC </span><span class="si">%c</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">67</span>
+<span class="go">&#39;ABC C&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;ABC </span><span class="si">%c</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">68</span>
+<span class="go">&#39;ABC D&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;ABC </span><span class="si">%c</span><span class="s">&#39;</span> <span class="o">%</span> <span class="s">&#39;D&#39;</span>
+<span class="go">&#39;ABC D&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;ABC </span><span class="si">%s</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">68</span>
+<span class="go">&#39;ABC 68&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;ABC </span><span class="si">%r</span><span class="s">&#39;</span> <span class="o">%</span> <span class="mi">68</span>
+<span class="go">&#39;ABC 68&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">% (String Formatting Operator)</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#syntax">Syntax</a></li>
+<li><a class="reference internal" href="#conversion-flags">Conversion Flags</a></li>
+<li><a class="reference internal" href="#conversion-types">Conversion Types</a></li>
+<li><a class="reference internal" href="#remarks">Remarks</a></li>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#example-3">Example 3</a></li>
+<li><a class="reference internal" href="#example-4">Example 4</a></li>
+<li><a class="reference internal" href="#example-5">Example 5</a></li>
+<li><a class="reference internal" href="#example-6">Example 6</a></li>
+<li><a class="reference internal" href="#example-7">Example 7</a></li>
+<li><a class="reference internal" href="#example-8">Example 8</a></li>
+<li><a class="reference internal" href="#example-9">Example 9</a></li>
+<li><a class="reference internal" href="#example-10">Example 10</a></li>
+<li><a class="reference internal" href="#example-11">Example 11</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/docs/str/formatting.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jakub Przywóski.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>
