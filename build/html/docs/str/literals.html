@@ -43,17 +43,95 @@
             
   <div class="section" id="literal-syntax">
 <h1>Literal Syntax<a class="headerlink" href="#literal-syntax" title="Permalink to this headline">¶</a></h1>
-<p>floats can be simply initialized by using numeric values or obtained as a result of an expression. Values must consist of integral and fractional parts separated by a comma.</p>
+<p>String literals can be enclosed in matching single quotes (&#8216;) or double quotes (&#8221;).</p>
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mf">1.0</span>
-<span class="go">1.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mf">3.14</span>
-<span class="go">3.14</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mf">3.0</span><span class="o">/</span><span class="mi">2</span>
-<span class="go">1.5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mf">2.0</span> <span class="o">+</span> <span class="mf">1.5</span>
-<span class="go">3.5</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;ABC&#39;</span>
+<span class="go">&#39;ABC&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;ABC&quot;</span>
+<span class="go">&#39;ABC&#39;</span>
+</pre></div>
+</div>
+<div class="section" id="string-literal-concatenation">
+<h3>String literal concatenation<a class="headerlink" href="#string-literal-concatenation" title="Permalink to this headline">¶</a></h3>
+<p>Multiple adjacent string literals (delimited by whitespace), possibly using different quoting conventions, are allowed, and their meaning is the same as their concatenation. Thus, &#8220;hello&#8221; &#8216;world&#8217; is equivalent to &#8220;helloworld&#8221;. This feature can be used to reduce the number of backslashes needed, to split long strings conveniently across long lines, or even to add comments to parts of strings, for example:</p>
+<dl class="docutils">
+<dt>re.compile(&#8220;[<a href="#id2"><span class="problematic" id="id3">A-Za-z_</span></a>]&#8221;       # letter or underscore</dt>
+<dd><blockquote class="first">
+<div>&#8220;[<a href="#id4"><span class="problematic" id="id5">A-Za-z0-9_</span></a>]*&#8221;   # letter, digit or underscore</div></blockquote>
+<p class="last">)</p>
+</dd>
+</dl>
+<p>Note that this feature is defined at the syntactical level, but implemented at compile time. The ‘+’ operator must be used to concatenate string expressions at run time. Also note that literal concatenation can use different quoting styles for each component (even mixing raw strings and triple quoted strings).</p>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;AB&#39;</span> <span class="s">&#39;CD&#39;</span>
+<span class="go">&#39;ABCD&#39;</span>
+</pre></div>
+</div>
+<p>Strings can be broken into two or more lines by using line continaution character:</p>
+</div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s">&quot;AB</span><span class="se">\</span>
+<span class="gp">... </span><span class="s">CD&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">&#39;ABCD&#39;</span>
+</pre></div>
+</div>
+<p>Unescaped quotes of the same type as the one that was used for creating the string can’t be used inside of it:</p>
+</div>
+<div class="section" id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;AB&#39;CD&quot;</span>
+<span class="go">&quot;AB&#39;CD&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&quot;AB&quot;</span><span class="n">CD</span><span class="s">&quot;</span>
+  File <span class="nb">&quot;&lt;interactive input&gt;&quot;</span>, line <span class="m">1</span>
+    <span class="s">&quot;AB&quot;</span><span class="n">CD</span><span class="s">&quot;</span>
+           <span class="o">^</span>
+<span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
+</pre></div>
+</div>
+<div class="section" id="multi-line-strings">
+<h3>Multi line strings<a class="headerlink" href="#multi-line-strings" title="Permalink to this headline">¶</a></h3>
+<p>Strings can also be enclosed in matching groups of three single or double quotes (these are generally referred to as TRIPLE-QUOTED STRINGS).</p>
+</div>
+</div>
+<div class="section" id="example-5">
+<h2>Example 5<a class="headerlink" href="#example-5" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="sd">&#39;&#39;&#39;AB</span>
+<span class="gp">... </span><span class="sd">CD</span>
+<span class="gp">... </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="go">&#39;AB\nCD\n&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sd">&quot;&quot;&quot;AB</span>
+<span class="gp">... </span><span class="sd">CD</span>
+<span class="gp">... </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="go">&#39;AB\nCD\n&#39;</span>
+</pre></div>
+</div>
+<p>In triple-quoted strings, unescaped newlines and quotes are allowed (and are retained), except that three unescaped quotes in a row terminate the string. (A &#8220;quote&#8221; is the character used to open the string, i.e. either &#8216; or &#8221;.)</p>
+</div>
+<div class="section" id="example-6">
+<h2>Example 6<a class="headerlink" href="#example-6" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="gp">... </span><span class="sd">AB &quot;BC&quot;</span>
+<span class="gp">... </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="go">&#39;\nAB &quot;BC&quot;\n&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="gp">... </span><span class="sd">AB &#39;BC&#39;</span>
+<span class="gp">... </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="go">&quot;\nAB &#39;BC&#39;\n&quot;</span>
+</pre></div>
+</div>
+<p>The backslash (\) character is used to escape characters that otherwise have a special meaning, such as newline, backslash itself, or the quote character.</p>
+</div>
+<div class="section" id="id1">
+<h2>Example 6<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&quot;AA</span><span class="se">\n</span><span class="s">BB&quot;</span>
+<span class="go">AA</span>
+<span class="go">BB</span>
 </pre></div>
 </div>
 </div>
@@ -68,7 +146,19 @@
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Literal Syntax</a><ul>
-<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-1">Example 1</a><ul>
+<li><a class="reference internal" href="#string-literal-concatenation">String literal concatenation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#example-3">Example 3</a></li>
+<li><a class="reference internal" href="#example-4">Example 4</a><ul>
+<li><a class="reference internal" href="#multi-line-strings">Multi line strings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#example-5">Example 5</a></li>
+<li><a class="reference internal" href="#example-6">Example 6</a></li>
+<li><a class="reference internal" href="#id1">Example 6</a></li>
 </ul>
 </li>
 </ul>

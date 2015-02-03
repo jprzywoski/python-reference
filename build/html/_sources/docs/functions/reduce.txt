@@ -8,14 +8,12 @@ Applies function of two arguments cumulatively to the items of iterable, from le
 Syntax
 ------
 
-**reduce** (*function*, *iterable* *[, initializer]*)
+**reduce** *(function, iterable [, initializer])*
 
 *function*
     Required. A function of two arguments.
-    
 *iterable*
     Required. An iterable sequence.
-    
 *initializer*
     Optional. Value placed before the iterable; default value if iterable is empty.
     
@@ -51,8 +49,9 @@ Example 2
 
 See Also
 --------
-`map()`_, `filter()`_, `comprehensions and generator expressions`_.
+`map()`_, `filter()`_ and `Comprehensions and Generator Expression`_.
 
-.. _map(): ../functions/map.html
-.. _filter(): ../functions/reduce.html
+.. _map(): map.html
+.. _filter(): filter.html
+.. _Comprehensions and Generator Expression: ../comprehensions/index.html
 

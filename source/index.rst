@@ -2,8 +2,8 @@
 Python Reference (The Right Way) - DRAFT
 ========================================
 
-Contents:
-
+Contents
+========
 .. toctree::
    :maxdepth: 2
 
@@ -11,12 +11,13 @@ Contents:
    definitions
    basic_data_types
    docs/functions/index   
+   docs/comprehensions/index
    operators
-   comprehensions
    statements
    other_types
    dunders
    exceptions
+   constants
    boilerplate
    licence
    

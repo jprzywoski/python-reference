@@ -1,21 +1,21 @@
 int
 ===
-`int Overview`_
+These represent numbers in the range -2147483648 through 2147483647. (The range may be larger on machines with a larger natural word size, but not smaller.) When the result of an operation would fall outside this range, the result is normally returned as a long integer (in some cases, the exception OverflowError is raised instead). For the purpose of shift and mask operations, integers are assumed to have a binary, 2’s complement notation using 32 or more bits, and hiding no bits from the user (i.e., all 4294967296 different bit patterns correspond to different values).
+
+Plain integers (also just called integers) are implemented using long in C, which gives them at least 32 bits of precision (sys.maxint is always set to the maximum plain integer value for the current platform; the minimum value is -sys.maxint - 1). Long integers have unlimited precision.
+
+Numbers are created by numeric literals or as the result of built-in functions and operators. Unadorned integer literals (including binary, hex, and octal numbers) yield plain integers unless the value they denote is too large to be represented as a plain integer, in which case they yield a long integer. Integer literals with an 'L' or 'l' suffix yield long integers ('L' is preferred because 1l looks too much like eleven!).
 
 Constructors
 ------------
 `int()`_
-    
+    Returns an expression converted into an integer number.
 `int Literal Syntax`_
     
 Base Designators
 ----------------
-`0x | 0x (hexadecimal designator)`_
-    Returns an integer converted from base 16. 
-`0o | 0o | 0 (octal designator)`_
-    Returns an integer converted from base 8. 
-`0b | 0b (binary designator)`_
-    Returns an integer converted from base 2.
+`0... (Base Designators)`_
+    Returns a decimal integer converted from the specified base.
     
 Methods
 -------
@@ -24,36 +24,30 @@ Methods
     
 long
 ====
-`long Overview`_
+These represent numbers in an unlimited range, subject to available (virtual) memory only. For the purpose of shift and mask operations, a binary representation is assumed, and negative numbers are represented in a variant of 2’s complement which gives the illusion of an infinite string of sign bits extending to the left.
 
 Constructors
 ------------
 `long()`_
-    
+    Returns an expression converted into a long integer number.
 `long Literal Syntax`_
     
 Base Designators
 ----------------
-`0x | 0x (hexadecimal designator)`_
-    Returns an integer converted from base 16. 
-`0o | 0o | 0 (octal designator)`_
-    Returns an integer converted from base 8. 
-`0b | 0b (binary designator)`_
-    Returns an integer converted from base 2.
+`0... (Base Designators)`_
+    Returns a decimal integer converted from the specified base.
     
 Methods
 -------
 `bit_length`_
     Returns the number of bits necessary to represent an integer in binary, excluding the sign and leading zeros.
     
-.. _int Literal Syntax: ../ints/int_literals.html
-.. _long Literal Syntax: ../ints/long_literals.html
-.. _int Overview: ../ints/int_overview.html
-.. _long Overview: ../ints/long_overview.html
-.. _0x | 0x (hexadecimal designator): ../ints/designators_hex.html
-.. _0o | 0o | 0 (octal designator): ../ints/designators_octal.html
-.. _0b | 0b (binary designator): ../ints/designators_binary.html
-.. _bit_length: ../ints/bit_length.html
+.. _int Literal Syntax: int_literals.html
+.. _long Literal Syntax: long_literals.html
+.. _0... (Base Designators): base_designators.html
+.. _bit_length: bit_length.html
+.. _int(): ../functions/int.html
+.. _long(): ../functions/long.html
 
 
 

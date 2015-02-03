@@ -16,7 +16,7 @@ Return Value
 
 Example
 -------
->>> 1+3j.real
+>>> (1+3j).real
 1.0
 
 See Also

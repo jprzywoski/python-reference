@@ -43,10 +43,14 @@
             
   <div class="section" id="float">
 <h1>float<a class="headerlink" href="#float" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="../float/overview.html">Overview</a></p>
+<p>These represent machine-level double precision floating point numbers. You are at the mercy of the underlying machine architecture (and C or Java implementation) for the accepted range and handling of overflow. Python does not support single-precision floating point numbers; the savings in processor and memory usage that are usually the reason for using these is dwarfed by the overhead of using objects in Python, so there is no reason to complicate the language with two kinds of floating point numbers.</p>
+<p>Floating point numbers are usually implemented using double in C; information about the precision and internal representation of floating point numbers for the machine on which your program is running is available in sys.float_info.</p>
 <div class="section" id="constructors">
 <h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id1"><span class="problematic" id="id2">`float()`_</span></a></p>
+<dl class="docutils">
+<dt><a class="reference external" href="../functions/float.html">float()</a></dt>
+<dd>Returns an expression converted into a floating point number.</dd>
+</dl>
 <p><a class="reference external" href="../float/literals.html">Literal Syntax</a></p>
 </div>
 <div class="section" id="scientific-notation">

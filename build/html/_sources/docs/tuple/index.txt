@@ -1,43 +1,27 @@
-Fundamental Data Types
-==================
+=====
+tuple
+=====
 
-Numbers
----------------------------
-* int
-* long
-* float
-* complex
+Tuples are immutable ordered and indexed collections of objects. Tuples of two or more items are formed by comma-separated lists of expressions. A tuple of one item (a ‘singleton’) can be formed by affixing a comma to an expression (an expression by itself does not create a tuple, since parentheses must be usable for grouping of expressions). An empty tuple can be formed by an empty pair of parentheses.
 
-Strings
-----------------------
-* str
-* unicode
+Constructors
+------------
+`tuple`_
+    Returns a tuple built from iterable.
+`literal syntax`_
+    
+Methods
+-------
 
-Lists
------------------------
-* exercise location: **exercises/stocks.py**
-
-.. literalinclude:: exercises/stocks.py
-   :language: python
-   :linenos:
-   :emphasize-lines: 22,24,25,35,37,47,48,50,52
-
-See the :doc:`solutions/gallery/stocks`.
+Information
+___________
+`index`_
+    Returns the index of the first occurrence of the specified tuple item.
+`count`_
+    Returns the number of times the specified item appears in the tuple.
 
 
-.. _histogram:
-
-Histograms
-
-Dictionaries
--------------------------
-* 
-
-Tuples
-------
-* 
-
-Sets
------------
-* 
+.. _index: lindex.html
+.. _count: count.html
+.. _literal syntax: literals.html
 

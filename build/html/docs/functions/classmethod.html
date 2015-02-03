@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>classmethod &mdash; Python Reference (The Right Way) 0.1 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="classmethod">
+<h1>classmethod<a class="headerlink" href="#classmethod" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Returns a class method for the function.</p>
+</div>
+<div class="section" id="syntax">
+<h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<p><strong>classmethod</strong> <em>(class)</em></p>
+<dl class="docutils">
+<dt><em>class</em></dt>
+<dd>Required. Name of a class.</dd>
+</dl>
+</div>
+<div class="section" id="return-value">
+<h2>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
+</div>
+<div class="section" id="time-complexity">
+<h2>Time Complexity<a class="headerlink" href="#time-complexity" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
+</div>
+<div class="section" id="remarks">
+<h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h2>
+<p>When classmethod is called, it gets the class as the first argument instead of the instance of that class (as we normally do with methods). This means we can use the class and its properties inside that method rather than a particular instance.
+Class methods are useful when you need to have methods that aren&#8217;t specific to any particular instance, but still involve the class in some way.
+If we have a class, and a module-level function that operates on that class (factory, dependency injection stub, etc), make it a classmethod. Then it&#8217;ll be available to subclasses.
+Class methods can be overridden by subclasses unlike Python&#8217;s module-level functions.
+The &#64;classmethod form is a function decorator.
+See also staticmethod(), property() and abstract class in abc module.</p>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c">#This example shows obsolete syntax</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c">#Note that method bar can be called on both class and instance objects</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">cls</span><span class="p">):</span>             <span class="c">#</span>
+<span class="gp">... </span>        <span class="k">print</span> <span class="s">&#39;bar’           #</span>
+<span class="gp">... </span>    <span class="n">bar</span> <span class="o">=</span> <span class="nb">classmethod</span><span class="p">(</span><span class="n">bar</span><span class="p">)</span>    <span class="c">#&lt;= not pythonic anymore, decorator syntax recommended</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Foo</span><span class="o">.</span><span class="n">bar</span>
+<span class="go">&lt;bound method classobj.bar of &lt;class __main__.Foo at 0x00CDAC00&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Foo</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="go">bar</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Foo</span><span class="p">()</span><span class="o">.</span><span class="n">bar</span>
+<span class="go">&lt;bound method classobj.bar of &lt;class __main__.Foo at 0x00CDAC00&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Foo</span><span class="p">()</span><span class="o">.</span><span class="n">bar</span><span class="p">()</span>
+<span class="go">bar</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c">#This example shows usage of decorator syntax which is recommended</span>
+<span class="go">class Line:</span>
+<span class="go">    def __init__(self, length):</span>
+<span class="go">        self.length = length</span>
+</pre></div>
+</div>
+<blockquote>
+<div><p>&#64;classmethod
+def from_inches(cls, length_in):</p>
+<blockquote>
+<div>length = float(length_in)*2.54
+return cls(length)</div></blockquote>
+</div></blockquote>
+<p>l = Line.from_inches(3)
+print l.length         #returns 7.62</p>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">classmethod</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#syntax">Syntax</a></li>
+<li><a class="reference internal" href="#return-value">Return Value</a></li>
+<li><a class="reference internal" href="#time-complexity">Time Complexity</a></li>
+<li><a class="reference internal" href="#remarks">Remarks</a></li>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/docs/functions/classmethod.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jakub Przywóski.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+  </body>
+</html>

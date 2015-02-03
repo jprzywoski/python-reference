@@ -2,21 +2,23 @@
 str
 ===
 
-`Overview`_
+The items of a string are characters. There is no separate character type; a character is represented by a string of one item. Characters represent (at least) 8-bit bytes. The built-in functions chr() and ord() convert between characters and nonnegative integers representing the byte values. Bytes with the values 0-127 usually represent the corresponding ASCII values, but the interpretation of values is up to the program. The string data type is also used to represent arrays of bytes, e.g., to hold data read from a file.
+
+Strings are immutable sequences.
 
 Constructors
 ------------
 `str()`_
-    
-`Literal Syntax`_
+    Returns a string containing a printable representation of an object.
+`literal syntax`_
 
 Misc
 ----
-`String Designators`_
-    
+`..."" (String Designators)`_
+    Returns a modified string.
 `% (String Formatting Operator)`_
     Formats the string according to the specified format.
-`Escape Charcters`_
+`Escape Characters`_
     
 Methods
 -------
@@ -122,44 +124,48 @@ _________
 `encode`_
     Returns an encoded version of the string.
 
-.. _Overview: ../str/overview.html
-.. _% (String Formatting Operator): ../str/formatting.html
-.. _find: ../str/find.html
-.. _rfind: ../str/rfind.html
-.. _index: ../str/strindex.html
-.. _rindex: ../str/rinddex.html
-.. _translate: ../str/translate.html
-.. _replace: ../str/replace.html
-.. _upper: ../str/upper.html
-.. _lower: ../str/lower.html
-.. _capitalize: ../str/capitalize.html
-.. _title: ../str/title.html
-.. _swapcase: ../str/swapcase.html
-.. _lstrip: ../str/lstrip.html
-.. _rstrip: ../str/rstrip.html
-.. _strip: ../str/strip.html
-.. _split: ../str/split.html
-.. _rsplit: ../str/rsplit.html
-.. _partition: ../str/partition.html
-.. _rpartition: ../str/rpartition.html
-.. _splitlines: ../str/splitlines.html
-.. _join: ../str/join.html
-.. _startswith: ../str/startswith.html
-.. _endswith: ../str/endswith.html
-.. _count: ../str/count.html
-.. _isalnum: ../str/isalnum.html
-.. _isalpha: ../str/isalpha.html
-.. _isdigit: ../str/isdigit.html
-.. _islower: ../str/islower.html
-.. _isspace: ../str/isspace.html
-.. _istitle: ../str/istitle.html
-.. _isupper: ../str/isupper.html
-.. _ljust: ../str/ljust.html
-.. _center: ../str/center.html
-.. _rjust: ../str/rjust.html
-.. _zfill: ../str/zfill.html
-.. _expandtabs: ../str/expandtabs.html
-.. _format: ../str/format.html
-.. _decode: ../str/decode.html
-.. _encode: ../str/encode.html
+    
+.. _str(): ../functions/str.html
+.. _literal syntax: literals.html
+.. _% (String Formatting Operator): formatting.html
+.. _..."" (String Designators): designators.html
+.. _Escape Characters: escapes.html
+.. _find: find.html
+.. _rfind: rfind.html
+.. _index: strindex.html
+.. _rindex: rinddex.html
+.. _translate: translate.html
+.. _replace: replace.html
+.. _upper: upper.html
+.. _lower: lower.html
+.. _capitalize: capitalize.html
+.. _title: title.html
+.. _swapcase: swapcase.html
+.. _lstrip: lstrip.html
+.. _rstrip: rstrip.html
+.. _strip: strip.html
+.. _split: split.html
+.. _rsplit: rsplit.html
+.. _partition: partition.html
+.. _rpartition: rpartition.html
+.. _splitlines: splitlines.html
+.. _join: join.html
+.. _startswith: startswith.html
+.. _endswith: endswith.html
+.. _count: count.html
+.. _isalnum: isalnum.html
+.. _isalpha: isalpha.html
+.. _isdigit: isdigit.html
+.. _islower: islower.html
+.. _isspace: isspace.html
+.. _istitle: istitle.html
+.. _isupper: isupper.html
+.. _ljust: ljust.html
+.. _center: center.html
+.. _rjust: rjust.html
+.. _zfill: zfill.html
+.. _expandtabs: expandtabs.html
+.. _format: format.html
+.. _decode: decode.html
+.. _encode: encode.html
 

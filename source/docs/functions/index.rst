@@ -7,31 +7,31 @@ Functional Programming
 `map`_
     Applies function to every item of an iterable object and returns a list of the results.
 `filter`_
-    Returns a sequence from those elements of iterable for which function returns true.
+    Returns a sequence from those elements of iterable for which function returns True.
 `reduce`_
     Applies function of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value.
 
-Numeric Types Constructors
---------------------------
+Numeric Types Conversions and Constructors
+-------------------------------------------
 `bool`_
-    Returns an expression that has been converted to a Boolean, using the standard truth testing procedure.
+    Returns an expression converted into a Boolean.
 `int`_
-    Converts a number or a string to an integer, or returns 0 if no arguments are given.
+    Returns an expression converted into an integer number.
 `long`_
-    Converts a number or a string to a long integer, or returns 0 if no arguments are given.
+    Returns an expression converted into a long integer number.
 `float`_
-    Returns a floating point number.
+    Returns an expression converted into a floating point number.
 `complex`_
-    Returns a complex number.
+    Returns an expression converted into a complex number.
     
 Numeric Types Conversions
 -------------------------
 `bin`_
-    Returns an expression that has been converted to a binary string.
-`hex`_
-    Converts an integer number (of any size) to a hexadecimal string.
+    Returns an integer converted into a binary string.
 `oct`_
-    Converts an integer number to an octal string.
+    Returns an integer converted into an octal string.
+`hex`_
+    Returns an integer converted into a hexadecimal string.
     
 Arithmetic
 ----------
@@ -211,3 +211,81 @@ Misc
 .. _map: ../functions/map.html
 .. _filter: ../functions/filter.html
 .. _reduce: ../functions/reduce.html
+.. _bool: bool.html
+.. _int: int.html
+.. _long: long.html
+.. _float: float.html
+.. _complex: complex.html
+.. _bin: bin.html
+.. _hex: hex.html
+.. _oct: oct.html
+.. _abs: abs.html
+.. _pow: pow.html
+.. _round: round.html
+.. _divmod: divmod.html
+.. _chr: chr.html
+.. _ord: ord.html
+.. _unichr: unichr.html
+.. _format: format.html
+.. _repr: repr.html
+.. _str: str.html
+.. _unicode: unicode.html
+.. _list: list.html
+.. _tuple: tuple.html
+.. _bytearray: bytearray.html
+.. _buffer: buffer.html
+.. _memoryview: memoryview.html
+.. _range: range.html
+.. _xrange: xrange.html
+.. _dict: dict.html
+.. _set: set.html
+.. _frozenset: frozenset.html
+.. _enumerate: enumerate.html
+.. _len: len.html
+.. _reversed: reversed.html
+.. _sorted: sorted.html
+.. _sum: sum.html
+.. _zip: zip.html
+.. _slice: slice.html
+.. _iter: iter.html
+.. _next: next.html
+.. _cmp: cmp.html
+.. _max: max.html
+.. _min: min.html
+.. _all: all.html
+.. _any: any.html
+.. _hash: hash.html
+.. _id: id.html
+.. _file: file.html
+.. _open: open.html
+.. _classmethod: classmethod.html
+.. _property: property.html
+.. _staticmethod: staticmethod.html
+.. _super: super.html
+.. _setattr: setattr.html
+.. _getattr: getattr.html
+.. _delattr: delattr.html
+.. _hasattr: hasattr.html
+.. _isinstance: isinstance.html
+.. _issubclass: issubclass.html
+.. _type (1): type (1).html
+.. _dir: dir.html
+.. _type (2): type (2).html
+.. _callable: callable.html
+.. _globals: globals.html
+.. _locals: locals.html
+.. _help: help.html
+.. ___import__: __import__.html
+.. _reload: reload.html
+.. _compile: compile.html
+.. _execfile: execfile.html
+.. _eval: eval.html
+.. _input: input.html
+.. _intern: intern.html
+.. _print: print.html
+.. _raw_input: raw_input.html
+.. _object: object.html
+.. _apply: apply.html
+.. _basestring: basestring.html
+.. _coerce: coerce.html
+

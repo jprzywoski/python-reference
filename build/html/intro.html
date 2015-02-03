@@ -59,7 +59,8 @@
 <p>Moving all the contents from word files to Sphinx project has proven to be more time consuming than I originally thought. Getting the ver. 1.0 ready will take weeks.</p>
 <div class="section" id="scope">
 <h2>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h2>
-<p>This work is not meant to be a total replacement for Python Manuals. As a matter of fact most of the definitions are based on the official docs. I decided to only cover the core Python&#8217;s syntax, that means, the stuff that does not require using &#8220;import&#8221; statement.</p>
+<p>Everything here is intended for Python 2.7.X. The reason is simple - this is the version I personally use and its specification is frozen (no new features will be added), so the content is bound to be up to date for good. Moreover, Python 3.X is not catching up - there&#8217;s like seven or eight people using it worldwide.</p>
+<p>This work is not meant to be a total replacement for Python Manuals. As a matter of fact most of the definitions here are based on the official docs. I decided to only cover the core Python&#8217;s syntax, that means, the stuff that does not require using &#8220;import&#8221; statement.</p>
 <p>This reference is designed to minimize the amount of time needed to look things up. The whole layout is well structured and consistent. I put a lot of emphasis on working code examples and very simple definitions. Being realistic, no one wants to read lengthy passages about some obscure functions, most people only need to glance at the code examples and then copy, paste and modify.</p>
 <p>Python Standard Library is beyond the scope of this reference. If you are looking for a description of library modules have a look at:</p>
 <ul class="simple">
@@ -79,9 +80,8 @@
 </ol>
 <p>In both cases Python docs fail miserably.</p>
 <p>So I decided to introduce the following template logical structures:</p>
-</div>
 <div class="section" id="use-case-1">
-<h2>Use case 1<a class="headerlink" href="#use-case-1" title="Permalink to this headline">¶</a></h2>
+<h3>Use case 1<a class="headerlink" href="#use-case-1" title="Permalink to this headline">¶</a></h3>
 <p>This one is used to explain usage of functions/methods. It quickly gives you the info about:</p>
 <ul class="simple">
 <li>what does the function do</li>
@@ -89,43 +89,49 @@
 <li>what is the output</li>
 </ul>
 </div>
+<hr class="docutils" />
 <div class="section" id="name">
-<h2>Name<a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h2>
+<h3>Name<a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h3>
 <p>[quick description field – preferably up to 80 characters long]</p>
 <div class="section" id="syntax">
-<h3>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h3>
+<h4>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h4>
 <p>[detailed description of calling this function]</p>
 </div>
 <div class="section" id="return-value">
-<h3>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">¶</a></h3>
+<h4>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">¶</a></h4>
 <p>[if applicable]</p>
 </div>
 <div class="section" id="time-complexity">
-<h3>Time Complexity<a class="headerlink" href="#time-complexity" title="Permalink to this headline">¶</a></h3>
+<h4>Time Complexity<a class="headerlink" href="#time-complexity" title="Permalink to this headline">¶</a></h4>
 <p>[if applicable]</p>
 </div>
 <div class="section" id="remarks">
-<h3>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h3>
+<h4>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h4>
 <p>[further discussion]</p>
 </div>
 <div class="section" id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<h4>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h4>
 <p>[simple code snippets to illustrate basic usage; the simpler the better]</p>
 </div>
 <div class="section" id="see-also">
-<h3>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h3>
+<h4>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h4>
 <p>[links to related topics]</p>
 </div>
 </div>
 <div class="section" id="use-case-2">
-<h2>Use case 2<a class="headerlink" href="#use-case-2" title="Permalink to this headline">¶</a></h2>
+<h3>Use case 2<a class="headerlink" href="#use-case-2" title="Permalink to this headline">¶</a></h3>
 <p>Used as a list of thematically grouped functions/methods. I decided to organize things by function rather than alphabetically. That&#8217;s the same way a handyman organizes his tools in the toolbox. Makes needed things easier to find.</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="group">
+<h3>Group<a class="headerlink" href="#group" title="Permalink to this headline">¶</a></h3>
 <p><strong>Method_a (hyperlink)</strong></p>
 <blockquote>
 <div>[quick description field – preferably up to 80 characters long]</div></blockquote>
 <p><strong>Method_b (hyperlink)</strong></p>
 <blockquote>
 <div>[quick description field – preferably up to 80 characters long]</div></blockquote>
+</div>
 </div>
 </div>
 
@@ -139,7 +145,7 @@
   <ul>
 <li><a class="reference internal" href="#">Introduction</a><ul>
 <li><a class="reference internal" href="#scope">Scope</a></li>
-<li><a class="reference internal" href="#rationale">Rationale</a></li>
+<li><a class="reference internal" href="#rationale">Rationale</a><ul>
 <li><a class="reference internal" href="#use-case-1">Use case 1</a></li>
 <li><a class="reference internal" href="#name">Name</a><ul>
 <li><a class="reference internal" href="#syntax">Syntax</a></li>
@@ -151,6 +157,9 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#use-case-2">Use case 2</a></li>
+<li><a class="reference internal" href="#group">Group</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

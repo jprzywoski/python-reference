@@ -2,7 +2,7 @@
 Literal Syntax
 ==============
 
-floats can be simply initialized by using numeric values or obtained as a result of an expression. Values must consist of integral and fractional parts separated by a comma.
+floats can be simply initialized by using numeric values or obtained as a result of an expression. Values must consist of integral and fractional parts separated by a dot.
 
 Example 1
 ---------

@@ -49,7 +49,7 @@
 </div>
 <div class="section" id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
-<p><strong>map</strong> (<em>function</em>, <em>iterable</em> <em>[, ...]</em>)</p>
+<p><strong>map</strong> <em>(function, iterable [, ...])</em></p>
 <dl class="docutils">
 <dt><em>function</em></dt>
 <dd>Required. A function that is used to create a new list.</dd>
@@ -67,7 +67,7 @@
 </div>
 <div class="section" id="remarks">
 <h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h2>
-<p>If additional iterable arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel. If one iterable is shorter than another it is assumed to be extended with None items. If function is None, the identity function is assumed; if there are multiple arguments, map() returns a list consisting of tuples containing the corresponding items from all iterables (a kind of transpose operation). The iterable arguments may be a sequence or any iterable object; the result is always a list.</p>
+<p>If additional <em>iterable</em> arguments are passed, function must take that many arguments and is applied to the items from all iterables in parallel. If one <em>iterable</em> is shorter than another it is assumed to be extended with <strong>None</strong> items. If function is None, the identity function is assumed; if there are multiple arguments, map() returns a list consisting of tuples containing the corresponding items from all iterables (a kind of transpose operation). The <em>iterable</em> arguments may be a sequence or any iterable object; the result is always a list.</p>
 </div>
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
@@ -93,7 +93,7 @@
 </div>
 <div class="section" id="see-also">
 <h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="../functions/map.html">filter()</a>, <a class="reference external" href="../functions/reduce.html">reduce()</a>, <a href="#id1"><span class="problematic" id="id2">`comprehensions and generator expressions`_</span></a>.</p>
+<p><a class="reference external" href="reduce.html">reduce()</a>, <a class="reference external" href="filter.html">filter()</a> and <a class="reference external" href="../comprehensions/index.html">Comprehensions and Generator Expression</a>.</p>
 </div>
 </div>
 

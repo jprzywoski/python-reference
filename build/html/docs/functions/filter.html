@@ -45,14 +45,14 @@
 <h1>filter<a class="headerlink" href="#filter" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Returns a sequence from those elements of iterable for which function returns true.</p>
+<p>Returns a sequence from those elements of iterable for which function returns <strong>True</strong>.</p>
 </div>
 <div class="section" id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
-<p><strong>filter</strong> (<em>function</em>, <em>iterable</em>)</p>
+<p><strong>filter</strong> <em>(function, iterable)</em></p>
 <dl class="docutils">
 <dt><em>function</em></dt>
-<dd>Required. A function. If set to None returns only elements that are True.</dd>
+<dd>Required. A function. If set to None returns only elements that are <strong>True</strong>.</dd>
 <dt><em>iterable</em></dt>
 <dd>Required. Any iterable sequence.</dd>
 </dl>
@@ -67,8 +67,8 @@
 </div>
 <div class="section" id="note">
 <h2>Note<a class="headerlink" href="#note" title="Permalink to this headline">¶</a></h2>
-<p>Note that filter(function, iterable) is equivalent to [item for item in iterable if function(item)] if function is not None and [item for item in iterable if item] if function is None.
-See itertools.ifilter() and itertools.ifilterfalse() for iterator versions of this function, including a variation that filters for elements where the function returns false.</p>
+<p>Note that <em>filter(function, iterable)</em> is equivalent to <em>[item for item in iterable if function(item)]</em> if <em>function</em> is not <strong>None</strong> and <em>[item for item in iterable if item]</em> if <em>function</em> is <strong>None</strong>.</p>
+<p>See <em>itertools.ifilter()</em> and <em>itertools.ifilterfalse()</em> for iterator versions of this function, including a variation that filters for elements where the function returns <strong>False</strong>.</p>
 </div>
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
@@ -89,7 +89,7 @@ See itertools.ifilter() and itertools.ifilterfalse() for iterator versions of th
 </div>
 <div class="section" id="see-also">
 <h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference external" href="../functions/map.html">map()</a>, <a class="reference external" href="../functions/reduce.html">reduce()</a>, <a href="#id1"><span class="problematic" id="id2">`comprehensions and generator expressions`_</span></a>.</p>
+<p><a class="reference external" href="map.html">map()</a>, <a class="reference external" href="reduce.html">reduce()</a> and <a class="reference external" href="../comprehensions/index.html">Comprehensions and Generator Expression</a>.</p>
 </div>
 </div>
 

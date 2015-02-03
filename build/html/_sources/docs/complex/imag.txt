@@ -16,8 +16,8 @@ Return Value
 
 Example
 -------
->>> 1+3j.imag
-4.0
+>>> (1+3j).imag
+3.0
 
 See Also
 --------

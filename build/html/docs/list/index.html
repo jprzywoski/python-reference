@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Fundamental Data Types &mdash; Python Reference (The Right Way) 0.1 documentation</title>
+    <title>list &mdash; Python Reference (The Right Way) 0.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -41,49 +41,50 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="fundamental-data-types">
-<h1>Fundamental Data Types<a class="headerlink" href="#fundamental-data-types" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="numbers">
-<h2>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>int</li>
-<li>long</li>
-<li>float</li>
-<li>complex</li>
-</ul>
+  <div class="section" id="list">
+<h1>list<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h1>
+<p>Lists are mutable ordered and indexed collections of objects. Often called arrays in other languages. The items of a list are arbitrary Python objects. Lists are formed by placing a comma-separated list of expressions in square brackets. (Note that there are no special cases needed to form lists of length 0 or 1.)</p>
+<div class="section" id="constructors">
+<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="../functions/list.html">list()</a></dt>
+<dd>Converts an object into a list.</dd>
+<dt><a class="reference external" href="../comprehensions/list_comprehension.html">[] list comprehensions</a></dt>
+<dd>Returns a list based on existing iterables.</dd>
+</dl>
+<p><a class="reference external" href="literals.html">literal syntax</a></p>
 </div>
-<div class="section" id="strings">
-<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>str</li>
-<li>unicode</li>
-</ul>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="adding-elements">
+<h3>Adding Elements<a class="headerlink" href="#adding-elements" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><a class="reference external" href="append.html">append</a></dt>
+<dd>Adds an item to the end of the list.</dd>
+<dt><a class="reference external" href="insert.html">insert</a></dt>
+<dd>Inserts an item at a given position.</dd>
+<dt><a class="reference external" href="extend.html">extend</a></dt>
+<dd>Extends the list by appending all the items from the iterable.</dd>
+</dl>
 </div>
-<div class="section" id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>exercise location: <strong>exercises/stocks.py</strong></li>
-</ul>
-<p>See the <tt class="xref doc docutils literal"><span class="pre">solutions/gallery/stocks</span></tt>.</p>
-<p id="histogram">Histograms</p>
+<div class="section" id="deleting">
+<h3>Deleting<a class="headerlink" href="#deleting" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><a class="reference external" href="pop.html">pop</a></dt>
+<dd>Removes and returns the item at the specified index.</dd>
+<dt><a class="reference external" href="remove.html">remove</a></dt>
+<dd>Removes the first item from the list which matches the specified value.</dd>
+</dl>
 </div>
-<div class="section" id="dictionaries">
-<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<div class="section" id="information">
+<h3>Information<a class="headerlink" href="#information" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><a class="reference external" href="lindex.html">index</a></dt>
+<dd>Returns the index of the first occurrence of the specified list item.</dd>
+<dt><a class="reference external" href="count.html">count</a></dt>
+<dd>Returns the number of times the specified item appears in the list.</dd>
+</dl>
 </div>
-<div class="section" id="tuples">
-<h2>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
-</div>
-<div class="section" id="sets">
-<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
 </div>
 </div>
 
@@ -95,13 +96,14 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Fundamental Data Types</a><ul>
-<li><a class="reference internal" href="#numbers">Numbers</a></li>
-<li><a class="reference internal" href="#strings">Strings</a></li>
-<li><a class="reference internal" href="#lists">Lists</a></li>
-<li><a class="reference internal" href="#dictionaries">Dictionaries</a></li>
-<li><a class="reference internal" href="#tuples">Tuples</a></li>
-<li><a class="reference internal" href="#sets">Sets</a></li>
+<li><a class="reference internal" href="#">list</a><ul>
+<li><a class="reference internal" href="#constructors">Constructors</a></li>
+<li><a class="reference internal" href="#methods">Methods</a><ul>
+<li><a class="reference internal" href="#adding-elements">Adding Elements</a></li>
+<li><a class="reference internal" href="#deleting">Deleting</a></li>
+<li><a class="reference internal" href="#information">Information</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
