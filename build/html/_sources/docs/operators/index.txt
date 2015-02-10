@@ -4,19 +4,19 @@ Operators
 
 Arithmetic Operators
 --------------------
-`+`_
+`+ (addition)`_
     
-`-`_
+`- (subtraction)`_
     
-`*`_
+`* (multiplication)`_
     
-`/`_
+`/ (division)`_
 
-`**`_
+`** (exponent)`_
     
-`//`_
+`// (floor division)`_
     
-`%`_
+`% (modulus)`_
     
 
 Boolean Operators
@@ -25,17 +25,7 @@ Boolean Operators
     
 `or`_
     
-`not`_
-
-Identity
---------
-`is`_
-    
-    
-Membership
-----------
-`in`_
-    
+`not`_   
 
 Relational Operators
 --------------------
@@ -52,6 +42,15 @@ Relational Operators
 `<=`_
     
 
+Identity
+--------
+`is`_
+    
+    
+Membership
+----------
+`in`_
+    
 Assignment Operators
 --------------------
 `= (simple assignment)`_
@@ -62,13 +61,13 @@ Assignment Operators
     
 `*= (multiplication assignment)`_
     
-`/=`_
+`/= (division assignment)`_
     
-`**=`_
+`**= (exponent assignment)`_
     
-`%=`_
+`%= (modulus assignment)`_
     
-`//=`_
+`//= (floor division assignment)`_
     
 
 Bitwise Operators
@@ -88,31 +87,21 @@ Bitwise Operators
 
 Bitwise Assignment Operators
 ----------------------------
-`>>=`_
-    
-`<<=`_
-    
 `&=`_
+
+`|=`_
     
 `^=`_
     
-`|=`_
+`>>=`_
     
-
-Square Bracket Operators
-------------------------
-`[] Index`_
-    
-'[::] Slice`_
-    
-`[] Get Value`_
-    
+`<<=`_   
     
 String and Sequence
 -------------------
 `+ String or Sequence Concatenation`_
     
-`* String or Sequence Multiple Concatenation`_
+`* String or Sequence Multiple Concatenation`_ 
     
 `% String Formatting`_
     
@@ -139,24 +128,9 @@ Objects
     
 `@ Decorator`_
     
-    
-Constructors
-------------
-`"" String`_
-    
-`"""""" Multiline Strings`_
-    
-`, Tuple constructor`_
-    
-`[] list`_
-    
-`{} set`_
-    
-`{} dictionary`_
-    
 
-Arguments Packing and Unpacking
--------------------------------
+Function Arguments Packing and Unpacking
+----------------------------------------
 `* Tuple Packing`_
     
 `** Dictionary Packing`_
@@ -164,23 +138,4 @@ Arguments Packing and Unpacking
 `* Tuple Unpacking`_
     
 `** Dictionary Unpacking`_
-    
-
-Numbers
--------
-`l | L Long Integer`_
-    
-` base designators`_
-    
-`. float `_
-
-`e or E float`_
-
-String Designators
-------------------
-    
-    
-Ellipsis
---------
-
 

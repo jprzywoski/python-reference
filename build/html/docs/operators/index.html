@@ -23,7 +23,9 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="../../index.html" /> 
+    <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="../../index.html" />
+    <link rel="next" title="Statements" href="../../statements.html" />
+    <link rel="prev" title="Comprehensions and Generator Expression" href="../comprehensions/index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -32,6 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../statements.html" title="Statements"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../comprehensions/index.html" title="Comprehensions and Generator Expression"
+             accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -45,120 +53,92 @@
 <h1>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="arithmetic-operators">
 <h2>Arithmetic Operators<a class="headerlink" href="#arithmetic-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id5"><span class="problematic" id="id6">`+`_</span></a></p>
-<p><a href="#id7"><span class="problematic" id="id8">`-`_</span></a></p>
-<p><a href="#id9"><span class="problematic" id="id10">`*`_</span></a></p>
-<p><a href="#id11"><span class="problematic" id="id12">`/`_</span></a></p>
-<p><a href="#id13"><span class="problematic" id="id14">`**`_</span></a></p>
-<p><a href="#id15"><span class="problematic" id="id16">`//`_</span></a></p>
-<p><a href="#id17"><span class="problematic" id="id18">`%`_</span></a></p>
+<p><a href="#id1"><span class="problematic" id="id2">`+ (addition)`_</span></a></p>
+<p><a href="#id3"><span class="problematic" id="id4">`- (subtraction)`_</span></a></p>
+<p><a href="#id5"><span class="problematic" id="id6">`* (multiplication)`_</span></a></p>
+<p><a href="#id7"><span class="problematic" id="id8">`/ (division)`_</span></a></p>
+<p><a href="#id9"><span class="problematic" id="id10">`** (exponent)`_</span></a></p>
+<p><a href="#id11"><span class="problematic" id="id12">`// (floor division)`_</span></a></p>
+<p><a href="#id13"><span class="problematic" id="id14">`% (modulus)`_</span></a></p>
 </div>
 <div class="section" id="boolean-operators">
 <h2>Boolean Operators<a class="headerlink" href="#boolean-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id19"><span class="problematic" id="id20">`and`_</span></a></p>
-<p><a href="#id21"><span class="problematic" id="id22">`or`_</span></a></p>
-<p><a href="#id23"><span class="problematic" id="id24">`not`_</span></a></p>
-</div>
-<div class="section" id="identity">
-<h2>Identity<a class="headerlink" href="#identity" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id25"><span class="problematic" id="id26">`is`_</span></a></p>
-</div>
-<div class="section" id="membership">
-<h2>Membership<a class="headerlink" href="#membership" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id27"><span class="problematic" id="id28">`in`_</span></a></p>
+<p><a href="#id15"><span class="problematic" id="id16">`and`_</span></a></p>
+<p><a href="#id17"><span class="problematic" id="id18">`or`_</span></a></p>
+<p><a href="#id19"><span class="problematic" id="id20">`not`_</span></a></p>
 </div>
 <div class="section" id="relational-operators">
 <h2>Relational Operators<a class="headerlink" href="#relational-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id29"><span class="problematic" id="id30">`==`_</span></a></p>
-<p><a href="#id31"><span class="problematic" id="id32">`!=`_</span></a></p>
-<p><a href="#id33"><span class="problematic" id="id34">`&gt;`_</span></a></p>
-<p><a href="#id35"><span class="problematic" id="id36">`&gt;=`_</span></a></p>
-<p><a href="#id37"><span class="problematic" id="id38">`&lt;`_</span></a></p>
-<p><a href="#id39"><span class="problematic" id="id40">`&lt;=`_</span></a></p>
+<p><a href="#id21"><span class="problematic" id="id22">`==`_</span></a></p>
+<p><a href="#id23"><span class="problematic" id="id24">`!=`_</span></a></p>
+<p><a href="#id25"><span class="problematic" id="id26">`&gt;`_</span></a></p>
+<p><a href="#id27"><span class="problematic" id="id28">`&gt;=`_</span></a></p>
+<p><a href="#id29"><span class="problematic" id="id30">`&lt;`_</span></a></p>
+<p><a href="#id31"><span class="problematic" id="id32">`&lt;=`_</span></a></p>
+</div>
+<div class="section" id="identity">
+<h2>Identity<a class="headerlink" href="#identity" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id33"><span class="problematic" id="id34">`is`_</span></a></p>
+</div>
+<div class="section" id="membership">
+<h2>Membership<a class="headerlink" href="#membership" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id35"><span class="problematic" id="id36">`in`_</span></a></p>
 </div>
 <div class="section" id="assignment-operators">
 <h2>Assignment Operators<a class="headerlink" href="#assignment-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id41"><span class="problematic" id="id42">`= (simple assignment)`_</span></a></p>
-<p><a href="#id43"><span class="problematic" id="id44">`+= (increment assignment)`_</span></a></p>
-<p><a href="#id45"><span class="problematic" id="id46">`-= (decrement assignment)`_</span></a></p>
-<p><a href="#id47"><span class="problematic" id="id48">`*= (multiplication assignment)`_</span></a></p>
-<p><a href="#id49"><span class="problematic" id="id50">`/=`_</span></a></p>
-<p><a href="#id51"><span class="problematic" id="id52">`**=`_</span></a></p>
-<p><a href="#id53"><span class="problematic" id="id54">`%=`_</span></a></p>
-<p><a href="#id55"><span class="problematic" id="id56">`//=`_</span></a></p>
+<p><a href="#id37"><span class="problematic" id="id38">`= (simple assignment)`_</span></a></p>
+<p><a href="#id39"><span class="problematic" id="id40">`+= (increment assignment)`_</span></a></p>
+<p><a href="#id41"><span class="problematic" id="id42">`-= (decrement assignment)`_</span></a></p>
+<p><a href="#id43"><span class="problematic" id="id44">`*= (multiplication assignment)`_</span></a></p>
+<p><a href="#id45"><span class="problematic" id="id46">`/= (division assignment)`_</span></a></p>
+<p><a href="#id47"><span class="problematic" id="id48">`**= (exponent assignment)`_</span></a></p>
+<p><a href="#id49"><span class="problematic" id="id50">`%= (modulus assignment)`_</span></a></p>
+<p><a href="#id51"><span class="problematic" id="id52">`//= (floor division assignment)`_</span></a></p>
 </div>
 <div class="section" id="bitwise-operators">
 <h2>Bitwise Operators<a class="headerlink" href="#bitwise-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id57"><span class="problematic" id="id58">`&amp; (bitwise AND)`_</span></a></p>
-<p><a href="#id59"><span class="problematic" id="id60">`| (bitwise OR)`_</span></a></p>
-<p><a href="#id61"><span class="problematic" id="id62">`^ (bitwise XOR)`_</span></a></p>
-<p><a href="#id63"><span class="problematic" id="id64">`&lt;&lt; (left shift)`_</span></a></p>
-<p><a href="#id65"><span class="problematic" id="id66">`&gt;&gt; (right shift)`_</span></a></p>
-<p><a href="#id67"><span class="problematic" id="id68">`~ (bitwise NOT)`_</span></a></p>
+<p><a href="#id53"><span class="problematic" id="id54">`&amp; (bitwise AND)`_</span></a></p>
+<p><a href="#id55"><span class="problematic" id="id56">`| (bitwise OR)`_</span></a></p>
+<p><a href="#id57"><span class="problematic" id="id58">`^ (bitwise XOR)`_</span></a></p>
+<p><a href="#id59"><span class="problematic" id="id60">`&lt;&lt; (left shift)`_</span></a></p>
+<p><a href="#id61"><span class="problematic" id="id62">`&gt;&gt; (right shift)`_</span></a></p>
+<p><a href="#id63"><span class="problematic" id="id64">`~ (bitwise NOT)`_</span></a></p>
 </div>
 <div class="section" id="bitwise-assignment-operators">
 <h2>Bitwise Assignment Operators<a class="headerlink" href="#bitwise-assignment-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id69"><span class="problematic" id="id70">`&gt;&gt;=`_</span></a></p>
-<p><a href="#id71"><span class="problematic" id="id72">`&lt;&lt;=`_</span></a></p>
-<p><a href="#id73"><span class="problematic" id="id74">`&amp;=`_</span></a></p>
-<p><a href="#id75"><span class="problematic" id="id76">`^=`_</span></a></p>
-<p><a href="#id77"><span class="problematic" id="id78">`|=`_</span></a></p>
-</div>
-<div class="section" id="square-bracket-operators">
-<h2>Square Bracket Operators<a class="headerlink" href="#square-bracket-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id79"><span class="problematic" id="id80">`[] Index`_</span></a></p>
-<p>&#8216;[::] Slice`_</p>
-<p><a href="#id81"><span class="problematic" id="id82">`[] Get Value`_</span></a></p>
+<p><a href="#id65"><span class="problematic" id="id66">`&amp;=`_</span></a></p>
+<p><a href="#id67"><span class="problematic" id="id68">`|=`_</span></a></p>
+<p><a href="#id69"><span class="problematic" id="id70">`^=`_</span></a></p>
+<p><a href="#id71"><span class="problematic" id="id72">`&gt;&gt;=`_</span></a></p>
+<p><a href="#id73"><span class="problematic" id="id74">`&lt;&lt;=`_</span></a></p>
 </div>
 <div class="section" id="string-and-sequence">
 <h2>String and Sequence<a class="headerlink" href="#string-and-sequence" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id83"><span class="problematic" id="id84">`+ String or Sequence Concatenation`_</span></a></p>
-<p><a href="#id85"><span class="problematic" id="id86">`* String or Sequence Multiple Concatenation`_</span></a></p>
-<p><a href="#id87"><span class="problematic" id="id88">`% String Formatting`_</span></a></p>
-<p><a href="#id89"><span class="problematic" id="id90">`, String Concatenation`_</span></a></p>
+<p><a href="#id75"><span class="problematic" id="id76">`+ String or Sequence Concatenation`_</span></a></p>
+<p><a href="#id77"><span class="problematic" id="id78">`* String or Sequence Multiple Concatenation`_</span></a></p>
+<p><a href="#id79"><span class="problematic" id="id80">`% String Formatting`_</span></a></p>
+<p><a href="#id81"><span class="problematic" id="id82">`, String Concatenation`_</span></a></p>
 <p>` String Concatenation`_</p>
 </div>
 <div class="section" id="misc">
 <h2>Misc<a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id91"><span class="problematic" id="id92">`\ Line Continuation`_</span></a></p>
-<p><a href="#id93"><span class="problematic" id="id94">`; Statement Separator`_</span></a></p>
-<p><a href="#id95"><span class="problematic" id="id96">`, expression Separator`_</span></a></p>
-<p><a href="#id97"><span class="problematic" id="id98">`&gt;&gt; Print Redirection`_</span></a></p>
+<p><a href="#id83"><span class="problematic" id="id84">`\ Line Continuation`_</span></a></p>
+<p><a href="#id85"><span class="problematic" id="id86">`; Statement Separator`_</span></a></p>
+<p><a href="#id87"><span class="problematic" id="id88">`, expression Separator`_</span></a></p>
+<p><a href="#id89"><span class="problematic" id="id90">`&gt;&gt; Print Redirection`_</span></a></p>
 </div>
 <div class="section" id="objects">
 <h2>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id99"><span class="problematic" id="id100">`() Call`_</span></a></p>
-<p><a href="#id101"><span class="problematic" id="id102">`. Attribute Access`_</span></a></p>
-<p><a href="#id103"><span class="problematic" id="id104">`&#64; Decorator`_</span></a></p>
+<p><a href="#id91"><span class="problematic" id="id92">`() Call`_</span></a></p>
+<p><a href="#id93"><span class="problematic" id="id94">`. Attribute Access`_</span></a></p>
+<p><a href="#id95"><span class="problematic" id="id96">`&#64; Decorator`_</span></a></p>
 </div>
-<div class="section" id="constructors">
-<h2>Constructors<a class="headerlink" href="#constructors" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id105"><span class="problematic" id="id106">`&#8221;&#8221; String`_</span></a></p>
-<p><a href="#id107"><span class="problematic" id="id108">`&#8221;&#8220;&#8221;&#8220;&#8221;&#8221; Multiline Strings`_</span></a></p>
-<p><a href="#id109"><span class="problematic" id="id110">`, Tuple constructor`_</span></a></p>
-<p><a href="#id111"><span class="problematic" id="id112">`[] list`_</span></a></p>
-<p><a href="#id113"><span class="problematic" id="id114">`{} set`_</span></a></p>
-<p><a href="#id115"><span class="problematic" id="id116">`{} dictionary`_</span></a></p>
-</div>
-<div class="section" id="arguments-packing-and-unpacking">
-<h2>Arguments Packing and Unpacking<a class="headerlink" href="#arguments-packing-and-unpacking" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id117"><span class="problematic" id="id118">`* Tuple Packing`_</span></a></p>
-<p><a href="#id119"><span class="problematic" id="id120">`** Dictionary Packing`_</span></a></p>
-<p><a href="#id121"><span class="problematic" id="id122">`* Tuple Unpacking`_</span></a></p>
-<p><a href="#id123"><span class="problematic" id="id124">`** Dictionary Unpacking`_</span></a></p>
-</div>
-<div class="section" id="numbers">
-<h2>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id125"><span class="problematic" id="id126">`l | L Long Integer`_</span></a></p>
-<p>` base designators`_</p>
-<p><a href="#id1"><span class="problematic" id="id2">`</span></a>. float <a href="#id3"><span class="problematic" id="id4">`</span></a>_</p>
-<p><a href="#id127"><span class="problematic" id="id128">`e or E float`_</span></a></p>
-</div>
-<div class="section" id="string-designators">
-<h2>String Designators<a class="headerlink" href="#string-designators" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="ellipsis">
-<h2>Ellipsis<a class="headerlink" href="#ellipsis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="function-arguments-packing-and-unpacking">
+<h2>Function Arguments Packing and Unpacking<a class="headerlink" href="#function-arguments-packing-and-unpacking" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id97"><span class="problematic" id="id98">`* Tuple Packing`_</span></a></p>
+<p><a href="#id99"><span class="problematic" id="id100">`** Dictionary Packing`_</span></a></p>
+<p><a href="#id101"><span class="problematic" id="id102">`* Tuple Unpacking`_</span></a></p>
+<p><a href="#id103"><span class="problematic" id="id104">`** Dictionary Unpacking`_</span></a></p>
 </div>
 </div>
 
@@ -173,25 +153,26 @@
 <li><a class="reference internal" href="#">Operators</a><ul>
 <li><a class="reference internal" href="#arithmetic-operators">Arithmetic Operators</a></li>
 <li><a class="reference internal" href="#boolean-operators">Boolean Operators</a></li>
+<li><a class="reference internal" href="#relational-operators">Relational Operators</a></li>
 <li><a class="reference internal" href="#identity">Identity</a></li>
 <li><a class="reference internal" href="#membership">Membership</a></li>
-<li><a class="reference internal" href="#relational-operators">Relational Operators</a></li>
 <li><a class="reference internal" href="#assignment-operators">Assignment Operators</a></li>
 <li><a class="reference internal" href="#bitwise-operators">Bitwise Operators</a></li>
 <li><a class="reference internal" href="#bitwise-assignment-operators">Bitwise Assignment Operators</a></li>
-<li><a class="reference internal" href="#square-bracket-operators">Square Bracket Operators</a></li>
 <li><a class="reference internal" href="#string-and-sequence">String and Sequence</a></li>
 <li><a class="reference internal" href="#misc">Misc</a></li>
 <li><a class="reference internal" href="#objects">Objects</a></li>
-<li><a class="reference internal" href="#constructors">Constructors</a></li>
-<li><a class="reference internal" href="#arguments-packing-and-unpacking">Arguments Packing and Unpacking</a></li>
-<li><a class="reference internal" href="#numbers">Numbers</a></li>
-<li><a class="reference internal" href="#string-designators">String Designators</a></li>
-<li><a class="reference internal" href="#ellipsis">Ellipsis</a></li>
+<li><a class="reference internal" href="#function-arguments-packing-and-unpacking">Function Arguments Packing and Unpacking</a></li>
 </ul>
 </li>
 </ul>
 
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../comprehensions/index.html"
+                        title="previous chapter">Comprehensions and Generator Expression</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../statements.html"
+                        title="next chapter">Statements</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/docs/operators/index.txt"
@@ -220,6 +201,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="../../statements.html" title="Statements"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../comprehensions/index.html" title="Comprehensions and Generator Expression"
+             >previous</a> |</li>
         <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>
