@@ -12,13 +12,13 @@ Contents
    basic_data_types
    docs/functions/index   
    docs/comprehensions/index
-   operators
+   docs/operators/index
    statements
    other_types
    dunders
    exceptions
    constants
-   boilerplate
+   docs/boilerplate/index
    licence
    
 Indices and tables

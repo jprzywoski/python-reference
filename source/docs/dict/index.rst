@@ -13,6 +13,11 @@ Constructors
 `{} dict comprehension`_
     Returns a dictionary based on existing iterables.
 `literal syntax`_
+
+Misc
+----
+`[] (key lookup)`_
+    Returns the value associated with the given key.
     
 Methods
 -------
@@ -81,6 +86,7 @@ __________________________
     Returns all the elements that appear in the dictview and the specified iterable.
 
 .. _dict(): ../functions/dict.html
+.. _[] (key lookup): ../brackets/key_lookup.html
 .. _{} dict comprehension: ../comprehensions/dict_comprehension.html
 .. _literal syntax: literals.html
 .. _update: update.html

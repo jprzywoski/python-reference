@@ -20,6 +20,11 @@ Misc
     Formats the string according to the specified format.
 `Escape Characters`_
     
+`[] (index operator)`_
+    Gives access to a sequence's element.
+`[::] (slicing)`_
+    Gives access to a specified range of sequence's elements.
+    
 Methods
 -------
 
@@ -130,6 +135,8 @@ _________
 .. _% (String Formatting Operator): formatting.html
 .. _..."" (String Designators): designators.html
 .. _Escape Characters: escapes.html
+.. _[] (index operator): ../brackets/indexing.html
+.. _[::] (slicing): ../brackets/slicing.html
 .. _find: find.html
 .. _rfind: rfind.html
 .. _index: strindex.html
