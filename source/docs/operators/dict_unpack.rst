@@ -10,11 +10,26 @@ Syntax
 ======
 function(**dict)
 
+*dict*
+    The dictionary containing pairs of keyword arguments and their values.
+    
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
 Example
 =======
->>> def foo(a=None, b=None):
-...     return a, b
-...
->>> d = {'a': 1, 'b': 2}
->>> foo(**d)
-(1, 2)
+>>> def add(a=0, b=0):
+...     return a + b
+... 
+>>> d = {'a': 2, 'b': 3}
+>>> add(**d)
+5
+
+See also
+========
+#TODO

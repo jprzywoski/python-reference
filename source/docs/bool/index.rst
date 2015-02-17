@@ -7,7 +7,7 @@ These represent the truth values **False** and **True**. The two objects represe
 Constructors
 ------------
 `bool()`_
-    
+    Returns an expression converted into a Boolean.
 `Literal Syntax`_
 
     

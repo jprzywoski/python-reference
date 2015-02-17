@@ -45,27 +45,53 @@
 <h1>not<a class="headerlink" href="#not" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Reverts the logical state of a condition.</p>
+<p>Returns a boolean that is the reverse of the logical state of an expression.</p>
 </div>
 <div class="section" id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
-<p>not A</p>
-<p>Example
-======= 1
-&gt;&gt;&gt; not True
-False
-&gt;&gt;&gt; not False
-True</p>
-<p>Example
-======= 2
-&gt;&gt;&gt; True and not False
-True
-&gt;&gt;&gt; True and not True
-False
-&gt;&gt;&gt; True or not True
-True
-&gt;&gt;&gt; True or not False
-True</p>
+<p><strong>not A</strong></p>
+<dl class="docutils">
+<dt><em>A</em></dt>
+<dd>Any valid object.</dd>
+</dl>
+</div>
+<div class="section" id="return-value">
+<h2>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">¶</a></h2>
+<p><em>bool</em></p>
+</div>
+<div class="section" id="time-complexity">
+<h2>Time Complexity<a class="headerlink" href="#time-complexity" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
+</div>
+<div class="section" id="remarks">
+<h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h2>
+<p>Note that <em>not</em> does not return the evaluated argument but a Boolean instead.</p>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="ow">not</span> <span class="bp">True</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="ow">not</span> <span class="bp">False</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="bp">True</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">False</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="bp">True</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">True</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="bp">True</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">True</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="bp">True</span> <span class="ow">or</span> <span class="ow">not</span> <span class="bp">False</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
 </div>
 </div>
 
@@ -80,6 +106,12 @@ True</p>
 <li><a class="reference internal" href="#">not</a><ul>
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#syntax">Syntax</a></li>
+<li><a class="reference internal" href="#return-value">Return Value</a></li>
+<li><a class="reference internal" href="#time-complexity">Time Complexity</a></li>
+<li><a class="reference internal" href="#remarks">Remarks</a></li>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>

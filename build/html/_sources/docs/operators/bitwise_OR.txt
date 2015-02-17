@@ -1,19 +1,31 @@
 ============
-| Bitwise OR
+| Bitwise Inclusive OR
 ============
 
 Description
 ===========
-Yields the bitwise (inclusive) OR of its arguments.
+Returns the result of bitwise OR of two integers.
 
 Syntax
 ======
 A | B
 
+*A*
+    Integer object.
+*B*
+    Integer object.
+
+Return Value
+============
+**int**
+
+Time Complexity
+============
+#TODO
+
 Remarks
-=======
-A and B must be plain or long integers. The arguments are converted to a common type.
-Bitwise OR performs logical OR operation on each pair of bits from the two inputs from the same position. Takes 0 as False and 1 as True.
+====
+Bitwise OR sets the bits in the result to 1 if either of the corresponding bits in the two operands is 1.
 
 Example
 =======
@@ -25,3 +37,7 @@ Example
 '0b1111'
 >>> bin(0b1010 | 0b1111)
 '0b1111'
+
+See also
+========
+#TODO

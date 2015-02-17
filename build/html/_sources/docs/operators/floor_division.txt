@@ -4,11 +4,24 @@
 
 Description
 ===========
-The division of operands where the result is the quotient in which the digits after the decimal point are removed.
+Returns the integral part of the quotient.
 
 Syntax
 ======
-A // B [// …]
+**A // B**
+
+*A*
+    Any expression evaluating to a numeric type.
+*B*
+    Any expression evaluating to a numeric type.
+
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
@@ -20,3 +33,7 @@ Example
 2.5
 >>> 5.0 // 2
 2.0
+
+See also
+========
+#TODO

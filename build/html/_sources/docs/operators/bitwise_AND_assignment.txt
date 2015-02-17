@@ -10,6 +10,19 @@ Syntax
 ======
 A &= B
 
+*A*
+    Integer object.
+*B*
+    Integer object.
+
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
 Remarks
 =======
 Equivalent to A = A & B.
@@ -19,4 +32,8 @@ Example
 >>> b = 0b1111
 >>> b &= 0b0101
 >>> bin(b)
-'0b101' 
+'0b101'
+
+See Also
+========
+#TODO

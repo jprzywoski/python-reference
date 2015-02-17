@@ -4,11 +4,24 @@
 
 Description
 ===========
-Shifts the bits of A, B steps to the left.
+Shifts the bits of the first operand left by the specified number of bits.
 
 Syntax
 ======
 A << B
+
+*A*
+    Integer object.
+*B*
+    Integer object.
+
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
@@ -33,3 +46,7 @@ Example 2
 256
 >>> 128 << 1
 256
+
+See also
+========
+#TODO

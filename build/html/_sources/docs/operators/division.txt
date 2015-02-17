@@ -4,11 +4,24 @@
 
 Description
 ===========
-Returns the quotient of numbers.
+Returns the quotient of two expressions.
 
 Syntax
 ======
-A / B [/ …]
+**A / B**
+
+*A*
+    Any expression evaluating to a numeric type.
+*B*
+    Any expression evaluating to a numeric type.
+
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
@@ -24,3 +37,7 @@ Example
 2.0
 >>> 2 / 0.7
 2.857142857142857
+
+See also
+========
+#TODO

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>^ Bitwise XOR &mdash; Python Reference (The Right Way) 0.1 documentation</title>
+    <title>^ Bitwise Exclusive XOR &mdash; Python Reference (The Right Way) 0.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -41,20 +41,25 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="bitwise-xor">
-<h1>^ Bitwise XOR<a class="headerlink" href="#bitwise-xor" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="bitwise-exclusive-xor">
+<h1>^ Bitwise Exclusive XOR<a class="headerlink" href="#bitwise-exclusive-xor" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Yields the bitwise (exclusive) XOR of its arguments.</p>
+<p>Returns the result of bitwise XOR of two integers.</p>
 </div>
 <div class="section" id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
 <p>A ^ B</p>
+<dl class="docutils">
+<dt><em>A</em></dt>
+<dd>Integer object.</dd>
+<dt><em>B</em></dt>
+<dd>Integer object.</dd>
+</dl>
 </div>
 <div class="section" id="remarks">
 <h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h2>
-<p>A and B must be plain or long integers. The arguments are converted to a common type.
-Performs logical XOR (exclusive OR) operation on each pair of bits from the two inputs from the same position. Takes 0 as False and 1 as True.</p>
+<p>Bitwise XOR sets the bits in the result to 1 if either, but not both, of the corresponding bits in the two operands is 1.</p>
 </div>
 <div class="section" id="example-1">
 <h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
@@ -84,6 +89,10 @@ Performs logical XOR (exclusive OR) operation on each pair of bits from the two 
 </pre></div>
 </div>
 </div>
+<div class="section" id="see-also">
+<h2>See also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
+</div>
 </div>
 
 
@@ -94,12 +103,13 @@ Performs logical XOR (exclusive OR) operation on each pair of bits from the two 
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">^ Bitwise XOR</a><ul>
+<li><a class="reference internal" href="#">^ Bitwise Exclusive XOR</a><ul>
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#syntax">Syntax</a></li>
 <li><a class="reference internal" href="#remarks">Remarks</a></li>
 <li><a class="reference internal" href="#example-1">Example 1</a></li>
 <li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#see-also">See also</a></li>
 </ul>
 </li>
 </ul>

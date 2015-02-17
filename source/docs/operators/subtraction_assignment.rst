@@ -4,11 +4,24 @@
 
 Description
 ===========
-Subtracts 2 numbers and assigns the result to left operand.
+Subtracts a value from the variable and assigns the result to that variable.
 
 Syntax
 ======
-A -= B
+**A -= B**
+
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
@@ -20,3 +33,7 @@ Example
 >>> a -= 5
 >>> a
 5
+
+See also
+========
+#TODO

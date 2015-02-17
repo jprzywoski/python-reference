@@ -4,16 +4,20 @@
 
 Description
 ===========
-Yields the bitwise AND of its arguments.
+Returns the result of bitwise AND of two integers.
 
 Syntax
 ======
 A & B
 
+*A*
+    Integer object.
+*B*
+    Integer object.
+
 Remarks
 =======
-A and B must be plain or long integers. The arguments are converted to a common type.
-Bitwise AND performs the logical AND operation on each pair of bits from the two inputs from the same position. Takes 0 as False and 1 as True.
+Bitwise AND sets the bits in the result to 1 if both the corresponding bits in the two operands are 1.
 
 Example 1
 =========
@@ -33,3 +37,7 @@ Example 2
 False
 >>> bool(9 & 1)
 True
+
+See also
+========
+#TODO

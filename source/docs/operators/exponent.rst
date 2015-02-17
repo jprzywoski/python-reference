@@ -1,14 +1,27 @@
 ===========
-** exponent
+** power
 ===========
 
 Description
 ===========
-Raises number to a power.
+Returns the value of a numeric expression raised to a specified power.
 
 Syntax
 ======
-A**B [** …]
+**A ** B**
+
+*A*
+    Any expression evaluating to a numeric type.
+*B*
+    Any expression evaluating to a numeric type.
+
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
@@ -29,3 +42,7 @@ Example 2
 2.0
 >>> 4**-2
 0.0625
+
+See also
+========
+#TODO

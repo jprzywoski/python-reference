@@ -4,41 +4,101 @@
 
 Description
 ===========
-Assigns the result of the right hand side operand to the left hand side operand.
+Assigns a value to a variable(s).
 
 Syntax
 ======
-A = B
+**A = B**
+
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+    
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
-The assignment operator assigns a value to a variable.
+Assignment operation always works from right to left. The object that was referenced by the variable prior to the assignment is now dereferenced.
 
-a = 5;
+Example 1
+====
+>>> a = 10
+>>> a = 5
+>>> a
+5
 
-This statement assigns the integer value 5 to the variable a. The part at the left of the assignment operator (=) is
-known as the lvalue (left value) and the right one as the rvalue (right value). The lvalue has to be a variable
-whereas the rvalue can be either a constant, a variable, the result of an operation or any combination of these.
-The most important rule when assigning is the right-to-left rule: The assignment operation always takes place from
-right to left, and never the other way:
+Multiple assignment also follows the right-to-left rule. Consider the following example:
 
-This statement assigns to variable a (the lvalue) the value contained in variable b (the rvalue). The value that was
-stored until this moment in a is not considered at all in this operation, and in fact that value is lost.
+Example 2
+====
+>>> a = b = c = 10
+>>> a
+10
+>>> b
+10
+>>> c
+10
 
-The following expression is also valid in C++:
+First the integer 10 is assigned to the variable c, then the value of c (10) is assigned to b and b is assigned to a. After evaluating this expression all the variables are referencing the same object - integer 10.
 
-a = b = c = 5;
+Another case of assignment is a multi-variable assignment. Consider the following example:
 
-It assigns 5 to the all the three variables: a, b and c.
+Example 3
+====
+>>> a, b, c = 1, 2, 3  # <- this is a tuple
+>>> a
+1
+>>> b
+2
+>>> c
+3
 
-A, b = 10, 12
+Following right-to-left rule a tuple containing (1, 2, 3) is created, then it is iterated over and its consequent values are assigned to the comma separated list of variables on the left.
 
+This syntax can be used to swap the values of two variables:
 
-Example
-=======
+Example 4
+====
 >>> a = 0
 >>> b = 1
->>> c = a + b
->>> c
+>>> a, b = b, a
+>>> a
 1
->>> foo = 'bar'
+>>> b
+0
+
+Another common use is when we want to assign new values based on existing values:
+
+Example 5a
+====
+>>> a = 10
+>>> b = 5
+>>> a, b = a + b, a * b
+>>> a
+15
+>>> b
+50
+
+this is different than:
+
+Example 5b
+====
+>>> a = 10
+>>> b = 5
+>>> a = a + b
+>>> b = a * b
+>>> a
+15
+>>> b
+75
+
+See Also
+========
+#TODO

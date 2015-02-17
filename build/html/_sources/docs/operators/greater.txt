@@ -1,24 +1,35 @@
 =========================
-> Relational greater than
+> greater than
 =========================
 
 Description
 ===========
-Returns True if x (left hand argument) is greater than y (right hand argument).
+Returns a Boolean stating whether one expression is greater than the other.
 
 Syntax
 ======
-A > B
+**A > B**
+
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+
+Return Value
+============
+**bool**
+
+Time Complexity
+============
+#TODO
 
 Example
 =======
->>> 1 > 0
+>>> 10 > 5
 True
->>> True > False
-True
->>> 'b' > 'a'
-True
->>> 'b' > 'B'
-True
->>> 'b' > 100
-True
+>>> 10 > 10
+False
+
+See also
+========
+#TODO

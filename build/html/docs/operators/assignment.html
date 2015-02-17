@@ -45,38 +45,110 @@
 <h1>= Assignment<a class="headerlink" href="#assignment" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
-<p>Assigns the result of the right hand side operand to the left hand side operand.</p>
+<p>Assigns a value to a variable(s).</p>
 </div>
 <div class="section" id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
-<p>A = B</p>
+<p><strong>A = B</strong></p>
+<dl class="docutils">
+<dt><em>A</em></dt>
+<dd>Any valid object.</dd>
+<dt><em>B</em></dt>
+<dd>Any valid object.</dd>
+</dl>
+</div>
+<div class="section" id="return-value">
+<h2>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">¶</a></h2>
+<p>According to coercion rules.</p>
+</div>
+<div class="section" id="time-complexity">
+<h2>Time Complexity<a class="headerlink" href="#time-complexity" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
 </div>
 <div class="section" id="remarks">
 <h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h2>
-<p>The assignment operator assigns a value to a variable.</p>
-<p>a = 5;</p>
-<p>This statement assigns the integer value 5 to the variable a. The part at the left of the assignment operator (=) is
-known as the lvalue (left value) and the right one as the rvalue (right value). The lvalue has to be a variable
-whereas the rvalue can be either a constant, a variable, the result of an operation or any combination of these.
-The most important rule when assigning is the right-to-left rule: The assignment operation always takes place from
-right to left, and never the other way:</p>
-<p>This statement assigns to variable a (the lvalue) the value contained in variable b (the rvalue). The value that was
-stored until this moment in a is not considered at all in this operation, and in fact that value is lost.</p>
-<p>The following expression is also valid in C++:</p>
-<p>a = b = c = 5;</p>
-<p>It assigns 5 to the all the three variables: a, b and c.</p>
-<p>A, b = 10, 12</p>
+<p>Assignment operation always works from right to left. The object that was referenced by the variable prior to the assignment is now dereferenced.</p>
 </div>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>
-<span class="go">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span> <span class="o">=</span> <span class="s">&#39;bar&#39;</span>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">5</span>
 </pre></div>
 </div>
+<p>Multiple assignment also follows the right-to-left rule. Consider the following example:</p>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">b</span> <span class="o">=</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
+<span class="go">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>
+<span class="go">10</span>
+</pre></div>
+</div>
+<p>First the integer 10 is assigned to the variable c, then the value of c (10) is assigned to b and b is assigned to a. After evaluating this expression all the variables are referencing the same object - integer 10.</p>
+<p>Another case of assignment is a multi-variable assignment. Consider the following example:</p>
+</div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>  <span class="c"># &lt;- this is a tuple</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+<p>Following right-to-left rule a tuple containing (1, 2, 3) is created, then it is iterated over and its consequent values are assigned to the comma separated list of variables on the left.</p>
+<p>This syntax can be used to swap the values of two variables:</p>
+</div>
+<div class="section" id="example-4">
+<h2>Example 4<a class="headerlink" href="#example-4" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+<p>Another common use is when we want to assign new values based on existing values:</p>
+</div>
+<div class="section" id="example-5a">
+<h2>Example 5a<a class="headerlink" href="#example-5a" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">15</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
+<span class="go">50</span>
+</pre></div>
+</div>
+<p>this is different than:</p>
+</div>
+<div class="section" id="example-5b">
+<h2>Example 5b<a class="headerlink" href="#example-5b" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span>
+<span class="go">15</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span>
+<span class="go">75</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
 </div>
 </div>
 
@@ -91,8 +163,16 @@ stored until this moment in a is not considered at all in this operation, and in
 <li><a class="reference internal" href="#">= Assignment</a><ul>
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#syntax">Syntax</a></li>
+<li><a class="reference internal" href="#return-value">Return Value</a></li>
+<li><a class="reference internal" href="#time-complexity">Time Complexity</a></li>
 <li><a class="reference internal" href="#remarks">Remarks</a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#example-3">Example 3</a></li>
+<li><a class="reference internal" href="#example-4">Example 4</a></li>
+<li><a class="reference internal" href="#example-5a">Example 5a</a></li>
+<li><a class="reference internal" href="#example-5b">Example 5b</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>

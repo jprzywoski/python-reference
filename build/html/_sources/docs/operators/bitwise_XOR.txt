@@ -1,19 +1,23 @@
 =============
-^ Bitwise XOR
+^ Bitwise Exclusive XOR
 =============
 
 Description
 ===========
-Yields the bitwise (exclusive) XOR of its arguments.
+Returns the result of bitwise XOR of two integers.
 
 Syntax
 ======
 A ^ B
 
+*A*
+    Integer object.
+*B*
+    Integer object.
+
 Remarks
 =======
-A and B must be plain or long integers. The arguments are converted to a common type.
-Performs logical XOR (exclusive OR) operation on each pair of bits from the two inputs from the same position. Takes 0 as False and 1 as True.
+Bitwise XOR sets the bits in the result to 1 if either, but not both, of the corresponding bits in the two operands is 1.
 
 Example 1
 =========
@@ -38,3 +42,7 @@ Example 2
 8
 >>> b
 2
+
+See also
+========
+#TODO

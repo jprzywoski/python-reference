@@ -4,15 +4,32 @@
 
 Description
 ===========
-Returns a sum or concatenation of objects.
+Returns the sum of two expressions.
 
 Syntax
 ======
-A + B [+ …]
+**A + B**
 
-Example 1
-=========
+*A*
+    Any expression evaluating to a numeric type.
+*B*
+    Any expression evaluating to a numeric type.
+
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
+
+Example
+=======
 >>> 2 + 2
 4
 >>> 2.0 + 2
 4.0
+
+See also
+========
+#TODO

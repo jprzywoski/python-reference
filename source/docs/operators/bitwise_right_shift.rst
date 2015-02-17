@@ -4,15 +4,29 @@
 
 Description
 ===========
-Shifts the bits of A, B steps to the right.
+Shifts the bits of the first operand right by the specified number of bits.
 
 Syntax
 ======
 A >> B
 
+*A*
+    Integer object.
+*B*
+    Integer object.
+
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
 Remarks
 =======
 Negative shift counts are illegal and cause a ValueError to be raised.
+
 A right shift by n bits is equivalent to division by pow(2, n).
 
 Example 1
@@ -32,3 +46,7 @@ Example 2
 64
 >>> 128 >> 1
 64
+
+See also
+========
+#TODO

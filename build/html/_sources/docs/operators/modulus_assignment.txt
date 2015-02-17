@@ -4,11 +4,24 @@
 
 Description
 ===========
-Computes the modulus of 2 numbers and assigns the result to left operand.
+Computes the modulus of the variable and a value and assigns the result to that variable.
 
 Syntax
 ======
-A %= B
+**A %= B**
+
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
@@ -20,3 +33,7 @@ Example
 >>> a %= 2
 >>> a
 1
+
+See also
+========
+#TODO

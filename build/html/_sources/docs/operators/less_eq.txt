@@ -1,20 +1,35 @@
 ===================================
-<= Relational less than or equal to
+<= less than or equal to
 ===================================
 
 Description
 ===========
-Returns True if x (left hand argument) is less than or equal to y (right hand argument).
+Returns a Boolean stating whether one expression is less than or equal the other.
 
 Syntax
 ======
-A <= B
+**A <= B**
+
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+
+Return Value
+============
+**bool**
+
+Time Complexity
+============
+#TODO
 
 Example
 =======
->>> 1 <= 0
+>>> 10 <= 5
 False
->>> 'foo' <= 'bar'
-False
->>> 1 <= 1
+>>> 10 <= 10
 True
+
+See also
+========
+#TODO

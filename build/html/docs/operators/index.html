@@ -25,7 +25,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="../../index.html" />
     <link rel="next" title="Statements" href="../../statements.html" />
-    <link rel="prev" title="Comprehensions and Generator Expression" href="../comprehensions/index.html" /> 
+    <link rel="prev" title="Container Data Access" href="../brackets/index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -38,7 +38,7 @@
           <a href="../../statements.html" title="Statements"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../comprehensions/index.html" title="Comprehensions and Generator Expression"
+          <a href="../brackets/index.html" title="Container Data Access"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
       </ul>
@@ -53,92 +53,152 @@
 <h1>Operators<a class="headerlink" href="#operators" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="arithmetic-operators">
 <h2>Arithmetic Operators<a class="headerlink" href="#arithmetic-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id1"><span class="problematic" id="id2">`+ (addition)`_</span></a></p>
-<p><a href="#id3"><span class="problematic" id="id4">`- (subtraction)`_</span></a></p>
-<p><a href="#id5"><span class="problematic" id="id6">`* (multiplication)`_</span></a></p>
-<p><a href="#id7"><span class="problematic" id="id8">`/ (division)`_</span></a></p>
-<p><a href="#id9"><span class="problematic" id="id10">`** (exponent)`_</span></a></p>
-<p><a href="#id11"><span class="problematic" id="id12">`// (floor division)`_</span></a></p>
-<p><a href="#id13"><span class="problematic" id="id14">`% (modulus)`_</span></a></p>
-</div>
-<div class="section" id="boolean-operators">
-<h2>Boolean Operators<a class="headerlink" href="#boolean-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id15"><span class="problematic" id="id16">`and`_</span></a></p>
-<p><a href="#id17"><span class="problematic" id="id18">`or`_</span></a></p>
-<p><a href="#id19"><span class="problematic" id="id20">`not`_</span></a></p>
-</div>
-<div class="section" id="relational-operators">
-<h2>Relational Operators<a class="headerlink" href="#relational-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id21"><span class="problematic" id="id22">`==`_</span></a></p>
-<p><a href="#id23"><span class="problematic" id="id24">`!=`_</span></a></p>
-<p><a href="#id25"><span class="problematic" id="id26">`&gt;`_</span></a></p>
-<p><a href="#id27"><span class="problematic" id="id28">`&gt;=`_</span></a></p>
-<p><a href="#id29"><span class="problematic" id="id30">`&lt;`_</span></a></p>
-<p><a href="#id31"><span class="problematic" id="id32">`&lt;=`_</span></a></p>
-</div>
-<div class="section" id="identity">
-<h2>Identity<a class="headerlink" href="#identity" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id33"><span class="problematic" id="id34">`is`_</span></a></p>
-</div>
-<div class="section" id="membership">
-<h2>Membership<a class="headerlink" href="#membership" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id35"><span class="problematic" id="id36">`in`_</span></a></p>
+<dl class="docutils">
+<dt><a class="reference external" href="addition.html">+ (addition)</a></dt>
+<dd>Returns the sum of two expressions.</dd>
+<dt><a class="reference external" href="subtraction.html">- (subtraction)</a></dt>
+<dd>Returns the difference of two expressions.</dd>
+<dt><a class="reference external" href="multiplication.html">* (multiplication)</a></dt>
+<dd>Returns the product of two expressions.</dd>
+<dt><a class="reference external" href="exponent.html">** (power)</a></dt>
+<dd>Returns the value of a numeric expression raised to a specified power.</dd>
+<dt><a class="reference external" href="division.html">/ (division)</a></dt>
+<dd>Returns the quotient of two expressions.</dd>
+<dt><a class="reference external" href="floor_division.html">// (floor division)</a></dt>
+<dd>Returns the integral part of the quotient.</dd>
+<dt><a class="reference external" href="modulus.html">% (modulus)</a></dt>
+<dd>Returns the decimal part (remainder) of the quotient.</dd>
+</dl>
 </div>
 <div class="section" id="assignment-operators">
 <h2>Assignment Operators<a class="headerlink" href="#assignment-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id37"><span class="problematic" id="id38">`= (simple assignment)`_</span></a></p>
-<p><a href="#id39"><span class="problematic" id="id40">`+= (increment assignment)`_</span></a></p>
-<p><a href="#id41"><span class="problematic" id="id42">`-= (decrement assignment)`_</span></a></p>
-<p><a href="#id43"><span class="problematic" id="id44">`*= (multiplication assignment)`_</span></a></p>
-<p><a href="#id45"><span class="problematic" id="id46">`/= (division assignment)`_</span></a></p>
-<p><a href="#id47"><span class="problematic" id="id48">`**= (exponent assignment)`_</span></a></p>
-<p><a href="#id49"><span class="problematic" id="id50">`%= (modulus assignment)`_</span></a></p>
-<p><a href="#id51"><span class="problematic" id="id52">`//= (floor division assignment)`_</span></a></p>
+<dl class="docutils">
+<dt><a class="reference external" href="assignment.html">= (simple assignment)</a></dt>
+<dd>Assigns a value to a variable(s).</dd>
+<dt><a class="reference external" href="addition_assignment.html">+= (increment assignment)</a></dt>
+<dd>Adds a value and the variable and assigns the result to that variable.</dd>
+<dt><a class="reference external" href="subtraction_assignment.html">-= (decrement assignment)</a></dt>
+<dd>Subtracts a value from the variable and assigns the result to that variable.</dd>
+<dt><a class="reference external" href="multiplication_assignment.html">*= (multiplication assignment)</a></dt>
+<dd>Multiplies the variable by a value and assigns the result to that variable.</dd>
+<dt><a class="reference external" href="division_assignment.html">/= (division assignment)</a></dt>
+<dd>Divides the variable by a value and assigns the result to that variable.</dd>
+<dt><a class="reference external" href="exponent_assignment.html">**= (power assignment)</a></dt>
+<dd>Raises the variable to a specified power and assigns the result to the variable.</dd>
+<dt><a class="reference external" href="modulus_assignment.html">%= (modulus assignment)</a></dt>
+<dd>Computes the modulus of the variable and a value and assigns the result to that variable.</dd>
+<dt><a class="reference external" href="floor_division_assignment.html">//= (floor division assignment)</a></dt>
+<dd>Floor divides the variable by a value and assigns the result to that variable.</dd>
+</dl>
+</div>
+<div class="section" id="relational-operators">
+<h2>Relational Operators<a class="headerlink" href="#relational-operators" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="equal.html">== (equal)</a></dt>
+<dd>Returns a Boolean stating whether two expressions are equal.</dd>
+<dt><a class="reference external" href="not_equal.html">!= (not equal)</a></dt>
+<dd>Returns a Boolean stating whether two expressions are not equal.</dd>
+<dt><a class="reference external" href="greater_than.html">&gt; (greater than)</a></dt>
+<dd>Returns a Boolean stating whether one expression is greater than the other.</dd>
+<dt><a class="reference external" href="greater_eq.html">&gt;= (greater than or equal)</a></dt>
+<dd>Returns a Boolean stating whether one expression is greater than or equal the other.</dd>
+<dt><a class="reference external" href="less_than.html">&lt; (less than)</a></dt>
+<dd>Returns a Boolean stating whether one expression is less than the other.</dd>
+<dt><a class="reference external" href="less_eq.html">&lt;= (less than or equal)</a></dt>
+<dd>Returns a Boolean stating whether one expression is less than or equal the other.</dd>
+</dl>
+</div>
+<div class="section" id="boolean-operators">
+<h2>Boolean Operators<a class="headerlink" href="#boolean-operators" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="and.html">and</a></dt>
+<dd>Returns the first operand that evaluates to <em>False</em> or the last one if all are <em>True</em>.</dd>
+<dt><a class="reference external" href="or.html">or</a></dt>
+<dd>Returns the first operand that evaluates to <em>True</em> or the last one if all are <em>False</em>.</dd>
+<dt><a class="reference external" href="not.html">not</a></dt>
+<dd>Returns a boolean that is the reverse of the logical state of an expression.</dd>
+</dl>
+</div>
+<div class="section" id="conditional-operator">
+<h2>Conditional Operator<a class="headerlink" href="#conditional-operator" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="ternary.html">if else</a></dt>
+<dd>Returns either value depending on the result of a Boolean expression.</dd>
+</dl>
+</div>
+<div class="section" id="identity">
+<h2>Identity<a class="headerlink" href="#identity" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="is.html">is</a></dt>
+<dd>Returns a Boolean stating whether two objects are the same.</dd>
+</dl>
+</div>
+<div class="section" id="membership">
+<h2>Membership<a class="headerlink" href="#membership" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="in.html">in</a></dt>
+<dd>Returns a Boolean stating whether the object is in the container.</dd>
+</dl>
+</div>
+<div class="section" id="callables-operators">
+<h2>Callables Operators<a class="headerlink" href="#callables-operators" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="tuple_pack.html">* (tuple packing)</a></dt>
+<dd>Packs the consecutive function positional arguments into a tuple.</dd>
+<dt><a class="reference external" href="dict_pack.html">** (dictionary packing)</a></dt>
+<dd>Packs the consecutive function keyword arguments into a dictionary.</dd>
+<dt><a class="reference external" href="tuple_unpack.html">* (tuple unpacking)</a></dt>
+<dd>Unpacks the contents of a tuple into the function call.</dd>
+<dt><a class="reference external" href="dict_unpack.html">** (dictionary unpacking)</a></dt>
+<dd>Unpacks the contents of a dictionary into the function call.</dd>
+<dt><a class="reference external" href="decorator.html">&#64; (decorator)</a></dt>
+<dd>Returns a callable wrapped by another callable.</dd>
+<dt><a class="reference external" href="call.html">() (call operator)</a></dt>
+<dd>Calls a callable object with specified arguments.</dd>
+</dl>
 </div>
 <div class="section" id="bitwise-operators">
 <h2>Bitwise Operators<a class="headerlink" href="#bitwise-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id53"><span class="problematic" id="id54">`&amp; (bitwise AND)`_</span></a></p>
-<p><a href="#id55"><span class="problematic" id="id56">`| (bitwise OR)`_</span></a></p>
-<p><a href="#id57"><span class="problematic" id="id58">`^ (bitwise XOR)`_</span></a></p>
-<p><a href="#id59"><span class="problematic" id="id60">`&lt;&lt; (left shift)`_</span></a></p>
-<p><a href="#id61"><span class="problematic" id="id62">`&gt;&gt; (right shift)`_</span></a></p>
-<p><a href="#id63"><span class="problematic" id="id64">`~ (bitwise NOT)`_</span></a></p>
+<dl class="docutils">
+<dt><a class="reference external" href="bitwise_AND.html">&amp; (bitwise AND)</a></dt>
+<dd>Returns the result of bitwise AND of two integers.</dd>
+<dt><a class="reference external" href="bitwise_OR.html">| (bitwise OR)</a></dt>
+<dd>Returns the result of bitwise OR of two integers.</dd>
+<dt><a class="reference external" href="bitwise_XOR.html">^ (bitwise XOR)</a></dt>
+<dd>Returns the result of bitwise XOR of two integers.</dd>
+<dt><a class="reference external" href="bitwise_left_shift.html">&lt;&lt; (left shift)</a></dt>
+<dd>Shifts the bits of the first operand left by the specified number of bits.</dd>
+<dt><a class="reference external" href="bitwise_right_shift.html">&gt;&gt; (right shift)</a></dt>
+<dd>Shifts the bits of the first operand right by the specified number of bits.</dd>
+<dt><a class="reference external" href="bitwise_complement.html">~ (one’s complement)</a></dt>
+<dd>Sets the 1 bits to 0 and 1 to 0.</dd>
+</dl>
 </div>
 <div class="section" id="bitwise-assignment-operators">
 <h2>Bitwise Assignment Operators<a class="headerlink" href="#bitwise-assignment-operators" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id65"><span class="problematic" id="id66">`&amp;=`_</span></a></p>
-<p><a href="#id67"><span class="problematic" id="id68">`|=`_</span></a></p>
-<p><a href="#id69"><span class="problematic" id="id70">`^=`_</span></a></p>
-<p><a href="#id71"><span class="problematic" id="id72">`&gt;&gt;=`_</span></a></p>
-<p><a href="#id73"><span class="problematic" id="id74">`&lt;&lt;=`_</span></a></p>
-</div>
-<div class="section" id="string-and-sequence">
-<h2>String and Sequence<a class="headerlink" href="#string-and-sequence" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id75"><span class="problematic" id="id76">`+ String or Sequence Concatenation`_</span></a></p>
-<p><a href="#id77"><span class="problematic" id="id78">`* String or Sequence Multiple Concatenation`_</span></a></p>
-<p><a href="#id79"><span class="problematic" id="id80">`% String Formatting`_</span></a></p>
-<p><a href="#id81"><span class="problematic" id="id82">`, String Concatenation`_</span></a></p>
-<p>` String Concatenation`_</p>
+<dl class="docutils">
+<dt><a class="reference external" href="bitwise_AND_assignment.html">&amp;= (bitwise AND assignment)</a></dt>
+<dd>Performs bitwise AND and assigns value to the left operand.</dd>
+<dt><a class="reference external" href="bitwise_inclusive_OR_assignment.html">|= (bitwise OR assignment)</a></dt>
+<dd>Performs bitwise OR and assigns value to the left operand.</dd>
+<dt><a class="reference external" href="bitwise_exclusive_OR_assignment.html">^= (bitwise XOR assignment)</a></dt>
+<dd>Performs bitwise XOR and assigns value to the left operand.</dd>
+<dt><a class="reference external" href="bitwise_right_shift_assignment.html">&lt;&lt;= (bitwise right shift assignment)</a></dt>
+<dd>Performs bitwise left shift and assigns value to the left operand.</dd>
+<dt><a class="reference external" href="bitwise_left_shift_assignment.html">&gt;&gt;= (bitwise left shift assignment)</a></dt>
+<dd>Performs bitwise right shift and assigns value to the left operand.</dd>
+</dl>
 </div>
 <div class="section" id="misc">
 <h2>Misc<a class="headerlink" href="#misc" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id83"><span class="problematic" id="id84">`\ Line Continuation`_</span></a></p>
-<p><a href="#id85"><span class="problematic" id="id86">`; Statement Separator`_</span></a></p>
-<p><a href="#id87"><span class="problematic" id="id88">`, expression Separator`_</span></a></p>
-<p><a href="#id89"><span class="problematic" id="id90">`&gt;&gt; Print Redirection`_</span></a></p>
-</div>
-<div class="section" id="objects">
-<h2>Objects<a class="headerlink" href="#objects" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id91"><span class="problematic" id="id92">`() Call`_</span></a></p>
-<p><a href="#id93"><span class="problematic" id="id94">`. Attribute Access`_</span></a></p>
-<p><a href="#id95"><span class="problematic" id="id96">`&#64; Decorator`_</span></a></p>
-</div>
-<div class="section" id="function-arguments-packing-and-unpacking">
-<h2>Function Arguments Packing and Unpacking<a class="headerlink" href="#function-arguments-packing-and-unpacking" title="Permalink to this headline">¶</a></h2>
-<p><a href="#id97"><span class="problematic" id="id98">`* Tuple Packing`_</span></a></p>
-<p><a href="#id99"><span class="problematic" id="id100">`** Dictionary Packing`_</span></a></p>
-<p><a href="#id101"><span class="problematic" id="id102">`* Tuple Unpacking`_</span></a></p>
-<p><a href="#id103"><span class="problematic" id="id104">`** Dictionary Unpacking`_</span></a></p>
+<dl class="docutils">
+<dt><a class="reference external" href="semicolon.html">; (statement separator)</a></dt>
+<dd>Separates two statements.</dd>
+<dt><a class="reference external" href="slash.html">(line continuation)</a></dt>
+<dd>Breaks the line of code allowing for the next line continuation.</dd>
+<dt><a class="reference external" href="attr_access.html">. (attribute access)</a></dt>
+<dd>Gives access to an object&#8217;s attribute.</dd>
+</dl>
 </div>
 </div>
 
@@ -152,24 +212,23 @@
   <ul>
 <li><a class="reference internal" href="#">Operators</a><ul>
 <li><a class="reference internal" href="#arithmetic-operators">Arithmetic Operators</a></li>
-<li><a class="reference internal" href="#boolean-operators">Boolean Operators</a></li>
+<li><a class="reference internal" href="#assignment-operators">Assignment Operators</a></li>
 <li><a class="reference internal" href="#relational-operators">Relational Operators</a></li>
+<li><a class="reference internal" href="#boolean-operators">Boolean Operators</a></li>
+<li><a class="reference internal" href="#conditional-operator">Conditional Operator</a></li>
 <li><a class="reference internal" href="#identity">Identity</a></li>
 <li><a class="reference internal" href="#membership">Membership</a></li>
-<li><a class="reference internal" href="#assignment-operators">Assignment Operators</a></li>
+<li><a class="reference internal" href="#callables-operators">Callables Operators</a></li>
 <li><a class="reference internal" href="#bitwise-operators">Bitwise Operators</a></li>
 <li><a class="reference internal" href="#bitwise-assignment-operators">Bitwise Assignment Operators</a></li>
-<li><a class="reference internal" href="#string-and-sequence">String and Sequence</a></li>
 <li><a class="reference internal" href="#misc">Misc</a></li>
-<li><a class="reference internal" href="#objects">Objects</a></li>
-<li><a class="reference internal" href="#function-arguments-packing-and-unpacking">Function Arguments Packing and Unpacking</a></li>
 </ul>
 </li>
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../comprehensions/index.html"
-                        title="previous chapter">Comprehensions and Generator Expression</a></p>
+  <p class="topless"><a href="../brackets/index.html"
+                        title="previous chapter">Container Data Access</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="../../statements.html"
                         title="next chapter">Statements</a></p>
@@ -205,7 +264,7 @@
           <a href="../../statements.html" title="Statements"
              >next</a> |</li>
         <li class="right" >
-          <a href="../comprehensions/index.html" title="Comprehensions and Generator Expression"
+          <a href="../brackets/index.html" title="Container Data Access"
              >previous</a> |</li>
         <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
       </ul>

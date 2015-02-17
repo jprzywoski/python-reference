@@ -10,6 +10,19 @@ Syntax
 ======
 ~A
 
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
 Remarks
 =======
 Performs logical NOT operation on bits. Takes 0 as False and 1 as True.
@@ -28,3 +41,7 @@ Example
 '-0b1011'
 >>> bin(~0b1011)
 '-0b1100'
+
+See also
+========
+#TODO

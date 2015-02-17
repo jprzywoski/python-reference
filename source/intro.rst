@@ -28,7 +28,7 @@ Python Standard Library is beyond the scope of this reference. If you are lookin
 
 * Python Module of The Week by Doug Hellman
 
-* Python Reference by Frederik Lundh (this one is a bit dated, but still top-notch in terms of clarity)
+* Python Reference by Fredrik Lundh (this one is a bit dated, but still top-notch in terms of clarity)
 
 * Official Python Standard Library documentation (terse and lacks examples)
 

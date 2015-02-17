@@ -4,11 +4,24 @@
 
 Description
 ===========
-Returns a difference of objects.
+Returns the difference of two expressions.
 
 Syntax
 ======
-A – B [- …]
+**A – B**
+
+*A*
+    Any expression evaluating to a numeric type.
+*B*
+    Any expression evaluating to a numeric type.
+
+Return Value
+============
+According to coercion rules.
+
+Time Complexity
+============
+#TODO
 
 Example
 =======
@@ -18,3 +31,7 @@ Example
 1.0
 >>> 2 - 1.0
 1.0
+
+See also
+========
+#TODO

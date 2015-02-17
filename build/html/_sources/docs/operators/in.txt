@@ -10,11 +10,32 @@ Syntax
 ======
 A [not] in B
 
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
+Remarks
+=======
+When used with dictionaries checks the keys instead of values.
+    
 Example
 =======
->>> 'f' in 'foo'
+>>> 'A' in 'ABCD'
 True
->>> 'f' in ['f', 'o', 'o']
+>>> 0 in [0, 1, 2]
 True
->>> 'f' not in 'foo'
-False
+>>> 0 not in {'a': 0, 'b': 1}
+True
+
+See also
+========
+#TODO

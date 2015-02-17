@@ -1,5 +1,5 @@
 =======================================
-... if ... else ... Ternary Conditional
+if else conditional operator
 =======================================
 
 Description
@@ -8,22 +8,52 @@ Returns either value depending on the result of a Boolean expression.
 
 Syntax
 ======
-VARIABLE if EXPRESSION else VARIABLE
+**A if expression else B**
+
+*A*
+    The value for the entire conditional expression if the condition is True.
+*expression*
+    The condition that evaluates to a Boolean. 
+*B*
+    The value for the entire conditional expression if the condition is False.
+
+Return Value
+============
+The same as passed to the expression.
+
+Time Complexity
+============
+#TODO
 
 Remarks
 =======
-Conditional expressions or ternary operator have the lowest priority of all Python operations. The expression first evaluates the condition, C (not x); if C is true, x is evaluated and its value is returned; otherwise, y is evaluated and its value is returned.
+Python's conditional operator is similar to the if else statement. It is also called a ternary operator since it takes three operands (as opposed to binary operands like +, - or unary like ~).
 
-Example
-======= 1
+Example 1
+=======
 >>> 1 if True else 0
 1
 >>> 1 if False else 0
 0
 
-Example
-======= 2
->>> 1 if 2 + 2 == 4 else 0
-1
->>> 1 if 2 + 2 != 4 else 0
-0
+Example 2
+====
+>>> rating = 100
+>>> 'good' if rating > 80 else 'bad'
+'good'
+
+The above expression returns 'good' if rating is greater than 80 and 'bad' otherwise.
+
+Note that conditional operator does not allow the use of statements:
+
+Example 3
+====
+>>> print 'good' if rating > 80 else print 'bad'
+  File "<interactive input>", line 1
+    print 'good' if rating > 80 else print 'bad'
+                                         ^
+SyntaxError: invalid syntax
+
+See also
+========
+#TODO

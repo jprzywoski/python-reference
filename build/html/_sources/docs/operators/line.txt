@@ -1,0 +1,31 @@
+====
+#TODO
+====
+
+Description
+====
+#TODO
+
+Syntax
+====
+#TODO
+    
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
+Remarks
+====
+#TODO
+
+Example
+====
+#TODO
+
+See Also
+========
+#TODO

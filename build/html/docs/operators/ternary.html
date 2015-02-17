@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>... if ... else ... Ternary Conditional &mdash; Python Reference (The Right Way) 0.1 documentation</title>
+    <title>if else conditional operator &mdash; Python Reference (The Right Way) 0.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -41,31 +41,68 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="if-else-ternary-conditional">
-<h1>... if ... else ... Ternary Conditional<a class="headerlink" href="#if-else-ternary-conditional" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="if-else-conditional-operator">
+<h1>if else conditional operator<a class="headerlink" href="#if-else-conditional-operator" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="description">
 <h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
 <p>Returns either value depending on the result of a Boolean expression.</p>
 </div>
 <div class="section" id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
-<p>VARIABLE if EXPRESSION else VARIABLE</p>
+<p><strong>A if expression else B</strong></p>
+<dl class="docutils">
+<dt><em>A</em></dt>
+<dd>The value for the entire conditional expression if the condition is True.</dd>
+<dt><em>expression</em></dt>
+<dd>The condition that evaluates to a Boolean.</dd>
+<dt><em>B</em></dt>
+<dd>The value for the entire conditional expression if the condition is False.</dd>
+</dl>
+</div>
+<div class="section" id="return-value">
+<h2>Return Value<a class="headerlink" href="#return-value" title="Permalink to this headline">¶</a></h2>
+<p>The same as passed to the expression.</p>
+</div>
+<div class="section" id="time-complexity">
+<h2>Time Complexity<a class="headerlink" href="#time-complexity" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
 </div>
 <div class="section" id="remarks">
 <h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline">¶</a></h2>
-<p>Conditional expressions or ternary operator have the lowest priority of all Python operations. The expression first evaluates the condition, C (not x); if C is true, x is evaluated and its value is returned; otherwise, y is evaluated and its value is returned.</p>
-<p>Example
-======= 1
-&gt;&gt;&gt; 1 if True else 0
-1
-&gt;&gt;&gt; 1 if False else 0
-0</p>
-<p>Example
-======= 2
-&gt;&gt;&gt; 1 if 2 + 2 == 4 else 0
-1
-&gt;&gt;&gt; 1 if 2 + 2 != 4 else 0
-0</p>
+<p>Python&#8217;s conditional operator is similar to the if else statement. It is also called a ternary operator since it takes three operands (as opposed to binary operands like +, - or unary like ~).</p>
+</div>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="k">if</span> <span class="bp">True</span> <span class="k">else</span> <span class="mi">0</span>
+<span class="go">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="mi">1</span> <span class="k">if</span> <span class="bp">False</span> <span class="k">else</span> <span class="mi">0</span>
+<span class="go">0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rating</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s">&#39;good&#39;</span> <span class="k">if</span> <span class="n">rating</span> <span class="o">&gt;</span> <span class="mi">80</span> <span class="k">else</span> <span class="s">&#39;bad&#39;</span>
+<span class="go">&#39;good&#39;</span>
+</pre></div>
+</div>
+<p>The above expression returns &#8216;good&#8217; if rating is greater than 80 and &#8216;bad&#8217; otherwise.</p>
+<p>Note that conditional operator does not allow the use of statements:</p>
+</div>
+<div class="section" id="example-3">
+<h2>Example 3<a class="headerlink" href="#example-3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&#39;good&#39;</span> <span class="k">if</span> <span class="n">rating</span> <span class="o">&gt;</span> <span class="mi">80</span> <span class="k">else</span> <span class="k">print</span> <span class="s">&#39;bad&#39;</span>
+  File <span class="nb">&quot;&lt;interactive input&gt;&quot;</span>, line <span class="m">1</span>
+    <span class="k">print</span> <span class="s">&#39;good&#39;</span> <span class="k">if</span> <span class="n">rating</span> <span class="o">&gt;</span> <span class="mi">80</span> <span class="k">else</span> <span class="k">print</span> <span class="s">&#39;bad&#39;</span>
+                                         <span class="o">^</span>
+<span class="gr">SyntaxError</span>: <span class="n">invalid syntax</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="see-also">
+<h2>See also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p>#TODO</p>
 </div>
 </div>
 
@@ -77,10 +114,16 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">... if ... else ... Ternary Conditional</a><ul>
+<li><a class="reference internal" href="#">if else conditional operator</a><ul>
 <li><a class="reference internal" href="#description">Description</a></li>
 <li><a class="reference internal" href="#syntax">Syntax</a></li>
+<li><a class="reference internal" href="#return-value">Return Value</a></li>
+<li><a class="reference internal" href="#time-complexity">Time Complexity</a></li>
 <li><a class="reference internal" href="#remarks">Remarks</a></li>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
+<li><a class="reference internal" href="#example-3">Example 3</a></li>
+<li><a class="reference internal" href="#see-also">See also</a></li>
 </ul>
 </li>
 </ul>

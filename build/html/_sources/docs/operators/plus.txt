@@ -10,6 +10,19 @@ Syntax
 ======
 A or B
 
+*A*
+    Any valid object.
+*B*
+    Any valid object.
+
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
 Example
 =======
 >>> True or True
@@ -20,3 +33,7 @@ True
 True
 >>> False or False
 False
+
+See also
+========
+#TODO

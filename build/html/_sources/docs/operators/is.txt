@@ -4,27 +4,40 @@ is
 
 Description
 ===========
-Returns a Boolean stating whether two variables are referencing the same object.
+Returns a Boolean stating whether two objects are the same.
 
 Syntax
 ======
 A is [not] B
 
+*A*
+    Any object.
+*B*
+    Any object.
+
+Return Value
+============
+#TODO
+
+Time Complexity
+============
+#TODO
+
 Remarks
 =======
-Equivalent to id(A) == id(B). Note that two different objects can have the same value.
+Equivalent to id(A) == id(B). Note that two different objects can have the same value. 
 
 Example 1
 =========
->>> a = 'foo'
->>> b = 'foo'
+>>> a = 'ABCD'
+>>> b = 'ABCD'
 >>> a is b
 True
 
 Example 2
 =========
->>> a = 'Arbeitsunfaehigkeitbescheinigung-' # certificate of inability to work in German
->>> b = 'Arbeitsunfaehigkeitbescheinigung-'
+>>> a = 'Arbeitsunfähigkeitbescheinigung-' # certificate of inability to work in German
+>>> b = 'Arbeitsunfähigkeitbescheinigung-'
 >>> a is b
 False
 >>> a == b
@@ -33,3 +46,8 @@ True
 14418904
 >>> id(b)
 14418288
+
+See also
+========
+intern() and id() functions, equals operator
+
