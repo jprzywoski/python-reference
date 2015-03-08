@@ -14,6 +14,14 @@ Note
 ====
 It works like stdio‘s *fflush()*. This may be a no-op on some file-like objects. *flush()* does not necessarily write the file’s data to disk. Use *flush()* followed by *os.fsync()* to ensure this behavior. 
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example
 =======
 >>> fw = open(r'C:\test.txt', "w")
@@ -23,4 +31,8 @@ Example
 []
 >>> fw.flush() # flushing forces the buffer content into the file without closing it
 >>> fr.readlines()
-['foobar'] 
+['foobar']
+
+See Also
+========
+#TODO

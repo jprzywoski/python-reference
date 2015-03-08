@@ -10,8 +10,20 @@ Syntax
 ======
 **file**. *errors*
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example
 =======
 >>> f = io.open(r'C:\aiw.txt', errors='ignore')
 >>> f.errors
-'ignore' 
+'ignore'
+
+See Also
+========
+#TODO

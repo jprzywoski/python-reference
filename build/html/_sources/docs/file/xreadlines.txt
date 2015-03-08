@@ -12,13 +12,17 @@ Syntax
 
 Remarks
 =======
-This method returns the same thing as **iter(f)**.
-
-Note
-====
-Deprecated since version 2.3:
+This method returns the same thing as **iter(file)**. Usage of this function is deprecated since Python 2.3. File objects are iterators by default now. 
 
 Use `for line in file` instead.
+
+Return Value
+============
+**file**
+
+Time Complexity
+===============
+#TODO
 
 Example
 =======
@@ -36,4 +40,8 @@ Example
 'ABC\n'
 >>> fx.next()
 StopIteration
+
+See Also
+========
+#TODO
 

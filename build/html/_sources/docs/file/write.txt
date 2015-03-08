@@ -17,6 +17,14 @@ Remarks
 =======
 There is no return value. Due to buffering, the string may not actually show up in the file until the *flush()* or *close()* method is called.
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example
 =======
 >>> f = open(r'C:\test.txt', 'w')
@@ -24,4 +32,8 @@ Example
 >>> f.close()
 >>> f = open(r'C:\test.txt')
 >>> f.read()
-'foo' 
+'foo'
+
+See Also
+========
+#TODO

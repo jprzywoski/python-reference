@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Fundamental Data Types &mdash; Python Reference (The Right Way) 0.1 documentation</title>
+    <title>Statements &mdash; Python Reference (The Right Way) 0.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -23,7 +23,9 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="../../index.html" /> 
+    <link rel="top" title="Python Reference (The Right Way) 0.1 documentation" href="../../index.html" />
+    <link rel="next" title="Other Objects" href="../../other_types.html" />
+    <link rel="prev" title="Operators" href="../operators/index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -32,6 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../other_types.html" title="Other Objects"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../operators/index.html" title="Operators"
+             accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>  
@@ -41,43 +49,71 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="fundamental-data-types">
-<h1>Fundamental Data Types<a class="headerlink" href="#fundamental-data-types" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="numbers">
-<h2>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+  <div class="section" id="statements">
+<h1>Statements<a class="headerlink" href="#statements" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="flow-control">
+<h2>Flow Control<a class="headerlink" href="#flow-control" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id1"><span class="problematic" id="id2">`if`_</span></a></p>
+<p><a href="#id3"><span class="problematic" id="id4">`elif`_</span></a></p>
+<p><a href="#id5"><span class="problematic" id="id6">`else`_</span></a></p>
 </div>
-<div class="section" id="strings">
-<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<div class="section" id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference external" href="for.html">for in</a></dt>
+<dd>Loops over elements of an iterable object.</dd>
+<dt><a class="reference external" href="while.html">while</a></dt>
+<dd>Executes block of code repeatedly while the specified condition is True.</dd>
+<dt><a class="reference external" href="continue.html">continue</a></dt>
+<dd>Skips the execution of the code below it and starts a new cycle of the loop.</dd>
+<dt><a class="reference external" href="break.html">break</a></dt>
+<dd>Terminates the execution of a loop.</dd>
+<dt><a class="reference external" href="elsel.html">else (2)</a></dt>
+<dd>Executes specified block of code after loop terminating condition other then break was met.</dd>
+</dl>
 </div>
-<div class="section" id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id7"><span class="problematic" id="id8">`def`_</span></a></p>
+<p><a href="#id9"><span class="problematic" id="id10">`lambda`_</span></a></p>
+<p><a href="#id11"><span class="problematic" id="id12">`return`_</span></a></p>
+<p><a href="#id13"><span class="problematic" id="id14">`pass`_</span></a></p>
 </div>
-<div class="section" id="dictionaries">
-<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<div class="section" id="classes">
+<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id15"><span class="problematic" id="id16">`class`_</span></a></p>
+<p><a href="#id17"><span class="problematic" id="id18">`del`_</span></a></p>
 </div>
-<div class="section" id="tuples">
-<h2>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<div class="section" id="context-managers">
+<h2>Context Managers<a class="headerlink" href="#context-managers" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id19"><span class="problematic" id="id20">`with`_</span></a></p>
 </div>
-<div class="section" id="sets">
-<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li></li>
-</ul>
+<div class="section" id="generators">
+<h2>Generators<a class="headerlink" href="#generators" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id21"><span class="problematic" id="id22">`yield`_</span></a></p>
+</div>
+<div class="section" id="system">
+<h2>System<a class="headerlink" href="#system" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id23"><span class="problematic" id="id24">`exec`_</span></a></p>
+<p><a href="#id25"><span class="problematic" id="id26">`print`_</span></a></p>
+</div>
+<div class="section" id="imports-and-scope">
+<h2>Imports and Scope<a class="headerlink" href="#imports-and-scope" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id27"><span class="problematic" id="id28">`import`_</span></a></p>
+<p><a href="#id29"><span class="problematic" id="id30">`from`_</span></a></p>
+<p><a href="#id31"><span class="problematic" id="id32">`as`_</span></a></p>
+<p><a href="#id33"><span class="problematic" id="id34">`global`_</span></a></p>
+</div>
+<div class="section" id="assertions">
+<h2>Assertions<a class="headerlink" href="#assertions" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id35"><span class="problematic" id="id36">`assert`_</span></a></p>
+</div>
+<div class="section" id="exceptions-handling">
+<h2>Exceptions Handling<a class="headerlink" href="#exceptions-handling" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id37"><span class="problematic" id="id38">`try`_</span></a></p>
+<p><a href="#id39"><span class="problematic" id="id40">`except`_</span></a></p>
+<p><a href="#id41"><span class="problematic" id="id42">`finally`_</span></a></p>
+<p><a href="#id43"><span class="problematic" id="id44">`raise`_</span></a></p>
 </div>
 </div>
 
@@ -89,17 +125,27 @@
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Fundamental Data Types</a><ul>
-<li><a class="reference internal" href="#numbers">Numbers</a></li>
-<li><a class="reference internal" href="#strings">Strings</a></li>
-<li><a class="reference internal" href="#lists">Lists</a></li>
-<li><a class="reference internal" href="#dictionaries">Dictionaries</a></li>
-<li><a class="reference internal" href="#tuples">Tuples</a></li>
-<li><a class="reference internal" href="#sets">Sets</a></li>
+<li><a class="reference internal" href="#">Statements</a><ul>
+<li><a class="reference internal" href="#flow-control">Flow Control</a></li>
+<li><a class="reference internal" href="#loops">Loops</a></li>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+<li><a class="reference internal" href="#classes">Classes</a></li>
+<li><a class="reference internal" href="#context-managers">Context Managers</a></li>
+<li><a class="reference internal" href="#generators">Generators</a></li>
+<li><a class="reference internal" href="#system">System</a></li>
+<li><a class="reference internal" href="#imports-and-scope">Imports and Scope</a></li>
+<li><a class="reference internal" href="#assertions">Assertions</a></li>
+<li><a class="reference internal" href="#exceptions-handling">Exceptions Handling</a></li>
 </ul>
 </li>
 </ul>
 
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../operators/index.html"
+                        title="previous chapter">Operators</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../other_types.html"
+                        title="next chapter">Other Objects</a></p>
   <h3>This Page</h3>
   <ul class="this-page-menu">
     <li><a href="../../_sources/docs/statements/index.txt"
@@ -128,6 +174,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="../../other_types.html" title="Other Objects"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../operators/index.html" title="Operators"
+             >previous</a> |</li>
         <li><a href="../../index.html">Python Reference (The Right Way) 0.1 documentation</a> &raquo;</li> 
       </ul>
     </div>

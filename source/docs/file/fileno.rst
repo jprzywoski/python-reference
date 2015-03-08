@@ -18,6 +18,14 @@ Note
 ====
 File-like objects which do not have a real file descriptor should not provide this method!
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example
 =======
 >>> f = open(r'C:\aiw.txt')
@@ -25,4 +33,8 @@ Example
 3
 >>> f1 = open(r'C:\aiw.txt')
 >>> f1.fileno()
-4 
+4
+
+See Also
+========
+#TODO

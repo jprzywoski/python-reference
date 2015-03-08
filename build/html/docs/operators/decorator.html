@@ -49,11 +49,10 @@
 </div>
 <div class="section" id="syntax">
 <h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
-<p>&#64;decorator
-def function():</p>
-<blockquote>
-<div>suite</div></blockquote>
+<p>&#64;decorator</p>
 <dl class="docutils">
+<dt>def function():</dt>
+<dd>suite</dd>
 <dt><em>decorator</em></dt>
 <dd>A callable that takes another callable as an argument.</dd>
 </dl>
@@ -84,8 +83,8 @@ def function():</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example-1">
+<h2>Example 1<a class="headerlink" href="#example-1" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># this example shows how to use a decorator to add functionality to a function</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">decorator</span><span class="p">(</span><span class="n">f</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="k">def</span> <span class="nf">inner</span><span class="p">():</span>
@@ -103,6 +102,32 @@ def function():</p>
 <span class="go">before</span>
 <span class="go">inside</span>
 <span class="go">after</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2">
+<h2>Example 2<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># this is actually a useful example - decorator is used to measure</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># time taken to execute a function</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">timeit</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="kn">import</span> <span class="nn">time</span>
+<span class="gp">... </span>        <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
+<span class="gp">... </span>        <span class="n">retval</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+<span class="gp">... </span>        <span class="n">finish</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span>
+<span class="gp">... </span>        <span class="k">return</span> <span class="n">finish</span><span class="p">,</span> <span class="n">retval</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">inner</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nd">@timeit</span>
+<span class="gp">... </span><span class="k">def</span> <span class="nf">adder</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adder</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<span class="go">(3.682225269585615e-06, 45)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adder</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">))</span>
+<span class="go">(1.8076378694331652e-05, 499500)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">adder</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">))</span>
+<span class="go">(0.0833967122414947, 499999500000L)</span>
 </pre></div>
 </div>
 </div>
@@ -126,7 +151,8 @@ def function():</p>
 <li><a class="reference internal" href="#return-value">Return Value</a></li>
 <li><a class="reference internal" href="#time-complexity">Time Complexity</a></li>
 <li><a class="reference internal" href="#remarks">Remarks</a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
+<li><a class="reference internal" href="#example-1">Example 1</a></li>
+<li><a class="reference internal" href="#example-2">Example 2</a></li>
 <li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>

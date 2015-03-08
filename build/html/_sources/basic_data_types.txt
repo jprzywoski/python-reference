@@ -34,11 +34,12 @@ Sequences
 Mappings
 --------
 `dict`_
-    Hash tables for storing unordered key-value pairs. Mutable.
+    Hash table for storing unordered key-value pairs. Mutable.
+    
+Sets
+----
 `set`_
     Unordered list of unique objects. Mutable.
-`frozenset`_
-    Unordered list of unique objects. Immutable.
     
 Files
 -----
@@ -47,7 +48,7 @@ Files
     
 .. _bool: docs/bool/index.html
 .. _int: docs/ints/index.html
-.. _long: docs/ints/index.html
+.. _long: docs/ints/indexl.html
 .. _float: docs/float/index.html
 .. _complex: docs/complex/index.html
 .. _str: docs/str/index.html

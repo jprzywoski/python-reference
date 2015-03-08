@@ -11,7 +11,7 @@ Syntax
 **{expression(variable) for variable in input_set [predicate][, …]}**
 
 *expression*
-	Required. An output expression producing members of the new set from members of the input set that satisfy the predicate expression.
+	Optional. An output expression producing members of the new set from members of the input set that satisfy the predicate expression.
 *variable*
 	Required. Variable representing members of an input set.
 *input_set*
@@ -20,6 +20,14 @@ Syntax
 	Optional. Expression acting as a filter on members of the input set.
 *[, …]]*
 	Optional. Another nested comprehension.
+
+Return Value
+============
+**set**
+
+Time Complexity
+===============
+#TODO
 
 Example 1
 =========
@@ -39,3 +47,7 @@ Example 3
 =========
 >>> {(m, n) for n in range(2) for m in range(3, 5)}
 set([(3, 0), (3, 1), (4, 0), (4, 1)])
+  
+See Also
+========
+#TODO

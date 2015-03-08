@@ -23,6 +23,14 @@ Note
 ====
 This function is simply a wrapper for the underlying *fread()* C function, and will behave the same in corner cases, such as whether the *EOF* value is cached.
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example
 =======
 >>> f.read(8)
@@ -30,4 +38,7 @@ Example
 >>> f.read(128)
 "        ALICE'S ADVENTURES IN WONDERLAND\n\n                          Lewis Carroll\n\n               THE MILLENNIUM FULCRUM EDITION"
 >>> f.read() # this returns contents of the whole file
- 
+
+See Also
+========
+#TODO

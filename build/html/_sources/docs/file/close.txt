@@ -14,6 +14,14 @@ Remarks
 =======
 A closed file cannot be read or written any more. Any operation which requires that the file be open will raise a *ValueError* after the file has been closed. Calling *close()* more than once is allowed.
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example 1
 =========
 >>> f = open(r'C:\aiw.txt')
@@ -49,3 +57,7 @@ Example 3
 Note
 ====
 Not all “file-like” types in Python support use as a context manager for the with statement. If your code is intended to work with any file-like object, you can use the function *contextlib.closing()* instead of using the object directly.
+
+See Also
+========
+#TODO

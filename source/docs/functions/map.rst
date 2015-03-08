@@ -3,7 +3,7 @@ map
 
 Description
 -----------
-Applies function to every item of an iterable object and returns a list of the results.
+Applies function to every item of an iterable and returns a list of the results.
 
 Syntax
 ------

@@ -19,7 +19,15 @@ A trailing newline character is kept in the string (but may be absent when a fil
 
 Note
 ====
-Unlike stdio‘s *fgets()*, the returned string contains null characters ('\0') if they occurred in the input.
+Unlike stdio‘s *fgets()* in C, the returned string contains null characters ('\0') if they occurred in the input.
+
+Return Value
+============
+**str**
+
+Time Complexity
+===============
+#TODO
 
 Example
 =======
@@ -29,4 +37,8 @@ Example
 >>> f.readline(32)
 '\n'
 >>> f.readline(64)
-'                          Lewis Carroll\n' 
+'                          Lewis Carroll\n'
+
+See Also
+========
+#TODO

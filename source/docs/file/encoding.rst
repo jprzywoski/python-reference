@@ -4,11 +4,19 @@ encoding
 
 Description
 ===========
-Returns the encoding that this file uses.
+Returns the encoding of the file.
 
 Syntax
 ======
 **file**. *encoding*
+
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
 
 Remarks
 =======
@@ -19,3 +27,7 @@ Example
 >>> f = io.open(r'C:\aiw.txt', encoding='utf-8')
 >>> f.encoding
 'utf-8'
+
+See Also
+========
+#TODO

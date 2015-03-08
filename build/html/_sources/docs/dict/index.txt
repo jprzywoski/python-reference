@@ -2,7 +2,7 @@
 dict
 ====
 
-Dictionaries are mutable unordered collections (they do not record element position or order of insertio) of key-value pairs. Keys within the dictionary must be unique and must be hashable. That includes types like numbers, strings and tuples. Lists and dicts can not be used as keys since they are mutable. Dictionaries are also called hash tables or associative arrays.
+Dictionaries are mutable unordered collections (they do not record element position or order of insertion) of key-value pairs. Keys within the dictionary must be unique and must be hashable. That includes types like numbers, strings and tuples. Lists and dicts can not be used as keys since they are mutable. Dictionaries are also called hash tables or associative arrays.
 
 Numeric types used for keys obey the normal rules for numeric comparison: if two numbers compare equal (such as 1 and 1.0) then they can be used interchangeably to index the same dictionary entry. (Note however, that since computers store floating-point numbers as approximations it is usually unwise to use them as dictionary keys.)
 

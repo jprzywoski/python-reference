@@ -20,6 +20,14 @@ Files support the iterator protocol. Each iteration returns the same result as *
 
 File objects also offer a number of other interesting attributes. These are not required for file-like objects, but should be implemented if they make sense for the particular object.
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example
 =======
 >>> f = open(r'C:\test.txt', 'w')
@@ -28,3 +36,7 @@ Example
 >>> f = open(r'C:\test.txt')
 >>> f.read()
 'foobar'
+
+See Also
+========
+#TODO

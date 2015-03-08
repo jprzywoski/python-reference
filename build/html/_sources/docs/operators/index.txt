@@ -129,6 +129,23 @@ Misc
     Breaks the line of code allowing for the next line continuation.
 `. (attribute access)`_
     Gives access to an object's attribute.
+
+String and Sequence Operators
+====
+`+ (concatenation)`_
+    Returns a concatenation of two sequences.
+`* (multiple concatenation)`_
+    Returns a sequence self-concatenated specified amount of times.
+`% (string formatting operator)`_
+    Formats the string according to the specified format.
+
+Sequence Assignment Operators
+====
+`+= (concatenation assignment)`_
+    Concatenates the sequence with the right operand and assigns the result to that sequence.
+`*= (multiple concatenation assignment)`_
+    Multiple concatenates the sequence and assigns the result to that sequence.
+    
     
 .. _is: is.html
 .. _in: in.html
@@ -178,3 +195,9 @@ Misc
 .. _; (statement separator): semicolon.html
 .. _\ (line continuation): slash.html
 .. _. (attribute access): attr_access.html
+.. _+ (concatenation): concatenation.html
+.. _* (multiple concatenation): multiple_concatenation.html
+.. _% (string formatting operator): ../str/formatting.html
+.. _+= (concatenation assignment): concatenation_assignment.html
+.. _*= (multiple concatenation assignment): multiple_concatenation_assignment.html
+

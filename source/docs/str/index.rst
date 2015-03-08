@@ -14,12 +14,14 @@ Constructors
 
 Misc
 ----
+`ASCII Table (0 - 128)`_
+    Basic character set.
 `..."" (String Designators)`_
     Returns a modified string.
 `% (String Formatting Operator)`_
     Formats the string according to the specified format.
 `Escape Characters`_
-    
+    List of valid escape characters.
 `[] (index operator)`_
     Gives access to a sequence's element.
 `[::] (slicing)`_
@@ -175,4 +177,5 @@ _________
 .. _format: format.html
 .. _decode: decode.html
 .. _encode: encode.html
+.. _ASCII Table (0 - 128): ASCII.html
 

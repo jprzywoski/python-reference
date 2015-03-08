@@ -14,7 +14,7 @@ Contents
    docs/comprehensions/index
    docs/brackets/index
    docs/operators/index
-   statements
+   docs/statements/index
    other_types
    dunders
    exceptions

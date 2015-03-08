@@ -18,8 +18,20 @@ Note
 ====
 This attribute is not used to control the print statement, but to allow the implementation of print to keep track of its internal state.
 
+Return Value
+============
+**None**
+
+Time Complexity
+===============
+#TODO
+
 Example
 =======
 >>> f = open(r'C:\test.txt')
 >>> f.softspace
 0
+
+See Also
+========
+#TODO
