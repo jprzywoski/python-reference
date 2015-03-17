@@ -76,7 +76,12 @@ Identity
 Membership
 ==========
 `in`_
-    Returns a Boolean stating whether the object is in the container.   
+    Returns a Boolean stating whether the object is in the container.
+    
+Deletion
+====
+`del`_
+    Removes object.
 
 Callables Operators
 ==================
@@ -91,7 +96,9 @@ Callables Operators
 `@ (decorator)`_
     Returns a callable wrapped by another callable.
 `() (call operator)`_
-    Calls a callable object with specified arguments.    
+    Calls a callable object with specified arguments.
+`lambda`_
+    Returns an anonymous function.
 
 Bitwise Operators
 =================
@@ -200,4 +207,5 @@ Sequence Assignment Operators
 .. _% (string formatting operator): ../str/formatting.html
 .. _+= (concatenation assignment): concatenation_assignment.html
 .. _*= (multiple concatenation assignment): multiple_concatenation_assignment.html
+.. _lambda: lambda.html
 

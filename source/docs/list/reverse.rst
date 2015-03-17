@@ -16,7 +16,7 @@ Return Value
 
 Time Complexity
 ===============
-#TODO
+O(n)
 
 Example
 =======

@@ -21,7 +21,7 @@ the same as used as sequence operands
 
 Time Complexity
 ============
-#TODO
+O(k)
 
 Example
 =======

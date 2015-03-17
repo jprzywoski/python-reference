@@ -1,6 +1,6 @@
-==
+====
 in
-==
+====
 
 Description
 ===========
@@ -21,7 +21,10 @@ Return Value
 
 Time Complexity
 ============
-#TODO
+O(1) for dict
+O(1) to O(n) for sets
+O(n) for sequences (str, list, tuple)
+
 
 Remarks
 =======

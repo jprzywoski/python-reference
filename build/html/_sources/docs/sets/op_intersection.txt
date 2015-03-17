@@ -19,7 +19,7 @@ Return Value
 
 Time Complexity
 ===============
-#TODO
+O(min(len(s), len(t)) to O(len(s) * len(t)) 
 
 Example
 =======

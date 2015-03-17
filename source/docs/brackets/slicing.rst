@@ -23,7 +23,11 @@ The same as selected.
 
 Time Complexity
 ===============
-#TODO
+O(k) for slice retrieval
+
+O(n) for deletion
+
+O(n+k) for slice assignment
 
 Remarks
 =======

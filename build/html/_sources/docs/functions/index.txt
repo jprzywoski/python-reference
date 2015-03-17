@@ -123,18 +123,21 @@ Comparisons
     Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
 `any`_
     Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
+    
 Identity
 --------
 `hash`_
     Return the hash value of the object (if it has one).
 `id`_
     Returns the “identity” of an object.
+    
 File Objects Constructors
 -------------------------
 `file`_
     Returns a file object.
 `open`_
     Opens a file returning a file object.
+    
 Object Oriented Functions
 -------------------------
 `classmethod`_
@@ -176,9 +179,10 @@ Information
     Returns a dictionary representing the current local symbol table.
 `help`_
     Invokes the built-in help system.
+    
 System
 ------
-`__import__`_
+`\_\_import\_\_`_
     Imports a module.
 `reload`_
     Reloads a previously imported module.
@@ -275,7 +279,7 @@ Misc
 .. _globals: globals.html
 .. _locals: locals.html
 .. _help: help.html
-.. ___import__: __import__.html
+.. _\_\_import\_\_: __import__.html
 .. _reload: reload.html
 .. _compile: compile.html
 .. _execfile: execfile.html
@@ -288,4 +292,5 @@ Misc
 .. _apply: apply.html
 .. _basestring: basestring.html
 .. _coerce: coerce.html
+.. _vars: vars.html
 

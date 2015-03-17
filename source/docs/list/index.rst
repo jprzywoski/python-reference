@@ -24,20 +24,20 @@ Methods
 
 Adding Elements
 _______________
-`append`_
-    Adds an item to the end of the list.
 `insert`_
     Inserts an item at a given position.
+`append`_
+    Adds an item to the end of the list.
 `extend`_
     Extends the list by appending all the items from the iterable.
 
 Deleting
 ________
-`pop`_
-    Removes and returns the item at the specified index.
 `remove`_
     Removes the first item from the list which matches the specified value.
-
+`pop`_
+    Removes and returns the item at the specified index.
+    
 Information
 ___________
 `index`_

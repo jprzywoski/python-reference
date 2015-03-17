@@ -19,7 +19,7 @@ The same as selected.
 
 Time Complexity
 ===============
-#TODO
+O(1)
 
 Discussion
 ==========

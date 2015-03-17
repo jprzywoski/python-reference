@@ -23,7 +23,7 @@ Return Value
 
 Time Complexity
 ===============
-#TODO
+O(n log n)
 
 Remarks
 =======

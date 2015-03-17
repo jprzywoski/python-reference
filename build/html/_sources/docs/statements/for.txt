@@ -14,7 +14,7 @@ Syntax
     *suite*
     
 *item*
-    Item retrieved from the iterable.
+    Item retrieved from the iterable. This variable is bound to the current element of the iterable.
 *iterable*
     Any iterable object.
 *else*
@@ -24,7 +24,7 @@ Syntax
 
 Remarks
 ====
-After each iteration, next item is retrieved from the iterable container. The loop's *suite* is executed repeatedly until the container is empty.
+After each iteration, next item is retrieved from the iterable container. The loop's *suite* is executed repeatedly until the container is empty. 
 
 Python has only one `for` loop, which is functionally the same as `for each` in some other languages. To loop specified number of times range() or xrange() function is used.
 

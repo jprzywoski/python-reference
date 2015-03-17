@@ -35,6 +35,9 @@ Functions
 
 `pass`_
 
+Generators
+==========
+`yield`_
 
 Classes
 =======
@@ -46,11 +49,6 @@ Classes
 Context Managers
 ====
 `with`_
-
-
-Generators
-==========
-`yield`_
 
 
 System
@@ -74,7 +72,7 @@ Imports and Scope
 Assertions
 ====
 `assert`_
-    
+    Raises AssertionError if the specified expression evaluates to False.
 
 Exceptions Handling
 ====
@@ -92,4 +90,5 @@ Exceptions Handling
 .. _continue: continue.html
 .. _break: break.html
 .. _else (2): elsel.html
+.. _assert: assert.html
 

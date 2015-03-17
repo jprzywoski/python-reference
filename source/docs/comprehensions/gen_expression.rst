@@ -1,5 +1,5 @@
 =======================
-() GENERATOR EXPRESSION
+() generator expression
 =======================
 
 Description

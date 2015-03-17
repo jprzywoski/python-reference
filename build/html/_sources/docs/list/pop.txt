@@ -19,7 +19,8 @@ The same that was deleted.
 
 Time Complexity
 ===============
-#TODO
+O(1) for pop()
+O(n) for pop(index)
 
 Example
 =======

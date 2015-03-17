@@ -36,18 +36,31 @@ This is an advanced function that is not needed in everyday Python programming, 
 Remarks
 =======
 This function is invoked by the import statement. It can be replaced (by importing the __builtin__ module and assigning to __builtin__.__import__) in order to change semantics of the import statement, but nowadays it is usually simpler to use import hooks (see PEP 302). Direct use of __import__() is rare, except in cases where you want to import a module whose name is only known at runtime.
+
 When the name variable is of the form package.module, normally, the top-level package (the name up till the first dot) is returned, not the module named by name. However, when a non-empty fromlist argument is given, the module named by name is returned.
 For example, the statement import spam results in bytecode resembling the following code:
-spam = __import__('spam', globals(), locals(), [], -1)
+
+>>> spam = __import__('spam', globals(), locals(), [], -1)
+
 The statement import spam.ham results in this call:
-spam = __import__('spam.ham', globals(), locals(), [], -1)
+
+>>> spam = __import__('spam.ham', globals(), locals(), [], -1)
+
 Note how __import__() returns the toplevel module here because this is the object that is bound to a name by the import statement.
-On the other hand, the statement from spam.ham import eggs, sausage as saus results in
-_temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], -1)
-eggs = _temp.eggs
-saus = _temp.sausage
+
+On the other hand, the statement `from spam.ham import eggs, sausage as saus` results in
+
+>>> _temp = __import__('spam.ham', globals(), locals(), ['eggs', 'sausage'], -1)
+>>> eggs = _temp.eggs
+>>> saus = _temp.sausage
+
 Here, the spam.ham module is returned from __import__(). From this object, the names to import are retrieved and assigned to their respective names.
+
 If you simply want to import a module (potentially within a package) by name, use importlib.import_module().
+
+Example
+====
+#TODO
 
 See Also
 ========

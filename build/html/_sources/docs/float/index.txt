@@ -36,7 +36,3 @@ Methods
 .. _fromhex: ../float/fromhex.html
 .. _e | E (scientific notation): ../float/scientific.html
 .. _float(): ../functions/float.html
-
-
-
-
