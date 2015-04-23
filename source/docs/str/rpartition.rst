@@ -11,7 +11,7 @@ Syntax
 **str**. *rpartition(sep)*
 
 *sep*
-    Required. Separator for the returned tuple. If the separator is not found, partition returns a 3-tuple containing the string itself, followed by two empty strings.
+    Required. Separator for the returned tuple. If the separator is not found, partition returns a 3-tuple containing two empty strings, followed by the string itself.
 
 Return Value
 ------------
