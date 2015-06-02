@@ -29,8 +29,6 @@ Functions
 =========
 `def`_
     
-`lambda`_
-    
 `return`_
 
 `pass`_

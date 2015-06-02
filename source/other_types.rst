@@ -28,6 +28,8 @@ Others
     A generator function object.
 `code`_
     Compiled Python code.
+
+    
     
 .. _frozenset: docs/sets/index.html
 .. _bytearray: docs/bytearray/index.html

@@ -16,7 +16,7 @@ Contents
    docs/operators/index
    docs/statements/index
    other_types
-   dunders
+   docs/dunders/index
    exceptions
    constants
    docs/boilerplate/index

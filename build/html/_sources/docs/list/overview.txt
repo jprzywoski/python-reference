@@ -1,7 +1,0 @@
-========
-Overview
-========
-
-The items of a list are arbitrary Python objects. Lists are formed by placing a comma-separated list of expressions in square brackets. (Note that there are no special cases needed to form lists of length 0 or 1.)
-
-

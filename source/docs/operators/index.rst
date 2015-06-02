@@ -112,8 +112,8 @@ Bitwise Operators
     Shifts the bits of the first operand left by the specified number of bits.
 `>> (right shift)`_
     Shifts the bits of the first operand right by the specified number of bits.
-`~ (one’s complement)`_
-    Sets the 1 bits to 0 and 1 to 0.
+`~ (bitwise complement)`_
+    Sets the 1 bits to 0 and 1 to 0 and then adds 1.
     
 Bitwise Assignment Operators
 ============================
@@ -193,7 +193,7 @@ Sequence Assignment Operators
 .. _^ (bitwise XOR): bitwise_XOR.html
 .. _<< (left shift): bitwise_left_shift.html
 .. _>> (right shift): bitwise_right_shift.html
-.. _~ (one’s complement): bitwise_complement.html
+.. _~ (bitwise complement): bitwise_complement.html
 .. _&= (bitwise AND assignment): bitwise_AND_assignment.html
 .. _|= (bitwise OR assignment): bitwise_inclusive_OR_assignment.html
 .. _^= (bitwise XOR assignment): bitwise_exclusive_OR_assignment.html

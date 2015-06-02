@@ -1,5 +1,5 @@
 ==========================
-~ One’s Complement
+~ bitwise complement
 ==========================
 
 Description

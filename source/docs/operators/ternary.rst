@@ -27,7 +27,7 @@ Time Complexity
 
 Remarks
 =======
-Python's conditional operator is similar to the if else statement. It is also called a ternary operator since it takes three operands (as opposed to binary operands like +, - or unary like ~).
+Python's conditional operator is similar to the if else statement. It is also called a ternary operator since it takes three operands (as opposed to binary operands like +, - or unary ones like ~).
 
 Example 1
 =======

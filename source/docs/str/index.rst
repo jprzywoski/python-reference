@@ -14,7 +14,7 @@ Constructors
 
 Misc
 ----
-`ASCII Table (0 - 128)`_
+`ASCII Table (0 - 127)`_
     Basic character set.
 `..."" (String Designators)`_
     Returns a modified string.
@@ -26,7 +26,30 @@ Misc
     Gives access to a sequence's element.
 `[::] (slicing)`_
     Gives access to a specified range of sequence's elements.
-    
+
+Functions
+-------
+`len`_
+    Returns an int type specifying number of elements in the collection.
+`min`_
+    Returns the smallest item from a collection.
+`max`_
+    Returns the largest item in an iterable or the largest of two or more arguments.
+`sum`_
+    Returns a total of the items contained in the iterable object.
+`sorted`_
+    Returns a sorted list from the iterable.
+`reversed`_
+    Returns a reverse iterator over a sequence.
+`all`_
+    Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
+`any`_
+    Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
+`enumerate`_
+    Returns an enumerate object.
+`zip`_
+    Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+
 Methods
 -------
 
@@ -177,5 +200,17 @@ _________
 .. _format: format.html
 .. _decode: decode.html
 .. _encode: encode.html
-.. _ASCII Table (0 - 128): ASCII.html
+.. _ASCII Table (0 - 127): ascii.html
+
+.. _enumerate: ../functions/enumerate.html
+.. _len: ../functions/len.html
+.. _reversed: ../functions/reversed.html
+.. _sorted: ../functions/sorted.html
+.. _sum: ../functions/sum.html
+.. _zip: ../functions/zip.html
+.. _cmp: ../functions/cmp.html
+.. _max: ../functions/max.html
+.. _min: ../functions/min.html
+.. _all: ../functions/all.html
+.. _any: ../functions/any.html
 

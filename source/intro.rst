@@ -1,19 +1,29 @@
-============
+====
 Introduction
-============
+====
 
-This documentation is the result of my frustration with official Python Manuals.
+The goal of this documentation is to provide Python Community with high quality lookup reference.
 
-Currently all the material resides on my PC in a form of Word documents. I am going to convert those word documents into .rst files over the course of the next few days. Or weeks possibly if my motivation falters. And I'm talking about 300-400 A4 pages describing all the Python features with working code examples. It took me about 4 months to put it all together.
+Notes
+====
+
+*Update 01/06/2015.*
+
+This project is put on the back-burner now. However, I aim to finish uploading the materials sometime this year.
+
+*Update 18/01/2015.*
+
+Moving all the contents from word files to Sphinx project has proven to be more time consuming than I originally thought. Getting the ver. 1.0 ready will take weeks.
 
 *Note*
 
 Moving stuff from Word files into reStructuredText is tedious. This is work in progress as of January 2015.
 
+Currently all the material resides on my PC in a form of Word documents. I am going to convert those word documents into .rst files over the course of the next few days. Or weeks possibly if my motivation falters.
 
-*Update 18/01/2015.*
+And I'm talking about 300-400 A4 pages describing all the Python features with working code examples. It took me about 4 months to put it all together.
 
-Moving all the contents from word files to Sphinx project has proven to be more time consuming than I originally thought. Getting the ver. 1.0 ready will take weeks.
+All the work was done between April and August 2014.
 
 Scope
 =====

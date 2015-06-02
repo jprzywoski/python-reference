@@ -4,7 +4,7 @@ partition
 
 Description
 ----------
-Returns a tuple containing the first part of the string split by the specified separator, the separator itself and the other part of the string.
+Returns a tuple containing the left part of the string split by the specified separator, the separator itself and the right part of the string.
 
 Syntax
 ------
