@@ -1,6 +1,7 @@
 ====
 str
 ====
+
 The items of a string are characters. There is no separate character type; a character is represented by a string of one item. Characters represent (at least) 8-bit bytes. The built-in functions chr() and ord() convert between characters and nonnegative integers representing the byte values. Bytes with the values 0-127 usually represent the corresponding ASCII values, but the interpretation of values is up to the program. The string data type is also used to represent arrays of bytes, e.g., to hold data read from a file.
 
 Strings are immutable sequences.
@@ -9,31 +10,23 @@ Constructors
 ====
 `str()`_
     Returns a string containing a printable representation of an object.
-`x"string" (string designators)`_
-    Returns a modified string.
 `literal syntax`_
-    Initializes a new instance of the **str** type. 
 
-Operators
+Misc
 ====
-`% (string formatting)`_
+`ASCII Table (0 - 127)`_
+    Basic character set.
+`..."" (String Designators)`_
+    Returns a modified string.
+`% (String Formatting Operator)`_
     Formats the string according to the specified format.
+`Escape Characters`_
+    List of valid escape characters.
 `[] (index operator)`_
     Gives access to a sequence's element.
 `[::] (slicing)`_
     Gives access to a specified range of sequence's elements.
-`+ (concatenation)`_
-    Returns a concatenation of two sequences.
-`* (multiple concatenation)`_
-    Returns a sequence self-concatenated specified amount of times.
-    
-Misc
-====
-`Escape Characters`_
-    List of valid escape characters.
-`ASCII Table (0 - 127)`_
-    Basic character set.
-    
+
 Functions
 ====
 `len`_
@@ -42,8 +35,6 @@ Functions
     Returns the smallest item from a collection.
 `max`_
     Returns the largest item in an iterable or the largest of two or more arguments.
-`cmp`_
-    Compares two objects and returns an integer according to the outcome.
 `sorted`_
     Returns a sorted list from the iterable.
 `reversed`_
@@ -160,11 +151,12 @@ Encodings
     Decodes the string using the codec registered for encoding.
 `encode`_
     Returns an encoded version of the string.
+
     
 .. _str(): ../functions/str.html
 .. _literal syntax: literals.html
 .. _% (String Formatting Operator): formatting.html
-.. _x"string" (String Designators): designators.html
+.. _..."" (String Designators): designators.html
 .. _Escape Characters: escapes.html
 .. _[] (index operator): ../brackets/indexing.html
 .. _[::] (slicing): ../brackets/slicing.html
@@ -207,6 +199,7 @@ Encodings
 .. _decode: decode.html
 .. _encode: encode.html
 .. _ASCII Table (0 - 127): ascii.html
+
 .. _enumerate: ../functions/enumerate.html
 .. _len: ../functions/len.html
 .. _reversed: ../functions/reversed.html
@@ -218,5 +211,4 @@ Encodings
 .. _min: ../functions/min.html
 .. _all: ../functions/all.html
 .. _any: ../functions/any.html
-.. _+ (concatenation): ../operators/concatenation.html
-.. _* (multiple concatenation): ../operators/multiple_concatenation.html
+

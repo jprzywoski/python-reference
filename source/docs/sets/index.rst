@@ -9,7 +9,7 @@ Sets do not record element position or order of insertion. Accordingly, sets do 
 Sets are implemented using dictionaries. They cannot contain mutable elements such as lists or dictionaries. However, they can contain immutable collections.
 
 Constructors
-------------
+====
 `set()`_
     Returns a set type initialized from iterable.   
 `{} set comprehension`_
@@ -40,17 +40,17 @@ Functions
     Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
 
 Methods
--------
+====
 
 Adding Elements
-_______________
+----
 `add`_
     Adds a specified element to the set.
 `update`_
     Adds specified elements to the set.
 
 Deleting
-________
+----
 `discard`_
     Removes an element from the set.
 `remove`_
@@ -61,7 +61,7 @@ ________
     Removes all elements from the set.
     
 Information
-___________
+----
 `issuperset`_
     Returns a Boolean stating whether the set contains the specified set or iterable.
 `issubset`_
@@ -70,7 +70,7 @@ ___________
     Returns a Boolean stating whether the set contents do not overlap with the specified set or iterable.
     
 Set Operations
-______________
+----
 `difference`_
     Returns a new set with elements in the set that are not in the specified iterables.
 `intersection`_
@@ -81,7 +81,7 @@ ______________
     Returns a new set with elements from the set and the specified iterables.
     
 Set Operations Assignment
-_____________________________
+----
 `difference_update`_
     Updates the set, removing elements found in the specified iterables.
 `intersection_update`_
@@ -90,20 +90,20 @@ _____________________________
     Updates the set, keeping only elements found in either set or the specified iterable, but not in both.
     
 Copying
-_______
+----
 `copy`_
     Returns a copy of the set.
     
 Set Operators
--------------
+====
 
 Adding Elements
-_______________
+----
 `|= (update)`_
     Adds elements from another set.
 
 Relational Operators
-____________________
+----
 `== (is equal)`_
     Returns a Boolean stating whether the set has the same elements as the other set.
 `!= (is not equal)`_
@@ -118,7 +118,7 @@ ____________________
     Returns a Boolean stating whether the set contains the other set and that the sets are not equal.
 
 Set Operations
-______________
+----
 `- (difference)`_
     Returns a new set with elements in the set that are not in the other set.
 `& (intersection)`_
@@ -129,7 +129,7 @@ ______________
     Returns a new set with elements from the set and the other set.
     
 Set Operations Assignment
-_________________________
+----
 `-= (difference_update)`_
     Updates the set, removing elements found in the other set.
 `&= (intersection_update)`_

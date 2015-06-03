@@ -4,19 +4,19 @@ memoryview
 
 
 Constructors
-------------
+====
 `memoryview()`_
     Returns a new memoryview object.
 
 Methods
-----
+====
 `tobytes`_
     Returns the data in the buffer as a string.
 `tolist`_
     Returns the data in the buffer as a list of integers.
     
 Properties
-----
+====
 `format`_
     Returns a string containing the format (in struct module style) for each element in the view. 
 `itemsize`_

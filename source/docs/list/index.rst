@@ -1,23 +1,27 @@
 ====
 list
 ====
-
-Lists are mutable ordered and indexed collections of objects. Often called arrays in other languages. The items of a list are arbitrary Python objects. Lists are formed by placing a comma-separated list of expressions in square brackets. (Note that there are no special cases needed to form lists of length 0 or 1.)
+Lists are mutable ordered and indexed collections of objects. The items of a list are arbitrary Python objects. Lists are formed by placing a comma-separated list of expressions in square brackets. (Note that there are no special cases needed to form lists of length 0 or 1.)
     
 Constructors
-============
+====
 `list()`_
     Converts an object into a list.    
 `[] list comprehensions`_
     Returns a list based on existing iterables.
 `literal syntax`_
-
-Misc
+    Initializes a new instance of the **list** type.
+    
+Operators
 ====
 `[] (index operator)`_
     Gives access to a sequence's element.
 `[::] (slicing)`_
     Gives access to a specified range of sequence's elements.
+`+ (concatenation)`_
+    Returns a concatenation of two sequences.
+`* (multiple concatenation)`_
+    Returns a sequence self-concatenated specified amount of times.
     
 Functions
 ====
@@ -27,6 +31,8 @@ Functions
     Returns the smallest item from a collection.
 `max`_
     Returns the largest item in an iterable or the largest of two or more arguments.
+`cmp`_
+    Compares two objects and returns an integer according to the outcome.
 `sum`_
     Returns a total of the items contained in the iterable object.
 `sorted`_
@@ -43,10 +49,10 @@ Functions
     Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
     
 Methods
-=======
+====
 
 Adding Elements
-_______________
+----
 `insert`_
     Inserts an item at a given position.
 `append`_
@@ -55,14 +61,14 @@ _______________
     Extends the list by appending all the items from the iterable.
 
 Deleting
-________
+----
 `remove`_
     Removes the first item from the list which matches the specified value.
 `pop`_
     Removes and returns the item at the specified index.
     
 Information
-___________
+----
 `index`_
     Returns the index of the first occurrence of the specified list item.
 `count`_
@@ -80,7 +86,6 @@ ___________
 .. _remove: remove.html
 .. _index: lindex.html
 .. _count: count.html
-
 .. _enumerate: ../functions/enumerate.html
 .. _len: ../functions/len.html
 .. _reversed: ../functions/reversed.html
@@ -92,3 +97,5 @@ ___________
 .. _min: ../functions/min.html
 .. _all: ../functions/all.html
 .. _any: ../functions/any.html
+.. _+ (concatenation): ../operators/concatenation.html
+.. _* (multiple concatenation): ../operators/multiple_concatenation.html

@@ -14,20 +14,20 @@ An example of a bytearray length 4.
 
 
 Constructors
-------------
+====
 `bytearray()`_
     Returns a new bytearray object.
 
 Methods
-----
+====
 `fromhex`_
     Returns a new bytearray object initialized from a string of hex numbers.
 
 `Methods Inherited From str`_
-----
+====
 
 `Methods Inherited From list`_
-----
+====
 
 .. _bytearray(): ../functions/bytearray.html
 .. _fromhex: fromhex.html
