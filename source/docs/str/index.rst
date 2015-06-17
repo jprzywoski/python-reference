@@ -56,6 +56,14 @@ Functions
     Returns an enumerate object.
 `zip`_
     Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+`chr`_
+    Returns a string of one character whose ASCII code is the specified number.
+`ord`_
+    Returns an integer representing the code of the character.
+`unichr`_
+    Returns a Unicode character specified by the code.
+`format`_
+    Returns a formatted string.
 
 Methods
 ====
@@ -220,3 +228,7 @@ Encodings
 .. _any: ../functions/any.html
 .. _+ (concatenation): ../operators/concatenation.html
 .. _* (multiple concatenation): ../operators/multiple_concatenation.html
+.. _chr: ../functions/chr.html
+.. _ord: ../functions/ord.html
+.. _unichr: ../functions/unichr.html
+.. _format: ../functions/format.html

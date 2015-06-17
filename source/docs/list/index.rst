@@ -73,6 +73,13 @@ Information
     Returns the index of the first occurrence of the specified list item.
 `count`_
     Returns the number of times the specified item appears in the list.
+    
+Modifying
+----
+`sort`_
+    Sorts the list in place.
+`reverse`_
+    Reverses the elements of the list, in place.
 
 .. _[] (index operator): ../brackets/indexing.html
 .. _[::] (slicing): ../brackets/slicing.html
@@ -86,6 +93,8 @@ Information
 .. _remove: remove.html
 .. _index: lindex.html
 .. _count: count.html
+.. _reverse: reverse.html
+.. _sort: sort.html
 .. _enumerate: ../functions/enumerate.html
 .. _len: ../functions/len.html
 .. _reversed: ../functions/reversed.html

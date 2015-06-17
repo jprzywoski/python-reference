@@ -195,6 +195,20 @@ Example 6
 
 Example 7
 ---------
+>>> # this example shows how to format numbers to specified precision
+>>> "PI: {:.2f}".format(3.141592653589793)
+'PI: 3.14'
+>>> "PI: {:.2e}".format(3.141592653589793)
+'PI: 3.14e+00'
+>>> "PI: {:.2g}".format(3.141592653589793)
+'PI: 3.1'
+>>> "PI: {:.2n}".format(3.141592653589793)
+'PI: 3.1'
+>>> "PI: {:.2%}".format(3.141592653589793)
+'PI: 314.16%'
+
+Example 8
+---------
 >>> # replacing %+f, %-f, and % f and specifying a sign:
 >>> '{:+f}; {:+f}'.format(3.14, -3.14)  # show it always
 '+3.140000; -3.140000'
@@ -203,7 +217,7 @@ Example 7
 >>> '{:-f}; {:-f}'.format(3.14, -3.14)  # show only the minus -- same as '{:f}; {:f}'
 '3.140000; -3.140000'
 
-Example 8
+Example 9
 ---------
 >>> # replacing %x and %o and converting the value to different bases:
 >>> # format also supports binary numbers
@@ -213,13 +227,13 @@ Example 8
 >>> "int: {0:d};  hex: {0:#x};  oct: {0:#o};  bin: {0:#b}".format(42)
 'int: 42;  hex: 0x2a;  oct: 0o52;  bin: 0b101010'
 
-Example 9
+Example 10
 ---------
 >>> # using the comma as a thousands separator:
 >>> '{:,}'.format(1234567890)
 '1,234,567,890'
 
-Example 10
+Example 11
 ----------
 >>> # expressing a percentage:
 >>> points = 19.5
@@ -227,7 +241,7 @@ Example 10
 >>> 'Correct answers: {:.2%}'.format(points/total)
 'Correct answers: 88.64%'
 
-Example 11
+Example 12
 ----------
 >>> # using type-specific formatting:
 >>> import datetime
@@ -235,7 +249,7 @@ Example 11
 >>> '{:%Y-%m-%d %H:%M:%S}'.format(d)
 '2010-07-04 12:15:58'
 
-Example 12
+Example 13
 ----------
 >>> # nesting arguments and more complex examples
 >>> for align, text in zip('<^>', ['left', 'center', 'right']):

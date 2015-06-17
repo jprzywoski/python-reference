@@ -37,6 +37,6 @@ Others
 .. _function: docs/function/index.html
 .. _generator: docs/generator/index.html
 .. _code: docs/code/index.html
-.. _classmethod: docs/staticmethod/index.html
-.. _staticmethod: docs/classmethod/index.html
+.. _classmethod: docs/classmethod/index.html
+.. _staticmethod: docs/staticmethod/index.html
 .. _property: docs/property/index.html

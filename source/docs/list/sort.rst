@@ -38,7 +38,7 @@ Example 1
 
 Example 2
 =========
-# This example shows how to use cmp argument
+>>> # this example shows how to use cmp argument
 >>> l = ['a', 'B', 'A', 'c']
 >>> l.sort()
 >>> l
@@ -72,4 +72,4 @@ See Also
 ========
 `sorted()`_ function
 
-
+.. _sorted: ../functions/sorted.html
