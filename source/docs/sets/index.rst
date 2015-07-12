@@ -15,29 +15,7 @@ Constructors
 `{} set comprehension`_
     Returns a set based on existing iterables.
 `literal syntax`_
-
-Functions
-====
-`len`_
-    Returns an int type specifying number of elements in the collection.
-`min`_
-    Returns the smallest item from a collection.
-`max`_
-    Returns the largest item in an iterable or the largest of two or more arguments.
-`sum`_
-    Returns a total of the items contained in the iterable object.
-`sorted`_
-    Returns a sorted list from the iterable.
-`reversed`_
-    Returns a reverse iterator over a sequence.
-`all`_
-    Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
-`any`_
-    Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
-`enumerate`_
-    Returns an enumerate object.
-`zip`_
-    Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+    Initializes a new instance of the **set** type.
 
 Methods
 ====
@@ -137,6 +115,30 @@ Set Operations Assignment
 `^= (symmetric_difference_update)`_
     Updates the set, keeping only elements found in either set or the other set, but not in both.
 
+Functions
+====
+`len`_
+    Returns an int type specifying number of elements in the collection.
+`min`_
+    Returns the smallest item from a collection.
+`max`_
+    Returns the largest item in an iterable or the largest of two or more arguments.
+`sum`_
+    Returns a total of the items contained in the iterable object.
+`sorted`_
+    Returns a sorted list from the iterable.
+`reversed`_
+    Returns a reverse iterator over a sequence.
+`all`_
+    Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
+`any`_
+    Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
+`enumerate`_
+    Returns an enumerate object.
+`zip`_
+    Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+    
+    
 .. _set(): ../functions/set.html
 .. _{} set comprehension: ../comprehensions/set_comprehension.html
 .. _literal syntax: literals.html

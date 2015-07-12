@@ -8,8 +8,8 @@ Constructors
 ------------
 `bool()`_
     Returns an expression converted into a Boolean.
-`Literal Syntax`_
-
+`literal syntax`_
+    Initializes a new instance of the **bool** type.
     
 .. _literal syntax: literals.html
 .. _bool(): ../functions/bool.html

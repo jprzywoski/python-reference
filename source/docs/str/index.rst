@@ -14,57 +14,6 @@ Constructors
 `literal syntax`_
     Initializes a new instance of the **str** type. 
 
-Operators
-====
-`% (string formatting)`_
-    Formats the string according to the specified format.
-`[] (index operator)`_
-    Gives access to a sequence's element.
-`[::] (slicing)`_
-    Gives access to a specified range of sequence's elements.
-`+ (concatenation)`_
-    Returns a concatenation of two sequences.
-`* (multiple concatenation)`_
-    Returns a sequence self-concatenated specified amount of times.
-    
-Misc
-====
-`Escape Characters`_
-    List of valid escape characters.
-`ASCII Table (0 - 127)`_
-    Basic character set.
-    
-Functions
-====
-`len`_
-    Returns an int type specifying number of elements in the collection.
-`min`_
-    Returns the smallest item from a collection.
-`max`_
-    Returns the largest item in an iterable or the largest of two or more arguments.
-`cmp`_
-    Compares two objects and returns an integer according to the outcome.
-`sorted`_
-    Returns a sorted list from the iterable.
-`reversed`_
-    Returns a reverse iterator over a sequence.
-`all`_
-    Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
-`any`_
-    Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
-`enumerate`_
-    Returns an enumerate object.
-`zip`_
-    Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
-`chr`_
-    Returns a string of one character whose ASCII code is the specified number.
-`ord`_
-    Returns an integer representing the code of the character.
-`unichr`_
-    Returns a Unicode character specified by the code.
-`format`_
-    Returns a formatted string.
-
 Methods
 ====
 
@@ -168,6 +117,58 @@ Encodings
     Decodes the string using the codec registered for encoding.
 `encode`_
     Returns an encoded version of the string.
+    
+Functions
+====
+`len`_
+    Returns an int type specifying number of elements in the collection.
+`min`_
+    Returns the smallest item from a collection.
+`max`_
+    Returns the largest item in an iterable or the largest of two or more arguments.
+`cmp`_
+    Compares two objects and returns an integer according to the outcome.
+`sorted`_
+    Returns a sorted list from the iterable.
+`reversed`_
+    Returns a reverse iterator over a sequence.
+`all`_
+    Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
+`any`_
+    Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
+`enumerate`_
+    Returns an enumerate object.
+`zip`_
+    Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+`chr`_
+    Returns a string of one character whose ASCII code is the specified number.
+`ord`_
+    Returns an integer representing the code of the character.
+`unichr`_
+    Returns a Unicode character specified by the code.
+`format`_
+    Returns a formatted string.
+    
+Operators
+====
+`% (string formatting)`_
+    Formats the string according to the specified format.
+`[] (index operator)`_
+    Gives access to a sequence's element.
+`[::] (slicing)`_
+    Gives access to a specified range of sequence's elements.
+`+ (concatenation)`_
+    Returns a concatenation of two sequences.
+`* (multiple concatenation)`_
+    Returns a sequence self-concatenated specified amount of times.
+    
+Misc
+====
+`Escape Characters`_
+    List of valid escape characters.
+`ASCII Table (0 - 127)`_
+    Basic character set.
+
     
 .. _str(): ../functions/str.html
 .. _literal syntax: literals.html

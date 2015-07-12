@@ -10,20 +10,24 @@ Example 1
 'ABC'
 >>> "ABC"
 'ABC'
- 
+
 String literal concatenation
 ----------------------------
 Multiple adjacent string literals (delimited by whitespace), possibly using different quoting conventions, are allowed, and their meaning is the same as their concatenation. Thus, "hello" 'world' is equivalent to "helloworld". This feature can be used to reduce the number of backslashes needed, to split long strings conveniently across long lines, or even to add comments to parts of strings, for example:
 
-re.compile("[A-Za-z_]"       # letter or underscore
-           "[A-Za-z0-9_]*"   # letter, digit or underscore
-          )
-          
+::
+
+    re.compile(
+        "[A-Za-z_]"       # letter or underscore
+        "[A-Za-z0-9_]*"   # letter, digit or underscore
+    )
+
+    
 Note that this feature is defined at the syntactical level, but implemented at compile time. The ‘+’ operator must be used to concatenate string expressions at run time. Also note that literal concatenation can use different quoting styles for each component (even mixing raw strings and triple quoted strings).
 
 Example 2
 =========
->>> 'AB' 'CD'
+>>> 'AB' "CD"
 'ABCD'
 
 Strings can be broken into two or more lines by using line continaution character:
@@ -49,7 +53,7 @@ SyntaxError: invalid syntax
 
 Multi line strings
 ------------------
-Strings can also be enclosed in matching groups of three single or double quotes (these are generally referred to as TRIPLE-QUOTED STRINGS).
+Strings can also be enclosed in matching groups of three single or double quotes (these are generally referred to as triple-quoted strings).
 
 Example 5
 =========
@@ -82,4 +86,3 @@ Example 6
 >>> print "AA\nBB"
 AA
 BB
-

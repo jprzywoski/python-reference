@@ -28,8 +28,8 @@ Others
     A generator function object.
 `code`_
     Compiled Python code.
-
-    
+`slice`_
+    Slice objects.    
     
 .. _frozenset: docs/sets/index.html
 .. _bytearray: docs/bytearray/index.html
@@ -37,6 +37,7 @@ Others
 .. _function: docs/function/index.html
 .. _generator: docs/generator/index.html
 .. _code: docs/code/index.html
+.. _slice: docs/slice/index.html
 .. _classmethod: docs/classmethod/index.html
 .. _staticmethod: docs/staticmethod/index.html
 .. _property: docs/property/index.html

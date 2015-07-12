@@ -7,7 +7,8 @@ Constructors
 ====
 `long()`_
     Returns an expression converted into a long integer number.
-`long Literal Syntax`_
+`literal syntax`_
+    Initializes a new instance of the **long** type.
     
 Base Designators
 ====
@@ -19,7 +20,7 @@ Methods
 `bit_length`_
     Returns the number of bits necessary to represent an integer in binary, excluding the sign and leading zeros.
     
-.. _long Literal Syntax: long_literals.html
+.. _literal syntax: long_literals.html
 .. _0... (Base Designators): base_designators.html
 .. _bit_length: bit_length.html
 .. _long(): ../functions/long.html

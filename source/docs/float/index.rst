@@ -10,7 +10,8 @@ Constructors
 ====
 `float()`_
     Returns an expression converted into a floating point number.
-`Literal Syntax`_
+`literal syntax`_
+    Initializes a new instance of the **float** type.
 
 Scientific Notation
 ====
@@ -29,7 +30,7 @@ Methods
     Returns the float represented by a hexadecimal string s.
     
 
-.. _Literal Syntax: ../float/literals.html
+.. _literal syntax: ../float/literals.html
 .. _as_integer_ratio: ../float/as_integer_ratio.html
 .. _is_integer: ../float/is_integer.html
 .. _hex: ../float/hex.html

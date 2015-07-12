@@ -1,8 +1,10 @@
 ====
-Double Underscore Methods and Variables
+Direct Attribute Access
 ====
 
-Direct Atribute Access
+The following methods can be defined to customize the meaning of attribute access (use of, assignment to, or deletion of x.name) for class instances.
+
+Methods
 ====
 `\__getattribute__`_
     Called unconditionally to implement attribute accesses for instances of the class.
@@ -13,31 +15,8 @@ Direct Atribute Access
 `\__delattr__`_
     Called when an attribute deletion is attempted.
     
-Descriptor Protocol
-====
-    Used to create object attributes overriding attribute access for class instances.
-
-Comparisons
-================
-
-Containers
-==========
-
-Context Managers
-================
-
-Numeric Methods
-===============
-
-Object Attributes
-=================
-
-Pickle Protocol
-===============
-
 .. _\__getattribute__: ./getattribute.html
 .. _\__getattr__: ./getattr.html
 .. _\__setattr__: ./setattr.html
 .. _\__delattr__: ./delattr.html
-
-.. _Descriptor ProtocolTODO: ./dscrpt.html
+    

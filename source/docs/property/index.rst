@@ -27,3 +27,10 @@ Methods
     
     
 .. _property: ../functions/property.html
+.. _getter: ./getter.html
+.. _setter: ./setter.html
+.. _deleter: ./deleter.html
+.. _fget: ./fget.html
+.. _fset: ./fset.html
+.. _fdel: ./fdel.html
+

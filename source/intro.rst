@@ -15,7 +15,7 @@ This project is put on the back-burner now. However, I aim to finish uploading t
 
 Moving all the contents from word files to Sphinx project has proven to be more time consuming than I originally thought. Getting the ver. 1.0 ready will take weeks.
 
-*Note*
+*Update*
 
 Moving stuff from Word files into reStructuredText is tedious. This is work in progress as of January 2015.
 

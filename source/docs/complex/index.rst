@@ -10,7 +10,8 @@ Constructors
 ====
 `complex()`_
     Returns an expression converted into a complex number.
-`Literal Syntax`_
+`literal syntax`_
+    Initializes a new instance of the **complex** type.
     
 Properties
 ====

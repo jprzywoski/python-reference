@@ -13,34 +13,7 @@ Constructors
 `{} dict comprehension`_
     Returns a dictionary based on existing iterables.
 `literal syntax`_
-
-Misc
-====
-`[] (key lookup)`_
-    Returns the value associated with the given key.
-
-Functions
-====
-`len`_
-    Returns an int type specifying number of elements in the collection.
-`min`_
-    Returns the smallest item from a collection.
-`max`_
-    Returns the largest item in an iterable or the largest of two or more arguments.
-`sum`_
-    Returns a total of the items contained in the iterable object.
-`sorted`_
-    Returns a sorted list from the iterable.
-`reversed`_
-    Returns a reverse iterator over a sequence.
-`all`_
-    Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
-`any`_
-    Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
-`enumerate`_
-    Returns an enumerate object.
-`zip`_
-    Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+    Initializes a new instance of the **dict** type.
     
 Methods
 ====
@@ -110,6 +83,34 @@ Dictionary Views Operators
 `| (union)`_
     Returns all the elements that appear in the dictview and the specified iterable.
 
+Functions
+====
+`len`_
+    Returns an int type specifying number of elements in the collection.
+`min`_
+    Returns the smallest item from a collection.
+`max`_
+    Returns the largest item in an iterable or the largest of two or more arguments.
+`sum`_
+    Returns a total of the items contained in the iterable object.
+`sorted`_
+    Returns a sorted list from the iterable.
+`reversed`_
+    Returns a reverse iterator over a sequence.
+`all`_
+    Returns a Boolean value that indicates whether the collection contains only values that evaluate to True.
+`any`_
+    Returns a Boolean value that indicates whether the collection contains any values that evaluate to True.
+`enumerate`_
+    Returns an enumerate object.
+`zip`_
+    Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+
+Misc
+====
+`[] (key lookup)`_
+    Returns the value associated with the given key.
+    
 .. _dict(): ../functions/dict.html
 .. _[] (key lookup): ../brackets/key_lookup.html
 .. _{} dict comprehension: ../comprehensions/dict_comprehension.html

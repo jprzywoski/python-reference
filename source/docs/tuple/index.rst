@@ -9,17 +9,16 @@ Constructors
     Returns a tuple built from iterable.
 `literal syntax`_
     Initializes a new instance of the **tuple** type.
-    
-Operators
+
+Methods
 ====
-`[] (index operator)`_
-    Gives access to a sequence's element.
-`[::] (slicing)`_
-    Gives access to a specified range of sequence's elements.
-`+ (concatenation)`_
-    Returns a concatenation of two sequences.
-`* (multiple concatenation)`_
-    Returns a sequence self-concatenated specified amount of times.
+
+Information
+----
+`index`_
+    Returns the index of the first occurrence of the specified tuple item.
+`count`_
+    Returns the number of times the specified item appears in the tuple.
 
 Functions
 ====
@@ -45,17 +44,19 @@ Functions
     Returns an enumerate object.
 `zip`_
     Returns a list of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
-    
-Methods
+
+Operators
 ====
+`[] (index operator)`_
+    Gives access to a sequence's element.
+`[::] (slicing)`_
+    Gives access to a specified range of sequence's elements.
+`+ (concatenation)`_
+    Returns a concatenation of two sequences.
+`* (multiple concatenation)`_
+    Returns a sequence self-concatenated specified amount of times.
 
-Information
-----
-`index`_
-    Returns the index of the first occurrence of the specified tuple item.
-`count`_
-    Returns the number of times the specified item appears in the tuple.
-
+    
 .. _[] (index operator): ../brackets/indexing.html
 .. _[::] (slicing): ../brackets/slicing.html
 .. _index: lindex.html
