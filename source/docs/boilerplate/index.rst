@@ -4,7 +4,7 @@ Boilerplate
 
 `if __name__ == '__main__':  main()`_
     Prevents main() from being executed during imports.
-`#!/usr/bin/env/python`_
+`#!/usr/bin/env python`_
     UNIX specific. 
 `#!/usr/local/bin/python`_
     UNIX specific. 
