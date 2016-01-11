@@ -23,7 +23,7 @@ Fill
 ====
 If a valid align value is specified, it can be preceded by a fill character that can be any character and defaults to a space if omitted.
 
-Allign
+Align
 ======
 *'<'*
 	Forces the field to be left-aligned within the available space (this is the default for most objects).
