@@ -6,7 +6,7 @@ The recognized escape sequences are:
 
 \\newline
     Ignored	 
-\\
+\\\\
     Backslash (\\)
 \\'
     Single quote (')	 
