@@ -45,7 +45,7 @@ Example 1
 >>> Foo.bar()
 bar
 >>> Foo().bar()
-Bar
+bar
 
 Example 2
 =========
