@@ -4,7 +4,7 @@ index
 
 Description
 ----------
-Returns the index of the last occurrence of the string searched for (raises *ValueError* if not found).
+Returns the index of the first occurrence of the string searched for (raises *ValueError* if not found).
 
 Syntax
 ------
