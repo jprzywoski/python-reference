@@ -43,7 +43,7 @@ Relational Operators
 ====================
 `== (equal)`_
     Returns a Boolean stating whether two expressions are equal.
-`!= (not equal)`_
+`≠ (not equal)`_
     Returns a Boolean stating whether two expressions are not equal.
 `> (greater than)`_
     Returns a Boolean stating whether one expression is greater than the other.
