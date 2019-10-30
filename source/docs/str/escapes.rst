@@ -4,37 +4,37 @@ Escape Characters
 
 The recognized escape sequences are:
 
-\\newline
+``\newline``
     Ignored	 
-\\
+``\``
     Backslash (\\)
-\\'
+``\'``
     Single quote (')	 
-\\"
+``\"``
     Double quote (")	 
-\\a
+``\a``
     ASCII Bell (BEL)	 
-\\b
+``\b``
     ASCII Backspace (BS)	 
-\\f
+``\f``
     ASCII Formfeed (FF)	 
-\\n
+``\n``
     ASCII Linefeed (LF)	 
-\\N{name}
+``\N{name}``
     Character named NAME in the Unicode database (Unicode only)	 
-\\r
+``\r``
     ASCII Carriage Return (CR)	 
-\\t
+``\t``
     ASCII Horizontal Tab (TAB)	 
-\\uxxxx
+``\uxxxx``
     Character with 16-bit hex value XXXX (Unicode only)	(1)
-\\Uxxxxxxxx
+``\Uxxxxxxxx``
     Character with 32-bit hex value XXXXXXXX (Unicode only)	(2)
-\\v
+``\v``
     ASCII Vertical Tab (VT)	 
-\\ooo
+``\ooo``
     Character with octal value OOO	(3,5)
-\\xhh
+``\xhh``
     Character with hex value HH	(4,5)
 
 Notes
