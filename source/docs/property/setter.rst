@@ -8,7 +8,7 @@ Overrides attribute access mechanism.
 
 Syntax
 ====
-property.getter(method)
+property.setter(method)
 
 method
     A method to decorate.
@@ -50,6 +50,10 @@ The returned property also has the attributes fget, fset, and fdel corresponding
 
 Example
 ====
->>> foo
-3.6055512754639896
+>>> c = C()
+>>> c.x == None
+True
+>>> c.x = 'bar'
+>>> c.x
+'bar'
 
