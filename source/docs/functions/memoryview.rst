@@ -28,12 +28,12 @@ See also buffer().
 
 Example
 =======
->>> memoryview('foo')
+>>> memoryview(b'foo')
 <memory at 0x02CCCDA0>
->>> m = memoryview('foo')
+>>> m = memoryview(b'foo')
 >>> m[:]
 <memory at 0x02CCCF80>
->>> m[1]
+>>> chr(m[1])
 'o'
 
 See Also
