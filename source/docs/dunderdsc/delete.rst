@@ -4,7 +4,7 @@ __delete__
 
 Description
 ====
-Called to delete the attribute on an instance instance of the owner class.
+Called to delete the attribute on an instance of the owner class.
 
 Syntax
 ====
