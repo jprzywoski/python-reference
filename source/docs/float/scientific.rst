@@ -8,9 +8,9 @@ Returns a float multiplied by the specified power of 10.
 
 Syntax
 ------
-[0-9].e[0-9]
+[0-9].e(-)?[0-9]
 
-[0-9].E[0-9]
+[0-9].E(-)?[0-9]
 
 Example
 -------
