@@ -8,7 +8,7 @@ Returns a Boolean stating whether a string ends with the specified suffix.
 
 Syntax
 ------
-**str**. *startswith(suffix[, start[, end]])*
+**str**. *endswith(suffix[, start[, end]])*
 
 *suffix*
     Required. The substring looked for. *suffix* can also be a tuple of suffixes to look for.
