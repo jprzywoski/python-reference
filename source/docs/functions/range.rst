@@ -12,11 +12,11 @@ Syntax
 **range** *(start, stop[, step])*
 
 *start*
-	Required if stop is used. An integer number.
+	Optional. An integer number specifying at which position to start. Default is 0
 *stop*
-	Required. An integer number.
+	Required. An integer number specifying at which position to stop (not included).
 *step*
-	Optional. An integer number specifying the progression.
+	Optional. An integer number specifying the incrementation. Default is 1
 
 Return Value
 ============
