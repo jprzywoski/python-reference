@@ -17,7 +17,7 @@ A [not] in B
 
 Return Value
 ============
-#TODO
+Boolean
 
 Time Complexity
 ============
