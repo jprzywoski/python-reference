@@ -21,7 +21,7 @@ The value of the key.
 
 Time Complexity
 ===============
-#TODO
+O(1)
 
 Example
 =======
