@@ -36,7 +36,7 @@ Example 1
 >>> class Foo:
 ...     @staticmethod
 ...     def bar():
-...         print 'bar'
+...         print("bar")
 ...
 >>> Foo.bar
 <function bar at 0x00DBC1B0>
@@ -45,14 +45,14 @@ Example 1
 >>> Foo.bar()
 bar
 >>> Foo().bar()
-Bar
+bar
 
 Example 2
 =========
->>> # this example uses obsolete no-decorator syntax
+>>> # This example uses the obsolete no-decorator syntax.
 >>> class Foo:
 ...     def bar():
-...         print 'bar'
+...         print("bar")
 ...     bar = staticmethod(bar)
 ...
 >>> Foo.bar
@@ -62,7 +62,7 @@ Example 2
 >>> Foo().bar()
 bar
 >>> Foo.bar()
-bar*
+bar
 	
 
 See Also
