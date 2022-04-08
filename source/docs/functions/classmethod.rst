@@ -51,17 +51,17 @@ bar
 Example 2
 =========
 >>> #This example shows usage of decorator syntax which is recommended
-class Line:
-    def __init__(self, length):
-        self.length = length
-
-    @classmethod
-    def from_inches(cls, length_in):
-        length = float(length_in)*2.54
-        return cls(length)
-
-l = Line.from_inches(3)
-print l.length         #returns 7.62
+>>> class Line:
+...    def __init__(self, length):
+...        self.length = length
+...
+...    @classmethod
+...    def from_inches(cls, length_in):
+...        length = float(length_in)*2.54
+...        return cls(length)
+...
+>>> l = Line.from_inches(3)
+>>> print l.length         #returns 7.62
 
 See Also
 ========
