@@ -32,4 +32,12 @@ Example
 
 See also
 ========
+
+In purpose of unpack a dict values as it were a list values.
+
+>>> from operator import itemgetter
+>>> d = {'foo': 1, 'bar': 2, 'baz': 3}
+>>> foo, baz = itemgetter('foo', 'baz')(d)
+(1, 3)
+
 #TODO
