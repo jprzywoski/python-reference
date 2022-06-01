@@ -23,7 +23,10 @@ same as returned by *function*
 
 Time Complexity
 ---------------
-#TODO
+Let Time Complexity of *function* be $O(f)$, and length of iterable be $n$.   
+We are calling $f$ for $n-2+1$ times *(Since, we are pairing the elements. In case of tripling, it would be n-3+1)*, i. e. $n-1$ times.
+
+Hence, it will be $O(f)$ multiplied by $n$ which is $O(f⋅n)$. It is **not linear (can be, but not always)**, and depends on function $f$ heavily.
 
 Example 1
 ---------
