@@ -20,7 +20,7 @@ Syntax
 
 Return Value
 ============
-#TODO
+An immutable iterable object `range(start,stop,[step])` which can be iterated through in a `for` loop. 
 
 Time Complexity
 ============
