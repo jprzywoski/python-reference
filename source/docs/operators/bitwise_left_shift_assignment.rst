@@ -8,7 +8,7 @@ Performs bitwise left shift and assigns value to the left operand.
 
 Syntax
 ======
-A >>= B
+A <<= B
 
 *A*
     Integer object.
