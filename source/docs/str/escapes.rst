@@ -5,49 +5,51 @@ Escape Characters
 The recognized escape sequences are:
 
 \\newline
-    Ignored	 
+    Ignored
 \\
     Backslash (\\)
 \\'
-    Single quote (')	 
+    Single quote (')
 \\"
-    Double quote (")	 
+    Double quote (")
 \\a
-    ASCII Bell (BEL)	 
+    ASCII Bell (BEL) (1)
 \\b
-    ASCII Backspace (BS)	 
+    ASCII Backspace (BS)
 \\f
-    ASCII Formfeed (FF)	 
+    ASCII Formfeed (FF)
 \\n
-    ASCII Linefeed (LF)	 
+    ASCII Linefeed (LF)
 \\N{name}
-    Character named NAME in the Unicode database (Unicode only)	 
+    Character named NAME in the Unicode database (Unicode only)
 \\r
-    ASCII Carriage Return (CR)	 
+    ASCII Carriage Return (CR)
 \\t
-    ASCII Horizontal Tab (TAB)	 
+    ASCII Horizontal Tab (TAB)
 \\uxxxx
-    Character with 16-bit hex value XXXX (Unicode only)	(1)
+    Character with 16-bit hex value XXXX (Unicode only)	(2)
 \\Uxxxxxxxx
-    Character with 32-bit hex value XXXXXXXX (Unicode only)	(2)
+    Character with 32-bit hex value XXXXXXXX (Unicode only)	(3)
 \\v
-    ASCII Vertical Tab (VT)	 
+    ASCII Vertical Tab (VT)
 \\ooo
-    Character with octal value OOO	(3,5)
+    Character with octal value OOO	(4,6)
 \\xhh
-    Character with hex value HH	(4,5)
+    Character with hex value HH	(5,6)
 
 Notes
 =====
-1.	Individual code units which form parts of a surrogate pair can be encoded using this escape sequence.
+1.	The bell sound is disabled by default in modern IDEs. To listen to the bell sound, try it in a console.
 
-2.	Any Unicode character can be encoded this way, but characters outside the Basic Multilingual Plane (BMP) will be encoded using a surrogate pair if Python is compiled to use 16-bit code units (the default).
+2.	Individual code units which form parts of a surrogate pair can be encoded using this escape sequence.
 
-3.	As in Standard C, up to three octal digits are accepted.
+3.	Any Unicode character can be encoded this way, but characters outside the Basic Multilingual Plane (BMP) will be encoded using a surrogate pair if Python is compiled to use 16-bit code units (the default).
 
-4.	Unlike in Standard C, exactly two hex digits are required.
+4.	As in Standard C, up to three octal digits are accepted.
 
-5.	In a string literal, hexadecimal and octal escapes denote the byte with the given value; it is not necessary that the byte encodes a character in the source character set. In a Unicode literal, these escapes denote a Unicode character with the given value.
+5.	Unlike in Standard C, exactly two hex digits are required.
+
+6.	In a string literal, hexadecimal and octal escapes denote the byte with the given value; it is not necessary that the byte encodes a character in the source character set. In a Unicode literal, these escapes denote a Unicode character with the given value.
 
 Remarks
 =======
