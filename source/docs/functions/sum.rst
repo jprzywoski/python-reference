@@ -17,11 +17,11 @@ Syntax
 
 Return Value
 ============
-#TODO
+Returns the additive sum of iterable objects (numbers).
 
 Time Complexity
 ============
-#TODO
+O(n) - Linear Time
 
 Remarks
 =======
